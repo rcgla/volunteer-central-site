@@ -1,0 +1,12 @@
+{%- extends '../base/base.html' -%}
+{%- set title = "Admin" -%}
+
+{%- block content -%}
+    <h1>Admin pages</h1>
+    <h2>Sessions</h2>
+    <ul>
+        {%- for session in sessions -%}
+        <li><a href=/admin/sessions/{{session.id}}>{{session.name}}</a></li>
+        {%- endfor -%}
+    </ul>
+{%- endblock -%}

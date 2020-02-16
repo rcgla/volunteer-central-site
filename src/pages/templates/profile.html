@@ -1,0 +1,56 @@
+{%- extends 'base/base.html' -%}
+{%- set title = "Profile" -%}
+{%- block content -%}
+
+<h1>Profile</h1>
+<p>View and edit your profile below. You may also change your password.</p>
+
+<div class="spaced">
+    <h2>Your profile</h2>
+    <p>{{user.name}}</p>
+    <p>{{user.address}}</p>
+    <p>{{user.phone}}</p>
+    <p>{{user.bio}}</p>
+</div>
+
+<div class="spaced">
+    <h2>Edit Profile</h2>
+    <p id="local-error" aria-live="polite"></p>
+    <form action="/user/forms/profile" method="POST" id="profile-form" class="simple">
+        <div>
+            <label for="name">Name</label>
+            <input type="text" name="name" value="{{user.name}}" required>
+        </div>
+        <div>
+            <label for="phone">Phone</label>
+            <input type="text" name="phone" value="{{user.phone}}">
+        </div>
+        <div>
+            <label for="address">Address</label>
+            <input type="text" name="address" value="{{user.address}}">
+        </div>
+        <div>
+            <label for="bio">Bio</label>
+            <input type="text" name="bio" value="{{user.bio}}">
+        </div>
+        <div>
+            <label for="password">Password</label>
+            <input type="password" name="password">
+        </div>
+        <div>
+            <label for="passwordmatch">Password (again)</label>
+            <input type="password" name="passwordmatch">
+        </div>
+        <input type="submit" name="save" value="Save changes">
+    </form>
+</div>
+<script type="module" src="/js/passwordMatch.js"></script>
+<script type="module">
+    import { initCheckPasswordsMatch } from '/js/passwordMatch.js';
+    window.addEventListener("load", () => {
+        initCheckPasswordsMatch("profile-form");   
+    });
+    
+</script>
+
+{%- endblock -%}

@@ -1,0 +1,63 @@
+{%- extends 'base/htmleton.html' -%}
+{%- block head -%}
+<title>Volunteer Central{%- if title -%}: {{ title }}{%- endif -%}</title>
+{%- endblock -%}
+{%- block body -%}
+
+<header {%if landing %}class="landing" {% endif %}>
+    {%- if landing -%} 
+    <div class="hero">
+        <h1>Volunteer Central</h1>
+    </div>
+    {%- endif -%}
+    {%- if not landing -%}
+    <h1 class="title"><a href="/">Volunteer Central</a></h1>
+    {%- endif -%}
+    
+    <nav aria-label="Top-level navigation">
+        <ul>
+        {%- if accessLevel == 'public' -%}
+            <li><a href='/login'>Login</a></li>
+        {%- else -%}
+            {%- if accessLevel == 'admin' -%}
+            <li><a href="/admin">Admin</a></li>
+            {%- endif -%}
+            <li><a href='/user/dashboard'>Dashboard</a></li>
+            <li><a href='/user/profile'>Profile</a></li>
+            <li>
+                <form method="POST" action="/forms/logout">
+                    <input type="submit" name="submit" value="Logout"/>
+                </form>
+            </li>
+        {%- endif -%}
+        </ul>
+    </nav>
+    
+</header>
+<main>
+    
+
+    {%- block content -%}
+    {%- endblock -%}
+</main>
+<footer>
+<span>© 2020 <a href="http://werock.la">Rock n' Roll Camp for Girls Los Angeles</a></span>
+</footer>
+
+<script type="text/javascript">
+
+    window.addEventListener("load", () => {
+        const params = new URLSearchParams(window.location.search);  
+        let header = document.querySelector("header");
+        if (params.has("error")) {
+            let elm = document.createElement("p");
+            elm.classList.add("alert");
+            elm.textContent = params.get("error");
+            elm.style.display = "block";
+            header.prepend(elm);
+        }
+    });
+  
+</script>
+
+{%- endblock -%}

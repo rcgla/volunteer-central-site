@@ -1,0 +1,42 @@
+{%- extends '../base/base.html' -%}
+{%- set title = "Admin: " + pagetitle -%}
+{%- block content -%}
+
+<h1>{{ pagetitle }}</h1>
+
+<table summary="User information" class="striped">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Photo</th>
+            <th>Roles</th>
+            <th>Email</th>
+            <th>Address</th>
+            <th>Phone</th>
+            <th>Bio</th>
+
+        </tr>
+    </thead>
+    <tbody>
+        {%- for user in users -%}
+        <tr>
+            <td>{{ user.name }}</td>
+            <td><img src="{{ user.photoUrl }}" alt="Profile picture" class="thumbnail"></td>
+            <td>
+                <ul>
+                    {%- for n in user.participationsByUserId.nodes -%}
+                    <li>{{n.role.name}}</li>
+                    {%- endfor -%}
+                </ul>
+            </td>
+            <td>{{ user.login.email }}</td>
+            <td>{{ user.address }}</td>
+            <td>{{ user.phone }}</td>
+            <td class="bio">{{ user.bio }}</td>
+        </tr>
+        {%- endfor -%}
+    </tbody>
+</table>
+
+{%- endblock -%}
+

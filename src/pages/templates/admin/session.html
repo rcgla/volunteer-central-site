@@ -1,0 +1,12 @@
+{%- extends 'base/base.html' -%}
+{%- set title = 'Session ' + session.name -%}
+{%- block content -%}
+
+<h1>{{ title }}</h1>
+<p>From {{ session.start | date("ddd MMM DD YYYY")}} to {{ session.end | date("ddd MMM DD YYYY") }}</p>
+<ul>
+    <li><a href="/admin/sessions/{{session.id}}/campers">Campers</a></li>
+    <li><a href="/admin/sessions/{{session.id}}/volunteers">Volunteers</a></li>
+</ul>
+
+{%- endblock -%}

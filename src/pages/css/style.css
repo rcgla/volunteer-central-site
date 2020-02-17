@@ -65,8 +65,8 @@ a:visited {
 
 main {
     grid-area: content;
-    justify-content: center;
-    display: grid;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 footer {

@@ -6,6 +6,7 @@
     --campblue: #4abcd3;
     --campred: #e3504f;
     --lightcampred: #fceded;
+    --lightcampblue: #c9ebf2;
 }
 
 html {
@@ -206,7 +207,7 @@ table tbody tr td ul {
     text-align: left;
 }
 table.striped thead tr:first-child {
-    background-color: var(--campblue);
+    background-color: var(--lightcampblue);
     line-height: 4rem;
 }
 

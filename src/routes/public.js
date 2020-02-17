@@ -10,7 +10,9 @@ router.get('/test', (req, res) => {
 });
 
 // home page
-router.get('/', (req, res) => res.render('index.html', { accessLevel: req.accessLevel}));
+router.get('/', (req, res) => {
+    res.render('index.html', { accessLevel: req.accessLevel})
+});
 
 // server error
 router.get('/server-error', (req, res) => res.render('server-error.html', { accessLevel: req.accessLevel}));

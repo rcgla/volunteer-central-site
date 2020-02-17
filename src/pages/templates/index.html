@@ -5,7 +5,12 @@
 
 
 <p>Welcome to the volunteer and camper portal for <a href="http://werock.la">Rock n' Roll Camp for Girls Los Angeles!</a></p>
-<p class="big"><a href="/login">Login</a> to get started.</p>
+
+{%- if accessLevel == 'public' -%}
+<p><a href="/login">Login</a> to get started.</p>
+{%- else -%}
+<p>Go to your <a href="/user/dashboard">dashboard</a> to get started.</p>
+{%- endif -%}
 
 <img src="/images/rcgla.jpg" alt="Rock n' Roll Camp for Girls LA logo">
 

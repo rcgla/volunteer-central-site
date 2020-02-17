@@ -176,7 +176,7 @@ td {
     padding: 0.5rem;
 }
 table thead tr th {
-    min-width: 10rem;
+    min-width: 12rem;
 }
 table tbody tr td.bio {
     text-align: left;

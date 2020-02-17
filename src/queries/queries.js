@@ -11,13 +11,14 @@ module.exports = {
     }`,
 
     ROLEGROUP_ROLES: 
-    `query ($name:String!) {
-        roleGroups (condition:{name:$name}) {
+    `query ($code:String!) {
+        roleGroups (condition:{code:$code}) {
           nodes {
             rolesInRoleGroupsByRoleGroupId {
               nodes {
                 role {
                   name
+                  code
                 }
               }
             }

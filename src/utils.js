@@ -33,8 +33,8 @@ function parseToken (token) {
 async function getUsersBySessionAndRoleGroup(sessionId, roleGroupName, jwt) {
     let result = await db.query(QADMIN.USERS, {}, jwt);
     let session = await db.query(Q.SESSION, {id: sessionId}, jwt);
-    let roles = await db.query(Q.ROLEGROUP_ROLES, {name: roleGroupName}, jwt);
-    roles = roles.data.data.roleGroups.nodes[0].rolesInRoleGroupsByRoleGroupId.nodes.map(n => n.role.name);
+    let roles = await db.query(Q.ROLEGROUP_ROLES, {code: roleGroupName}, jwt);
+    roles = roles.data.data.roleGroups.nodes[0].rolesInRoleGroupsByRoleGroupId.nodes.map(n => n.role.code);
     
     let users = result.data.data.users.nodes;
     
@@ -43,7 +43,7 @@ async function getUsersBySessionAndRoleGroup(sessionId, roleGroupName, jwt) {
         .map(n => n.session.id === sessionId));
     
     let usersInGroup = usersForSession.filter( u => {
-        let usersRoles = u.participationsByUserId.nodes.map(n => n.role.name);
+        let usersRoles = u.participationsByUserId.nodes.map(n => n.role.code);
         let applicableRoles = usersRoles.filter(r => roles.includes(r));
         return applicableRoles.length > 0;
     });

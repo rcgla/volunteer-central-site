@@ -30,6 +30,7 @@ function parseToken (token) {
 
 // this should prob be a postgres function
 // just doing it in js for now... 
+// TODO: filter for whether a user has dropped or not
 async function getUsersBySessionAndRoleGroup(sessionId, roleGroupName, jwt) {
     let result = await db.query(QADMIN.USERS, {}, jwt);
     let session = await db.query(Q.SESSION, {id: sessionId}, jwt);

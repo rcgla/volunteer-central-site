@@ -46,10 +46,12 @@ pre > code {
 
 a {
     color: var(--darkblue);
+    
 }
 
 a:hover {
     border-bottom: var(--mediumblue) 2px solid;
+    /* border-bottom: var(--campred) 2px solid; */
 }
 
 a:link, a:visited, a:hover {
@@ -58,10 +60,13 @@ a:link, a:visited, a:hover {
 
 a:visited {
     color: var(--blue);
+    
 }
 
 main {
     grid-area: content;
+    justify-content: center;
+    display: grid;
 }
 
 footer {
@@ -96,12 +101,13 @@ header.landing {
     "nav nav nav"
     "hero hero hero";
 }
-header > h1.title {
+header h1.title {
+    /* background: linear-gradient(90deg, transparent 10%, white 20%, white 70%, transparent);        */
     font-size: 2rem;
-    line-height: 2rem;
+    line-height: 3rem;
     grid-area: title;
 }
-header > h1.title a {
+header h1.title a {
     text-decoration: none !important;
     color: inherit !important;
     border: none !important;
@@ -115,9 +121,24 @@ header nav ul {
     justify-content: right;
     padding-left: 0;
     list-style-type: none;
+    align-self: center;
 }
 header nav ul li {
     padding-right: 2rem;
+    align-self: center;
+}
+header nav a {
+    /* background: linear-gradient(90deg, transparent 5%, white 10%, white 95%, transparent);        */
+    padding: .25rem;
+    background: white;
+}
+
+header form input[type='submit'] {
+    padding: .25rem;
+    border: none;
+    background-color: white;
+    color: var(--blue);
+    font-size: 1rem;
 }
 
 /* hero block */
@@ -127,7 +148,7 @@ header .hero {
     padding: 1rem;
 }
 header .hero h1 {
-    font-size: 5rem;        
+    font-size: 5rem; 
 }
 header .hero p {
     font-size: 3rem;

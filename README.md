@@ -12,9 +12,10 @@ This is a website. It is part of a set of projects related to RCGLA Volunteer Ce
 1. Setup [the database](https://github.com/rcgla/volunteer-central-db) and make sure PostgreSQL is running on your machine. You only have to setup the database once. Whatever PostgreSQL app you have running in the background will find the database when it is requested.
 2. Start [the database API](https://github.com/rcgla/volunteer-central-db-api)
 3. Open a terminal and go to the directory where you've cloned this repository. Make sure you're on the `dev` branch.
-4. (one time only) `npm install`
-5. (Every time you want to start it up) `npm run dev`
-6. Point your browser to [localhost:8000](http://localhost:8000)
+4. `cp example.env .env`
+5. (one time only) `npm install`
+6. (Every time you want to start it up) `npm run dev`
+7. Point your browser to [localhost:8000](http://localhost:8000)
 
 ## Background
 

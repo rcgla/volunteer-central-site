@@ -16,6 +16,7 @@ This is a website. It is part of a set of projects related to RCGLA Volunteer Ce
 5. (one time only) `npm install`
 6. (Every time you want to start it up) `npm run dev`
 7. Point your browser to [localhost:8000](http://localhost:8000)
+8. Optionally, login as an admin: `betro@example.com`/`dancingpaint`
 
 ## Background
 

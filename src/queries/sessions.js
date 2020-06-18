@@ -1,4 +1,4 @@
-const GET_ALL_SESSIONS = 
+const GET_ALL = 
 `query {
     sessions{
         nodes {
@@ -10,7 +10,7 @@ const GET_ALL_SESSIONS =
     }
 }`;
 
-const GET_SESSION_BY_ID = 
+const GET_BY_ID = 
 `query ($id:Int!) {
     sessions (condition:{id:$id}) {
         nodes {
@@ -23,6 +23,6 @@ const GET_SESSION_BY_ID =
 }`;
 
 export {
-    GET_SESSION_BY_ID,
-    GET_ALL_SESSIONS
+    GET_BY_ID,
+    GET_ALL
 };

@@ -11,11 +11,8 @@ router.get('/', (req, res) => {
     res.render('index.html', { accessLevel: req.accessLevel})
 });
 
-// server error
-router.get('/server-error', (req, res) => res.render('server-error.html', { accessLevel: req.accessLevel}));
-
-// request error
-router.get('/request-error', (req, res) => res.render('request-error.html', { accessLevel: req.accessLevel}));
+// error
+router.get('/error', (req, res) => res.render('error.html', { accessLevel: req.accessLevel}));
 
 // login page
 router.get('/login', (req, res) => res.render('./auth/login.html', {accessLevel: req.accessLevel}));

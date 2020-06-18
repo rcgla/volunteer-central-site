@@ -5,32 +5,26 @@ import * as Q from '../queries/index.js';
 const router = express.Router();
 
 // user profile page
-router.get('/profile', async (req, res) => {
-    try {
-        let result = await db.query(Q.USERS.GET_USER_PROFILE, { id: req.userId }, req.cookies.jwt);
-        return res.render('./profile.html', 
-            {
-                accessLevel: req.accessLevel,
-                user: result.data.data.user
-            });
+router.get('/profile', async (req, res, next) => {
+    let dbres = await db.query(Q.USERS.GET_BY_ID, { id: req.userId }, req.cookies.jwt);
+    
+    if (!dbres.success) {
+        let err = new Error(`Could not get profile for user (${req.userId})`);
+        return next(err);
     }
-    catch(err) {
-        console.log(err);
-        return res.redirect('/server-error');
-    }
+
+    return res.render('profile.html', 
+        {
+            user: dbres.data.user
+        }
+    );
 });
 
 router.get('/dashboard', async (req, res) => {
-    try {
-        return res.render('./dashboard.html',
-        {
-            accessLevel: req.accessLevel
-        });
-    }
-    catch(err) {
-        console.log(err);
-        return res.redirect('/server-error');   
-    }
+    return res.render('./dashboard.html',
+    {
+        accessLevel: req.accessLevel
+    });
 })
 
 

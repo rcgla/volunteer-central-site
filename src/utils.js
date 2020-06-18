@@ -38,14 +38,21 @@ function parseToken (token) {
 // just doing it in js for now... 
 // TODO: filter for whether a user has dropped or not
 async function getUsersBySessionAndRoleGroup(sessionId, roleGroupName, jwt) {
-    let result = await db.query(Q.USERS.GET_ALL_USERS, {}, jwt);
-    let session = await db.query(Q.SESSIONS.GET_SESSION_BY_ID, {id: sessionId}, jwt);
-    let roles = await db.query(Q.ROLES.GET_ROLES_FOR_ROLEGROUP, {code: roleGroupName}, jwt);
-    roles = roles.data.data.roleGroups.nodes[0].rolesInRoleGroupsByRoleGroupId.nodes.map(n => n.role.code);
+    let dbres = await db.query(Q.USERS.GET_ALL, {}, jwt);
+    if (!dbres.success) {
+        let err = new Error("Could not get users");
+        return {success: false, errors: [err], users: []};
+    }
+    let users = dbres.data.users.nodes;
+
+    dbres = await db.query(Q.ROLES.GET_ROLES_FOR_ROLEGROUP, {code: roleGroupName}, jwt);
+    if (!dbres.success) {
+        let err = new Error(`Could not get roles for rolegroup ${roleGroupName}`);
+        return {success: false, errors: [err], users: []};
+    }
+    let roles = dbres.data.roleGroups.nodes[0].rolesInRoleGroupsByRoleGroupId.nodes.map(n => n.role.code);
     
-    let users = result.data.data.users.nodes;
-    
-    usersForSession = users.filter(u => 
+    let usersForSession = users.filter(u => 
         u.participationsByUserId.nodes
         .map(n => n.session.id === sessionId));
     
@@ -55,7 +62,7 @@ async function getUsersBySessionAndRoleGroup(sessionId, roleGroupName, jwt) {
         return applicableRoles.length > 0;
     });
     
-    return usersInGroup;
+    return {success: true, errors: [], users: usersInGroup};
 }
 
 export {

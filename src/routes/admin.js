@@ -5,75 +5,75 @@ import * as utils from '../utils.js';
 
 const router = express.Router();
 
-router.get('/', async(req, res) => {
-    
-    try {
-        let sessions = await db.query(Q.SESSIONS.GET_ALL_SESSIONS, {}, req.cookies.jwt);
-        return res.render('./admin/index.html', 
-            {
-                sessions: sessions.data.data.sessions.nodes,
-                accessLevel: req.accessLevel
-            });
+router.get('/', async (req, res, next) => {
+    let dbres = await db.query(
+        Q.SESSIONS.GET_ALL, 
+        {}, 
+        req.cookies.jwt);
+        
+    if (!dbres.success) {
+        let err = new Error("Could not get sessions");
+        return next(err);
     }
-    catch(err) {
-        console.log(err);
-        return res.redirect('/server-error');
-    }
+
+    return res.render('./admin/index.html', 
+        {
+            sessions: dbres.data.sessions.nodes,
+            accessLevel: req.accessLevel
+        }
+    );
 });
 
-router.get('/sessions/:sessionId/campers', async (req, res) => {
-    try {
-        let campers = await utils.getUsersBySessionAndRoleGroup(
-            parseInt(req.params.sessionId), 
-            'CAMPERS',
-            req.cookies.jwt);
-        return res.render('./admin/users.html', 
-            {
-                accessLevel: req.accessLevel,
-                pagetitle: "Campers",
-                users: campers
-            });
+router.get('/sessions/:sessionId/campers', async (req, res, next) => {
+    let result = await utils.getUsersBySessionAndRoleGroup(
+        parseInt(req.params.sessionId), 
+        'CAMPERS',
+        req.cookies.jwt);
+    if (!result.success) {
+        let err = new Error(result.errors.join(','));
+        return next(err);
     }
-    catch(err) {
-        console.log(err);
-        return res.redirect('/server-error');
-    }
+    return res.render('./admin/users.html', 
+        {
+            accessLevel: req.accessLevel,
+            pagetitle: "Campers",
+            users: result.users
+        }
+    );
 });
 
 router.get('/sessions/:sessionId/volunteers', async (req, res) => {
-    try {
-        let volunteers = await utils.getUsersBySessionAndRoleGroup(
-            parseInt(req.params.sessionId), 
-            'VOLUNTEERS',
-            req.cookies.jwt);
-        return res.render('./admin/users.html', 
-            {
-                accessLevel: req.accessLevel,
-                pagetitle: "Volunteers",
-                users: volunteers
-            });
+    let result = await utils.getUsersBySessionAndRoleGroup(
+        parseInt(req.params.sessionId), 
+        'VOLUNTEERS',
+        req.cookies.jwt);
+    if (!result.success) {
+        let err = new Error(result.errors.join(','));
+        return next(err);
     }
-    catch(err) {
-        console.log(err);
-        return res.redirect('/server-error');
-    }
+    return res.render('./admin/users.html', 
+        {
+            accessLevel: req.accessLevel,
+            pagetitle: "Campers",
+            users: result.users
+        }
+    );
 });
 
-router.get('/sessions/:sessionId', async (req, res) => {
-    try {
-        let session = await db.query(
-            Q.SESSIONS.GET_SESSION_BY_ID, 
-            {id: parseInt(req.params.sessionId)}, 
-            req.cookies.jwt);
-        return res.render('./admin/session.html', {
-            session: session.data.data.sessions.nodes[0],
-            accessLevel: req.accessLevel
-        });
+router.get('/sessions/:sessionId', async (req, res, next) => {
+    let dbres = await db.query(
+        Q.SESSIONS.GET_BY_ID, 
+        { id: parseInt(req.params.sessionId) }, 
+        req.cookies.jwt);
+    if (!dbres.success) {
+        let err = new Error(`Could not get session ${req.params.sessionId}`);
+        return next(err);
     }
-    catch(err) {
-        console.log(err);
-        return res.redirect('/server-error');
-    }
+    let session = dbres.data.sessions.nodes[0];
+    return res.render('./admin/session.html', {
+        session,
+        accessLevel: req.accessLevel
+    });
 });
 
 export { router };

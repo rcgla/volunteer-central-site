@@ -15,41 +15,40 @@ router.post('/login',
         body('email').isEmail(),
         body('password').isLength({ min: 8 })
     ],
-    async (req, res) => {
+    async (req, res, next) => {
         const errors = validationResult(req);
         if (!errors.isEmpty()) {
-            return res.status(422).redirect('/login?error=Login%20error');
+            let message = "Login error";
+            return res.status(422).redirect('/login?message=' + encodeURIComponent(message));
         }
 
-        try {
-            let result = await db.query(
-                Q.AUTH.LOGIN, 
-                {   
-                    input: {
-                        email: req.body.email, 
-                        password: req.body.password
-                    }
-                });
-            let jwt = result.data.data.authenticate.jwtToken;
-            let token = utils.parseToken(jwt);
-            if (token) {
-                res
-                    .status(200)
-                    .cookie('jwt', jwt, { httpOnly: true/*, secure: true */ , maxAge: token.expires})
-                    .redirect('/user/dashboard');
-            }
-            else {
-                res
-                    .status(401)
-                    .redirect('/login?error=Login%20error');
-            }
+        let dbres = await db.query(
+            Q.AUTH.LOGIN, 
+            {   
+                input: {
+                    email: req.body.email, 
+                    password: req.body.password
+                }
+            });
+        if (!dbres.success) {
+            let message = "Login error";
+            return res.redirect('/login?message=' + encodeURIComponent(message));    
         }
-        catch(err) {
-            console.log(err);
-            res.redirect('/login?error=Login%20error');
+        let jwt = dbres.data.authenticate.jwtToken;
+        let token = utils.parseToken(jwt);
+        if (token) {
+            return res.status(200)
+                .cookie('jwt', jwt, { httpOnly: true/*, secure: true */ , maxAge: token.expires})
+                .redirect(req.body.next ? req.body.next : '/user/dashboard');
+        }
+        else {
+            let message = "Login error";
+            return res.status(401)
+                .redirect('/login?message=' + encodeURIComponent(message));
         }
     }
 );
+
 
 // submit logout
 router.post('/logout', (req, res) => {
@@ -69,37 +68,37 @@ router.post('/forgot-password',
     async (req, res) => {
         const errors = validationResult(req);
         if (!errors.isEmpty()) {
-            return res.status(422).redirect('/forgot-password?error=Reset%20password%20error');
+            let message = 'Reset password error';
+            return res.status(422).redirect('/forgot-password?message=' + encodeURIComponent(message));
         }
 
-        try {
-            let result = await db.query(
-                Q.AUTH.TEMPORARY_TOKEN,
-                {
-                    input: {
-                        email: req.body.email
-                    }
-                });
-            let jwt = result.data.data.createTemporaryToken.jwtToken;
-            let token = utils.parseToken(jwt);
-            if (token) {
-                let resetUrl = process.env.MODE === 'LOCALDEV' ? 
-                    `http://localhost:${process.env.PORT}/set-password?token=${jwt}`
-                    : 
-                    `http://vol.werock.la/set-password?token=${jwt}`;
-                await mail.emailPasswordReset(req.body.email, 
-                    emails.reset.subject,
-                    emails.reset.text(resetUrl),
-                    emails.reset.html(resetUrl));   
-                res
-                    .status(200)
-                    .redirect('/check-your-email');
-            }
+        let dbres = await db.query(
+            Q.AUTH.TEMPORARY_TOKEN,
+            {
+                input: {
+                    email: req.body.email
+                }
+            });
+        if (!dbres.success) {
+            let message = "Reset password error";
+            return res.redirect('/forgot-password?message=' + encodeURIComponent(message));
         }
-        catch(err) {
-            console.log(err);
-            res.redirect('/forgot-password?error=Reset%20password%20error');
+        let jwt = dbres.data.createTemporaryToken.jwtToken;
+        let token = utils.parseToken(jwt);
+        if (token) {
+            let resetUrl = process.env.MODE === 'LOCALDEV' ? 
+                `http://localhost:${process.env.PORT}/set-password?token=${jwt}`
+                : 
+                `http://vol.werock.la/set-password?token=${jwt}`;
+            await mail.sendEmail(req.body.email, 
+                emails.reset.subject,
+                emails.reset.text(resetUrl),
+                emails.reset.html(resetUrl));  
+            let message = "Password reset initiated. Please check your email for further instructions."; 
+            return res.status(200)
+                .redirect(`/?message=` + encodeURIComponent(message));
         }
     }
 );
+
 export { router };

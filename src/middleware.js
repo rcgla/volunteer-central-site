@@ -33,8 +33,18 @@ function accessLevel (req, res, next) {
     return next();
 }
 
+function error (err, req, res, next) {
+    console.log("Error: ", err.statusCode);
+    // use a generic status code if not present
+    if (!err.statusCode) {
+        err.statusCode = 500;
+    }
+    res.status(err.statusCode).redirect(`/error?code=${err.statusCode}&error=${err.message}`);
+}
+
 export {
     isAuthenticated, 
     isAdmin,
-    accessLevel
+    accessLevel,
+    error
 };

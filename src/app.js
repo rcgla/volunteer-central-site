@@ -55,7 +55,7 @@ app.use('/forms', apiLimiter, publicFormRoutes);
 app.use('/user/forms', middleware.isAuthenticated, userFormRoutes);
 //app.use('/admin/forms', middleware.isAuthenticated, middleware.isAdmin, adminFormRoutes);
 
-// const port = process.env.PORT || 8000;
-// app.listen(port, () => console.log(`Volunteer Central listening on port ${port}!`))
+// error middleware goes here at the end
+app.use(middleware.error);
 
 export { app };

@@ -14,75 +14,73 @@ router.post('/set-password',
     async (req, res) => {
         const errors = validationResult(req);
         if (!errors.isEmpty()) {
-            return res.status(422).redirect('/set-password?error=Password%30must%20be%20at%20least%208-20%20characters%20long.');
+            let message = "Password must be 8-20 characters";
+            return res.status(422).redirect('/set-password?message=' + encodeURIComponent(message));
         }
 
-        try {
-            let result = await db.query(
-                Q.AUTH.SET_PASSWORD, 
-                {
-                    input: {
-                        userId: req.userId, 
-                        newPassword: req.body.password
-                    }
+        let dbres = await db.query(
+            Q.AUTH.SET_PASSWORD, 
+            {
+                input: {
+                    userId: req.userId, 
+                    newPassword: req.body.password
                 }
-                , req.cookies.jwt);
-            if (result.data.data.setPassword) {
-                return res
-                        .status(200)
-                        // clear the temporary cookie
-                        .clearCookie('jwt', {
-                            path: '/'
-                        })
-                        .redirect('/login?error=Success.%20Login%20with%20your%20new%20password');
             }
-            else {
-                return res
-                        .status(401)
-                        .redirect('/set-password?error=Set%20password%20error');
-            }
-            
+            , req.cookies.jwt);
+        if (!dbres.success) {
+            let message = "Error setting password";
+            return res
+                .status(401)
+                .redirect('/set-password?message=' + encodeURIComponent(message));
         }
-        catch(err) {
-            console.log(err);
-            return res.redirect('/set-password?error=Error%20setting%20password');
-        }
+        let message = "Success. Login with your new password."
+        return res
+                .status(200)
+                // clear the temporary cookie
+                .clearCookie('jwt', {
+                    path: '/'
+                })
+                .redirect('/login?message=' + encodeURIComponent(message));
+                
     }
 );
 
 // submit profile
 router.post('/profile', 
     async (req, res) => {
-        try {
-            let data = {
-                name: req.body.name,
-                organization: req.body.organization,
-                website: req.body.website.indexOf("http://") === -1 ? 
-                    `http://${req.body.website}` : req.body.website
-            };
-            // TODO write this query
-            //await db.query(Q.USERS.UPDATE_USER_PROFILE, {id: req.userId, data}, req.cookies.jwt);
-            
-            if (req.body.password != "") {
-                if (req.body.password.length < 8) {
-                    return res.status(422).redirect('/user/profile?error=Password%30must%20be%20at%20least%208-20%20characters%20long.');
-                }
-                await db.query(
-                    Q.AUTH.SET_PASSWORD,
-                    {
-                        input: {
-                            userId: req.userId, 
-                            newPassword: req.body.password
-                        }
-                    },
-                    req.cookies.jwt);
+        let data = {
+            name: req.body.name,
+            organization: req.body.organization,
+            website: req.body.website.indexOf("http://") === -1 ? 
+                `http://${req.body.website}` : req.body.website
+        };
+        let dbres = await db.query(Q.USERS.UPDATE, {id: req.userId, data}, req.cookies.jwt);
+        
+        if (!dbres.success) {
+            let message = "Error updating profile.";
+            return res.redirect('/user/profile?message=' + encodeURIComponent(message));
+        }
+        if (req.body.password != "") {
+            if (req.body.password.length < 8) {
+                let message = "Password must be 8-20 characters";
+                return res.status(422).redirect('/user/profile?message=' + encodeURIComponent(message));
             }
-            return res.redirect('/user/profile');
+            dbres = await db.query(
+                Q.AUTH.SET_PASSWORD,
+                {
+                    input: {
+                        userId: req.userId, 
+                        newPassword: req.body.password
+                    }
+                },
+                req.cookies.jwt);
+            if (!dbres.success) {
+                let message = "Error updating password.";
+                return res.redirect('/user/profile?message=' + encodeURIComponent(message));
+            }
         }
-        catch(err) {
-            console.log(err);
-            return res.redirect('/user/profile?error=Error%20updating%20profile');
-        }
+        let message = "Profile updated.";
+        return res.redirect('/user/profile?message=' + encodeURIComponent(message));
     }
 );
 

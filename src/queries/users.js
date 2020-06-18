@@ -1,4 +1,4 @@
-const GET_USER_PROFILE = 
+const GET_BY_ID = 
 `query($id: Int!) {
     user (id: $id) {
         name
@@ -8,7 +8,7 @@ const GET_USER_PROFILE =
     }
 }`;
 
-const GET_ALL_USERS = 
+const GET_ALL = 
 `query {
     users {
         nodes {
@@ -28,6 +28,7 @@ const GET_ALL_USERS =
                     }
                     session {
                         name
+                        id
                     }
                 }
             }
@@ -35,7 +36,27 @@ const GET_ALL_USERS =
     }
 }`;
 
+const UPDATE =
+`mutation ($id: Int!, $data: UserPatch!) {
+    updateUser(input: {
+        id: $id,
+        patch: $data
+    }) {
+        clientMutationId
+    }
+}`;
+
+const GET_EMAIL = 
+`query($id: Int!) {
+    user (id: $id) {
+        login{
+            email
+        }
+    }
+}`;
 export { 
-    GET_ALL_USERS,
-    GET_USER_PROFILE
+    GET_ALL,
+    GET_BY_ID,
+    UPDATE,
+    GET_EMAIL
 };

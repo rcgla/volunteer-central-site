@@ -19,16 +19,17 @@ function isAdmin(req, res, next) {
 
 function accessLevel (req, res, next) {
     if (!req || !req.cookies || !req.cookies.jwt) {
-        req.accessLevel = 'public';
-        return next();
-    }
-    const token = utils.parseToken(req.cookies.jwt);
-    if (token) {
-        req.accessLevel = token.accessLevel;
-        req.userId = token.userId;
+        res.locals.accessLevel = 'public';
     }
     else {
-        req.accessLevel = 'public';
+        let token = utils.parseToken(req.cookies.jwt);
+        if (token) {
+            res.locals.accessLevel = token.accessLevel;
+            req.userId = token.userId;
+        }
+        else {
+            res.locals.accessLevel = 'public';
+        }
     }
     return next();
 }

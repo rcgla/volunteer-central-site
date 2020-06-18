@@ -20,12 +20,6 @@ router.get('/profile', async (req, res, next) => {
     );
 });
 
-router.get('/dashboard', async (req, res) => {
-    return res.render('./dashboard.html',
-    {
-        accessLevel: req.accessLevel
-    });
-})
-
+router.get('/dashboard', async (req, res) => res.render('./dashboard.html'));
 
 export { router };

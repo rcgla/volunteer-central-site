@@ -2,26 +2,22 @@ import express from 'express';
 import * as utils from '../utils.js';
 
 const router = express.Router();
-router.get('/test', (req, res) => {
-    return res.render('test.html', { accessLevel: req.accessLevel });
-});
+router.get('/test', (req, res) => res.render('test.html'));
 
 // home page
-router.get('/', (req, res) => {
-    res.render('index.html', { accessLevel: req.accessLevel})
-});
+router.get('/', (req, res) => res.render('index.html'));
 
 // error
-router.get('/error', (req, res) => res.render('error.html', { accessLevel: req.accessLevel}));
+router.get('/error', (req, res) => res.render('error.html'));
 
 // login page
-router.get('/login', (req, res) => res.render('./auth/login.html', {accessLevel: req.accessLevel}));
+router.get('/login', (req, res) => res.render('./auth/login.html'));
 
 // forgot password page
-router.get('/forgot-password', (req, res) => res.render('./auth/forgot-password.html', {accessLevel: req.accessLevel}));
+router.get('/forgot-password', (req, res) => res.render('./auth/forgot-password.html'));
 
 // check your email (for a reset password link) page
-router.get('/check-your-email', (req, res) => res.render('./auth/check-your-email.html', {accessLevel: req.accessLevel}));
+router.get('/check-your-email', (req, res) => res.render('./auth/check-your-email.html'));
 
 // reset password page
 router.get('/set-password', (req, res) => {
@@ -32,10 +28,7 @@ router.get('/set-password', (req, res) => {
         return res
                 .status(200)
                 .cookie('jwt', jwt, { httpOnly: true/*, secure: true */ , maxAge: token.expires})
-                .render('./auth/set-password.html',
-                    {
-                        accessLevel: req.accessLevel
-                    });
+                .render('./auth/set-password.html');
     }
     else {
         return res
@@ -55,7 +48,6 @@ router.get('/accept-invitation', (req, res) => {
                 .cookie('jwt', jwt, { httpOnly: true/*, secure: true */ , maxAge: token.expires})
                 .render('./auth/set-password.html',
                     {
-                        accessLevel: req.accessLevel,
                         pageTitle: "Welcome",
                         pageMessage: `Thank you for your involvement in Rock n' Roll Camp for Girls LA! 
                         Because you'll login to use this site, please set a password. 

@@ -53,7 +53,6 @@ router.get('/sessions/:sessionId/volunteers', async (req, res) => {
     }
     return res.render('./admin/users.html', 
         {
-            accessLevel: req.accessLevel,
             pagetitle: "Campers",
             users: result.users
         }
@@ -70,10 +69,7 @@ router.get('/sessions/:sessionId', async (req, res, next) => {
         return next(err);
     }
     let session = dbres.data.sessions.nodes[0];
-    return res.render('./admin/session.html', {
-        session,
-        accessLevel: req.accessLevel
-    });
+    return res.render('./admin/session.html', { session });
 });
 
 export { router };

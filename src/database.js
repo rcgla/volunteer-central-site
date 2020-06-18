@@ -1,14 +1,9 @@
-const axios = require('axios');
+import axios from 'axios';
 
 async function query(queryString, variables, jwt=null) {
     let request = makeRequest(queryString, variables, jwt);
     // return a promise
     let retval = await axios(request);
-    return retval;
-}
-
-async function queries(queryStringArray, variablesArray, jwt=null) {
-    let retval = await Promise.all(queryStringArray.map((q, idx) => axios(makeRequest(q, variablesArray[idx], jwt))));
     return retval;
 }
  
@@ -28,6 +23,6 @@ function makeRequest(queryString, variables, jwt=null) {
     return request;
 }
 
-module.exports = {
-    query, queries
+export {
+    query
 }

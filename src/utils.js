@@ -1,10 +1,16 @@
-var jwt = require('jsonwebtoken');
-const path = require('path');
-const db = require('./database');
-const Q = require('./queries/queries');
-const QADMIN = require('./queries/admin');
+import * as path from 'path';
+import dotenv from 'dotenv';
+import { fileURLToPath } from 'url';
+import { dirname } from 'path';
 
-require('dotenv').config({path: path.join(__dirname, '../.env')});
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
+const envpath = path.join(__dirname, '../.env');
+dotenv.config({path: envpath});
+
+import jwt from 'jsonwebtoken';
+import * as db from './database.js';
+import * as Q from './queries/index.js';
 
 function parseToken (token) {
     try {
@@ -32,9 +38,9 @@ function parseToken (token) {
 // just doing it in js for now... 
 // TODO: filter for whether a user has dropped or not
 async function getUsersBySessionAndRoleGroup(sessionId, roleGroupName, jwt) {
-    let result = await db.query(QADMIN.USERS, {}, jwt);
-    let session = await db.query(Q.SESSION, {id: sessionId}, jwt);
-    let roles = await db.query(Q.ROLEGROUP_ROLES, {code: roleGroupName}, jwt);
+    let result = await db.query(Q.USERS.GET_ALL_USERS, {}, jwt);
+    let session = await db.query(Q.SESSIONS.GET_SESSION_BY_ID, {id: sessionId}, jwt);
+    let roles = await db.query(Q.ROLES.GET_ROLES_FOR_ROLEGROUP, {code: roleGroupName}, jwt);
     roles = roles.data.data.roleGroups.nodes[0].rolesInRoleGroupsByRoleGroupId.nodes.map(n => n.role.code);
     
     let users = result.data.data.users.nodes;
@@ -52,7 +58,7 @@ async function getUsersBySessionAndRoleGroup(sessionId, roleGroupName, jwt) {
     return usersInGroup;
 }
 
-module.exports = {
+export {
     parseToken,
     getUsersBySessionAndRoleGroup
-}
+};

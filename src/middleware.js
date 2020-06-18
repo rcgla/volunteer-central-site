@@ -1,5 +1,5 @@
 // MIDDLEWARE FUNCTIONS
-const utils = require('./utils');
+import * as utils from './utils.js';
 
 function isAuthenticated (req, res, next) {
     const token = utils.parseToken(req.cookies.jwt);
@@ -33,8 +33,8 @@ function accessLevel (req, res, next) {
     return next();
 }
 
-module.exports = {
+export {
     isAuthenticated, 
     isAdmin,
     accessLevel
-}
+};

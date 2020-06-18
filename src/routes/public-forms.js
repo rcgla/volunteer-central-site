@@ -1,12 +1,13 @@
-var express = require('express')
-const db = require('../database');
-const QAUTH = require('../queries/auth');
-const utils = require('../utils');
-const mail = require('../mail.js');
-const emails = require('../emails.js');
-const { validationResult, body } = require('express-validator');
+import express from 'express';
+import * as db from '../database.js';
+import * as Q from '../queries/index.js';
+import * as utils from '../utils.js';
+import * as mail from '../mail.js';
+import * as emails from '../emails.js';
+import expressValidator from 'express-validator';
+const { validationResult, body } = expressValidator;
 
-var router = express.Router()
+const router = express.Router();
 
 // submit login
 router.post('/login', 
@@ -22,7 +23,7 @@ router.post('/login',
 
         try {
             let result = await db.query(
-                QAUTH.LOGIN, 
+                Q.AUTH.LOGIN, 
                 {   
                     input: {
                         email: req.body.email, 
@@ -73,7 +74,7 @@ router.post('/forgot-password',
 
         try {
             let result = await db.query(
-                QAUTH.TEMPORARY_TOKEN,
+                Q.AUTH.TEMPORARY_TOKEN,
                 {
                     input: {
                         email: req.body.email
@@ -101,4 +102,4 @@ router.post('/forgot-password',
         }
     }
 );
-module.exports = router;
+export { router };

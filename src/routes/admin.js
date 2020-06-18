@@ -1,15 +1,14 @@
-var express = require('express');
-const db = require('../database');
-const Q = require('../queries/queries');
-const QADMIN = require('../queries/admin');
-const utils = require('../utils');
+import express from 'express';
+import * as db from '../database.js';
+import * as Q from '../queries/index.js';
+import * as utils from '../utils.js';
 
-var router = express.Router()
+const router = express.Router();
 
 router.get('/', async(req, res) => {
     
     try {
-        let sessions = await db.query(Q.SESSIONS, {}, req.cookies.jwt);
+        let sessions = await db.query(Q.SESSIONS.GET_ALL_SESSIONS, {}, req.cookies.jwt);
         return res.render('./admin/index.html', 
             {
                 sessions: sessions.data.data.sessions.nodes,
@@ -62,7 +61,10 @@ router.get('/sessions/:sessionId/volunteers', async (req, res) => {
 
 router.get('/sessions/:sessionId', async (req, res) => {
     try {
-        let session = await db.query(Q.SESSION, {id: parseInt(req.params.sessionId)}, req.cookies.jwt);
+        let session = await db.query(
+            Q.SESSIONS.GET_SESSION_BY_ID, 
+            {id: parseInt(req.params.sessionId)}, 
+            req.cookies.jwt);
         return res.render('./admin/session.html', {
             session: session.data.data.sessions.nodes[0],
             accessLevel: req.accessLevel
@@ -74,5 +76,4 @@ router.get('/sessions/:sessionId', async (req, res) => {
     }
 });
 
-
-module.exports = router;
+export { router };

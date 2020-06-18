@@ -1,10 +1,7 @@
-const path = require('path');
-const express = require('express')
-const router = express.Router()
-const db = require('../database');
-const Q = require('../queries/queries');
-const utils = require('../utils');
+import express from 'express';
+import * as utils from '../utils.js';
 
+const router = express.Router();
 router.get('/test', (req, res) => {
     return res.render('test.html', { accessLevel: req.accessLevel });
 });
@@ -76,5 +73,4 @@ router.get('/accept-invitation', (req, res) => {
     }
 );
 
-
-module.exports = router;
+export { router };

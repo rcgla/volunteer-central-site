@@ -1,6 +1,4 @@
-module.exports = {
-    
-    reset: {
+const reset = {
         subject: 'Password reset requested for RCGLA Volunteer Central',
         text: linkTokenUrl => `
 Hello,
@@ -34,5 +32,6 @@ If it was not you, then please disregard this message.</p>
 <br/>
 <a href="http://werock.la">werock.la</a>
 `
-}
-}
+};
+
+export { reset };

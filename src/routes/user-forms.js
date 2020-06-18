@@ -1,9 +1,10 @@
-var express = require('express')
-const db = require('../database');
-const Q = require('../queries/queries');
-const QAUTH = require('../queries/auth');
-const { validator, validationResult, body } = require('express-validator');
-var router = express.Router()
+import express from 'express';
+import * as db from '../database.js';
+import * as Q from '../queries/index.js';
+import expressValidator from 'express-validator';
+const { validationResult, body } = expressValidator;
+
+const router = express.Router();
 
 // submit set password
 router.post('/set-password', 
@@ -18,7 +19,7 @@ router.post('/set-password',
 
         try {
             let result = await db.query(
-                QAUTH.SET_PASSWORD, 
+                Q.AUTH.SET_PASSWORD, 
                 {
                     input: {
                         userId: req.userId, 
@@ -59,14 +60,15 @@ router.post('/profile',
                 website: req.body.website.indexOf("http://") === -1 ? 
                     `http://${req.body.website}` : req.body.website
             };
-            await db.query(Q.UPDATE_USER_PROFILE, {id: req.userId, data}, req.cookies.jwt);
+            // TODO write this query
+            //await db.query(Q.USERS.UPDATE_USER_PROFILE, {id: req.userId, data}, req.cookies.jwt);
             
             if (req.body.password != "") {
                 if (req.body.password.length < 8) {
                     return res.status(422).redirect('/user/profile?error=Password%30must%20be%20at%20least%208-20%20characters%20long.');
                 }
                 await db.query(
-                    QAUTH.SET_PASSWORD,
+                    Q.AUTH.SET_PASSWORD,
                     {
                         input: {
                             userId: req.userId, 
@@ -84,4 +86,4 @@ router.post('/profile',
     }
 );
 
-module.exports = router;
+export { router };

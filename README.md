@@ -6,17 +6,27 @@ This is a website. It is part of a set of projects related to RCGLA Volunteer Ce
 * [The database API](https://github.com/rcgla/volunteer-central-db-api)
 * [The site (this one)](https://github.com/rcgla/volunteer-central-site)
 
+## Setup
 
-## Running the site
+You only have to do this once.
 
 1. Setup [the database](https://github.com/rcgla/volunteer-central-db) and make sure PostgreSQL is running on your machine. You only have to setup the database once. Whatever PostgreSQL app you have running in the background will find the database when it is requested.
-2. Start [the database API](https://github.com/rcgla/volunteer-central-db-api)
-3. Open a terminal and go to the directory where you've cloned this repository. Make sure you're on the `dev` branch.
-4. `cp example.env .env`
-5. (one time only) `npm install`
-6. (Every time you want to start it up) `npm run dev`
-7. Point your browser to [localhost:8000](http://localhost:8000)
-8. Optionally, login as an admin: `betro@example.com`/`dancingpaint`
+1. Open a terminal and go to the directory where you've cloned this repository. Make sure you're on the `dev` branch.
+1. `cp example.env .env`
+1. (one time only) `npm install`
+
+## Loading test data
+
+You only have to do this once.
+
+1. From the `volunteer-central-site` directory: `npm run loadTestData`
+
+## Starting the site
+
+1. Start [the database API](https://github.com/rcgla/volunteer-central-db-api)
+1. Start the web server: (Every time you want to start it up) `npm run dev`
+1. Point your browser to [localhost:8000](http://localhost:8000)
+1. Optionally, login as an admin: `mayor@example.com`/`dancingpaint`
 
 ## Background
 

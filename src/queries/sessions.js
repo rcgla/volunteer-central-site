@@ -1,28 +1,18 @@
-const GET_ALL = 
-`query {
-    sessions{
-        nodes {
-            id
-            name
-            start
-            end
-        }
-    }
-}`;
+import * as sessionTypes from './sessionTypes.js';
+import generate from './crudGenerator.js';
 
-const GET_BY_ID = 
-`query ($id:Int!) {
-    sessions (condition:{id:$id}) {
-        nodes {
-            id
-            name
-            start
-            end
-        }
+export const fragments = {
+    FIELDS: 
+    `
+    id
+    sessionType {
+        ${sessionTypes.fragments.FIELDS}
     }
-}`;
-
-export {
-    GET_BY_ID,
-    GET_ALL
+    name
+    start
+    end
+    `
 };
+
+export const {CREATE, DELETE, UPDATE, GET, GET_ALL} 
+    = generate("session", "sessions", fragments.FIELDS);

@@ -4,10 +4,12 @@ export const fragments = {
     FIELDS: 
     `
     id
-    name
+    transportType
+    start
+    notes
     `
 };
 
 export const {CREATE, DELETE, UPDATE, GET, GET_ALL} 
-    = generate("role", "roles", fragments.FIELDS);
+    = generate("pickupAuthorization", "pickupAuthorizations", fragments.FIELDS);
 

@@ -1,52 +1,14 @@
-const GET_BY_ID = 
-`query($id: Int!) {
-    user (id: $id) {
-        name
-        phone
-        address
-        bio
-    }
-}`;
+import generate from './crudGenerator.js';
 
-const GET_ALL = 
-`query {
-    users {
-        nodes {
-            name
-            login {
-                email
-            }
-            bio
-            phone
-            address
-            photoUrl
-            participationsByUserId {
-                nodes {
-                    role {
-                        name
-                        code
-                    }
-                    session {
-                        name
-                        id
-                    }
-                }
-            }
-        }
-    }
-}`;
+// TODO finish fields list
+// test inclusion of UserProtected fields
+export const fragments = {
+    FIELDS:`
+    name
+    `,
+};
 
-const UPDATE =
-`mutation ($id: Int!, $data: UserPatch!) {
-    updateUser(input: {
-        id: $id,
-        patch: $data
-    }) {
-        clientMutationId
-    }
-}`;
-
-const GET_EMAIL = 
+export const GET_EMAIL = 
 `query($id: Int!) {
     user (id: $id) {
         login{
@@ -54,9 +16,6 @@ const GET_EMAIL =
         }
     }
 }`;
-export { 
-    GET_ALL,
-    GET_BY_ID,
-    UPDATE,
-    GET_EMAIL
-};
+
+export const {CREATE, DELETE, UPDATE, GET, GET_ALL} 
+    = generate("user", "users", fragments.FIELDS);

@@ -1,24 +1,17 @@
-const GET_ALL = 
-`query {
-    invitations {
-        nodes {
-            user {
-                id
-                name
-            }
-            dateInvited
-        }
-    }
-}`
+import * as Users from "./users.js";
+import generate from './crudGenerator.js';
 
-const ADD = 
-`mutation ($input: CreateInvitationInput!) {
-    createInvitation(input: $input) {
-        clientMutationId
+export const fragments = {
+    FIELDS:`
+    id
+    user {
+        ${Users.fragments.FIELDS}
     }
-}`;
+    dateInvited
+    `,
+};
 
-export {
-    ADD,
-    GET_ALL
-}
+export const {CREATE, DELETE, UPDATE, GET, GET_ALL} 
+    = generate("invitation", "invitations", fragments.FIELDS);
+
+

@@ -1,0 +1,14 @@
+{
+    "users": [
+        {
+            "name": "Snazzy Smith",
+            "address": "1234 Rodeo Drive, Los Angeles, CA 90210",
+            "phone": "818-555-1212",
+            "tshirt_size": "M",
+            "email": "ssmith@example.com",
+            "password": "fancypaint",
+            "bio": "Occaecat do proident occaecat dolore in adipisicing irure.",
+            "type": "CLIENT"
+        }
+    ]
+}

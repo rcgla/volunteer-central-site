@@ -53,11 +53,11 @@ async function getUsersBySessionAndRoleGroup(sessionId, roleGroupName, jwt) {
     let roles = dbres.data.roleGroups.nodes[0].rolesInRoleGroupsByRoleGroupId.nodes.map(n => n.role.code);
     
     let usersForSession = users.filter(u => 
-        u.participationsByUserId.nodes
+        u.placements.nodes
         .map(n => n.session.id === sessionId));
     
     let usersInGroup = usersForSession.filter( u => {
-        let usersRoles = u.participationsByUserId.nodes.map(n => n.role.code);
+        let usersRoles = u.placementsByUserId.nodes.map(n => n.role.code);
         let applicableRoles = usersRoles.filter(r => roles.includes(r));
         return applicableRoles.length > 0;
     });

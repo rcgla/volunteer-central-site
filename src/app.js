@@ -21,6 +21,7 @@ import { router as userRoutes } from './routes/user.js';
 import { router as adminRoutes } from './routes/admin.js';
 import { router as publicFormRoutes } from './routes/public-forms.js';
 import { router as userFormRoutes } from './routes/user-forms.js';
+import { router as adminFormRoutes } from './routes/admin-forms.js';
 import * as middleware from './middleware.js';
 
 
@@ -53,9 +54,12 @@ app.use('/user', middleware.isAuthenticated, userRoutes);
 app.use('/admin', middleware.isAuthenticated, middleware.isAdmin, adminRoutes);
 app.use('/forms', apiLimiter, publicFormRoutes);
 app.use('/user/forms', middleware.isAuthenticated, userFormRoutes);
-//app.use('/admin/forms', middleware.isAuthenticated, middleware.isAdmin, adminFormRoutes);
+app.use('/admin/forms', middleware.isAuthenticated, middleware.isAdmin, adminFormRoutes);
 
 // error middleware goes here at the end
 app.use(middleware.error);
+
+import * as CGQ from './queries/camperGroups.js';
+console.log(CGQ.CREATE);
 
 export { app };

@@ -72,4 +72,41 @@ router.get('/sessions/:sessionId', async (req, res, next) => {
     return res.render('./admin/session.html', { session });
 });
 
+router.get('/settings', async (req, res, next) => {
+    let dbres = await db.query(
+        Q.SESSION_TYPES.GET_ALL,
+        {},
+        req.cookies.jwt);
+    if (!dbres.success) {
+        let err = new Error(`Could not get session types`);
+        return next(err);
+    }
+    let sessionTypes = dbres.data.sessionTypes.nodes;
+    return res.render('./admin/settings.html', {
+        sessionTypes
+    });
+});
+router.get('/sessionTypes/edit/:sessionTypeId', async (req, res, next) => {
+    let dbres = await db.query(
+        Q.SESSION_TYPES.GET,
+        { id: parseInt(req.params.sessionTypeId) },
+        req.cookies.jwt);
+    if (!dbres.success) {
+        let err = new Error(`Could not get session type ${req.params.sessionTypeId}`);
+        return next(err);
+    }
+    let sessionType = dbres.data.sessionType;
+    return res.render('./admin/add-edit.html', {
+        title: "Edit Session Type",
+        name: sessionType.name,
+        submit: `/admin/forms/sessionTypes/${req.params.sessionTypeId}`
+    });
+});
+router.get('/sessionTypes/add', async (req, res, next) => {
+    return res.render('./admin/add-edit.html', {
+        title: "Add Session Type",
+        submit: '/admin/forms/sessionTypes/add'
+    });
+});
+
 export { router };

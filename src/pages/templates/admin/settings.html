@@ -1,0 +1,30 @@
+{%- extends '../base/base.html' -%}
+{%- set title = "Admin: Site settings" -%}
+
+{%- block content -%}
+<h1>Site settings</h1>
+<h2>Session Types</h2>
+<table>
+    <tbody>
+        {%- for sessionType in sessionTypes -%}
+        <tr>
+            <td>{{sessionType.name}}</td>
+            <td>
+                <a href="/admin/sessionTypes/edit/{{sessionType.id}}">Edit</a>
+            </td>
+            <td>
+                <form method="POST" action="/admin/forms/sessionTypes/delete/{{sessionType.id}}">
+                    <input type="hidden" name="sessionTypeId" value="{{sessionType.id}}"/>
+                    <input type="submit" name="submit" value="Remove"/>
+                </form>
+            </td>
+        {%- endfor -%}
+    </tbody>
+    
+</table>
+<a href="/admin/sessionTypes/add">Add</a>
+<h2>Tracks</h2>
+<h2>Locations & Rooms</h2>
+<h2>Roles & Role Groups</h2>
+
+{%- endblock -%}

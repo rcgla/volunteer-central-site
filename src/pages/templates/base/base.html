@@ -56,6 +56,13 @@
             elm.style.display = "block";
             header.prepend(elm);
         }
+        else if (params.has("message")) {
+            let elm = document.createElement("p");
+            elm.classList.add("alert");
+            elm.textContent = params.get("message");
+            elm.style.display = "block";
+            header.prepend(elm);
+        }
     });
   
 </script>

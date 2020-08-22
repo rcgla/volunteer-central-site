@@ -47,7 +47,7 @@
             <td><img src="{{ user.photoUrl }}" alt="Profile picture" class="thumbnail"></td>
             <td>
                 <ul>
-                    {%- for n in user.participationsByUserId.nodes -%}
+                    {%- for n in user.placementsByUserId.nodes -%}
                     <li>{{n.role.name}}</li>
                     {%- endfor -%}
                 </ul>

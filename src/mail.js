@@ -17,16 +17,7 @@ async function testEmail(emailAddress) {
 
 async function sendEmail(toAddress, subject, messageBodyText, messageBodyHtml) {
     // can test locally with nodemailer server on port 1025
-    let opts = process.env.MODE === 'LOCALDEV' ? 
-        {
-            host: 'localhost',
-            port: 1025,
-            secure: false, 
-            tls: {
-                rejectUnauthorized: false
-            }
-        } 
-        : 
+    let opts = process.env.NODE_ENV === 'production' ? 
         {
             host: process.env.MAILHOST,
             port: process.env.MAILPORT,
@@ -34,6 +25,15 @@ async function sendEmail(toAddress, subject, messageBodyText, messageBodyHtml) {
             auth: {
                 user: process.env.MAILUSER,
                 pass: process.env.MAILPASS
+            }
+        }
+        :
+        {
+            host: 'localhost',
+            port: 1025,
+            secure: false, 
+            tls: {
+                rejectUnauthorized: false
             }
         };
     

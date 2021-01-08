@@ -1,5 +1,5 @@
 import express from 'express';
-import * as db from '../database.js';
+import * as db from '../database/index.js';
 import * as Q from '../queries/index.js';
 import * as utils from '../utils.js';
 
@@ -7,26 +7,25 @@ const router = express.Router();
 
 router.get('/', async (req, res, next) => {
     let dbres = await db.query(
-        Q.SESSIONS.GET_ALL, 
+        Q.EVENTS.GET_ALL(), 
         {}, 
         req.cookies.jwt);
         
     if (!dbres.success) {
-        let err = new Error("Could not get sessions");
+        let err = new Error("Could not get events");
         return next(err);
     }
 
     return res.render('./admin/index.html', 
         {
-            sessions: dbres.data.sessions.nodes,
-            accessLevel: req.accessLevel
+            events: dbres.data.events
         }
     );
 });
 
-router.get('/sessions/:sessionId/campers', async (req, res, next) => {
-    let result = await utils.getUsersBySessionAndRoleGroup(
-        parseInt(req.params.sessionId), 
+router.get('/events/:eventId/campers', async (req, res, next) => {
+    let result = await utils.getUsersByEventAndRoleGroup(
+        parseInt(req.params.eventId), 
         'CAMPERS',
         req.cookies.jwt);
     if (!result.success) {
@@ -35,7 +34,6 @@ router.get('/sessions/:sessionId/campers', async (req, res, next) => {
     }
     return res.render('./admin/users.html', 
         {
-            accessLevel: req.accessLevel,
             pagetitle: "Campers",
             users: result.users
         }
@@ -74,7 +72,7 @@ router.get('/sessions/:sessionId', async (req, res, next) => {
 
 router.get('/settings', async (req, res, next) => {
     let dbres = await db.query(
-        Q.SESSION_TYPES.GET_ALL,
+        Q.SESSION_TYPES.GET_ALL(),
         {},
         req.cookies.jwt);
     if (!dbres.success) {
@@ -88,7 +86,7 @@ router.get('/settings', async (req, res, next) => {
 });
 router.get('/sessionTypes/edit/:sessionTypeId', async (req, res, next) => {
     let dbres = await db.query(
-        Q.SESSION_TYPES.GET,
+        Q.SESSION_TYPES.GET(),
         { id: parseInt(req.params.sessionTypeId) },
         req.cookies.jwt);
     if (!dbres.success) {

@@ -1,13 +1,11 @@
 import generate from './crudGenerator.js';
 
-export const fragments = {
-    FIELDS: 
-    `
-    id
-    name
-    `
-};
+const FIELDS = () => `
+id
+name
+`;
+
+export { FIELDS };
 
 export const {CREATE, DELETE, UPDATE, GET, GET_ALL} 
-    = generate("role", "roles", fragments.FIELDS);
-
+    = generate("role", "roles", FIELDS);

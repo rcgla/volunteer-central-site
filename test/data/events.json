@@ -1,0 +1,377 @@
+[
+    {
+        "name": "Load in summer 2021",
+        "start": "2020-07-09T10:00:00-0700",
+        "end": "2020-07-09T16:00:00-0700",
+        "type": "LOADIN",
+        "visibility": "STAFF",
+        "locationNames": ["ICS"]
+    },
+    {
+        "name": "Load out summer 2021",
+        "start": "2020-07-19T10:00:00-0700",
+        "end": "2020-07-19T16:00:00-0700",
+        "type": "LOADOUT",
+        "visibility": "STAFF",
+        "locationNames": ["ICS"]
+    },
+    {
+        "name": "Week 1 Summer 2021",
+        "description": "",
+        "start": "2020-07-11T08:00:00-0700",
+        "end": "2020-07-17T17:00:00-0700",
+        "type": "SUMMERCAMP",
+        "visibility": "CLIENT",
+        "locationNames": ["ICS", "Troubadour"],
+        "tracks": [
+            {
+                "name": "Music",
+                "trackType": "MUSIC",
+                "description": "",
+                "start": "2020-07-11T08:00:00-0700",
+                "end": "2020-07-17T17:00:00-0700"
+            }
+        ],
+        "activities": [
+            {
+                "name": "Orientation prep meeting",
+                "description": "",
+                "notes": "",
+                "start": "2020-07-11T10:00:00-0700",
+                "end": "2020-07-11T11:30:00-0700",
+                "locationName": "ICS",
+                "roomNames": ["100"],
+                "visibility": "ADMIN",
+                "repeat": "None"
+            },
+            {
+                "name": "Volunteer orientation",
+                "description": "",
+                "notes": "",
+                "start": "2020-07-11T12:00:00-0700",
+                "end": "2020-07-11T16:00:00-0700",
+                "locationName": "ICS",
+                "roomNames": ["207"],
+                "visibility": "STAFF",
+                "repeat": "None",
+                "roles": ["Volunteer"]
+            },
+            {
+                "name": "Morning assembly",
+                "description": "",
+                "notes": "",
+                "start": "2020-07-12T09:00:00-0700",
+                "end": "2020-07-12T09:30:00-0700",
+                "repeat": "WEEKDAYS",
+                "locationName": "ICS",
+                "roomNames": ["Assembly"],
+                "roles": ["Volunteer", "Camper"]
+            },
+            {
+                "name": "Guitar (sharps)",
+                "description": "",
+                "notes": "",
+                "start": "2020-07-12T09:45:00-0700",
+                "end": "2020-07-12T10:45:00-0700",
+                "repeat": "WEEKDAYS",
+                "locationName": "ICS",
+                "roomNames": ["102", "104"],
+                "type": "INSTRUCTION",
+                "trackName": "Music",
+                "roles": ["Guitar,Sharp,Camper", "Guitar,Instructor"]
+            },
+            {
+                "name": "Drums (sharps)",
+                "description": "",
+                "notes": "",
+                "start": "2020-07-12T09:45:00-0700",
+                "end": "2020-07-12T10:45:00-0700",
+                "repeat": "WEEKDAYS",
+                "locationName": "ICS",
+                "roomNames": ["103", "105"],
+                "type": "INSTRUCTION",
+                "trackName": "Music",
+                "roles": [["Drums", "Sharp", "Camper"], ["Drums", "Instructor"]]
+            },
+            {
+                "name": "Vocals (sharps)",
+                "description": "",
+                "notes": "",
+                "start": "2020-07-12T09:45:00-0700",
+                "end": "2020-07-12T10:45:00-0700",
+                "repeat": "WEEKDAYS",
+                "locationName": "ICS",
+                "roomNames": ["201"],
+                "type": "INSTRUCTION",
+                "trackName": "Music",
+                "roles": [["Vocals", "Sharp", "Camper"], ["Vocals", "Instructor"]]
+            },
+            {
+                "name": "Keys (sharps)",
+                "description": "",
+                "notes": "",
+                "start": "2020-07-12T09:45:00-0700",
+                "end": "2020-07-12T10:45:00-0700",
+                "repeat": "WEEKDAYS",
+                "locationName": "ICS",
+                "roomNames": ["206"],
+                "type": "INSTRUCTION",
+                "trackName": "Music",
+                "roles": [["Keys", "Sharp", "Camper"], ["Keys", "Instructor"]]
+            },
+            {
+                "name": "Bass (sharps)",
+                "description": "",
+                "notes": "",
+                "start": "2020-07-12T09:45:00-0700",
+                "end": "2020-07-12T10:45:00-0700",
+                "repeat": "WEEKDAYS",
+                "locationName": "ICS",
+                "roomNames": ["208"],
+                "type": "INSTRUCTION",
+                "trackName": "Music",
+                "roles": [["Bass", "Sharp", "Camper"], ["Bass", "Instructor"]]
+            },
+            {
+                "name": "Guitar (flats)",
+                "description": "",
+                "notes": "",
+                "start": "2020-07-12T11:00:00-0700",
+                "end": "2020-07-12T12:00:00-0700",
+                "repeat": "WEEKDAYS",
+                "locationName": "ICS",
+                "roomNames": ["102", "104"],
+                "type": "INSTRUCTION",
+                "trackName": "Music",
+                "roles": [["Guitar", "Flat", "Camper"], ["Guitar", "Instructor"]]
+            },
+            {
+                "name": "Drums (flats)",
+                "description": "",
+                "notes": "",
+                "start": "2020-07-12T11:00:00-0700",
+                "end": "2020-07-12T12:00:00-0700",
+                "repeat": "WEEKDAYS",
+                "locationName": "ICS",
+                "roomNames": ["103", "105"],
+                "type": "INSTRUCTION",
+                "trackName": "Music",
+                "roles": [["Drums", "Flat", "Camper"], ["Drums", "Instructor"]]
+            },
+            {
+                "name": "Vocals (flats)",
+                "description": "",
+                "notes": "",
+                "start": "2020-07-12T11:00:00-0700",
+                "end": "2020-07-12T12:00:00-0700",
+                "repeat": "WEEKDAYS",
+                "locationName": "ICS",
+                "roomNames": ["201"],
+                "type": "INSTRUCTION",
+                "trackName": "Music",
+                "roles": [["Vocals", "Flat", "Camper"], ["Vocals", "Instructor"]]
+            },
+            {
+                "name": "Keys (flats)",
+                "description": "",
+                "notes": "",
+                "start": "2020-07-12T11:00:00-0700",
+                "end": "2020-07-12T12:00:00-0700",
+                "repeat": "WEEKDAYS",
+                "locationName": "ICS",
+                "roomNames": ["206"],
+                "type": "INSTRUCTION",
+                "trackName": "Music",
+                "roles": [["Keys", "Flat", "Camper"], ["Keys", "Instructor"]]
+            },
+            {
+                "name": "Bass (flats)",
+                "description": "",
+                "notes": "",
+                "start": "2020-07-12T11:00:00-0700",
+                "end": "2020-07-12T12:00:00-0700",
+                "repeat": "WEEKDAYS",
+                "locationName": "ICS",
+                "roomNames": ["208"],
+                "type": "INSTRUCTION",
+                "trackName": "Music",
+                "roles": [["Bass", "Flat", "Camper"], ["Bass", "Instructor"]]
+            },
+            {
+                "name": "Radical Empathy (flats)",
+                "start": "2020-07-12T09:45:00-0700",
+                "end": "2020-07-12T10:45:00-0700",
+                "locationName": "ICS",
+                "roomNames": ["207"],
+                "type": "WORKSHOP",
+                "repeat": "None",
+                "roles": ["Flat", "Camper"]
+            },
+            {
+                "name": "Radical Empathy (sharps)",
+                "start": "2020-07-12T11:00:00-0700",
+                "end": "2020-07-12T12:00:00-0700",
+                "locationName": "ICS",
+                "roomNames": ["207"],
+                "type": "WORKSHOP",
+                "repeat": "None",
+                "roles": ["Sharp", "Camper"]
+            },
+            {
+                "name": "Lunch",
+                "start": "2020-07-12T12:00:00-0700",
+                "end": "2020-07-12T13:00:00-0700",
+                "repeat": "WEEKDAYS",
+                "roles": ["Camper", "Volunteer"]
+            },
+            {
+                "name": "Band 1 (Sharps)",
+                "type": "BANDPRACTICE",
+                "start": "2020-07-12T13:00:00-0700",
+                "end": "2020-07-12T15:00:00-0700",
+                "locationName": "ICS",
+                "repeat": "WEEKDAYS",
+                "trackName": "Music"
+            },
+            {
+                "name": "Band 2 (Sharps)",
+                "type": "BANDPRACTICE",
+                "start": "2020-07-12T13:00:00-0700",
+                "end": "2020-07-12T15:00:00-0700",
+                "locationName": "ICS",
+                "repeat": "WEEKDAYS",
+                "trackName": "Music"
+            },
+            {
+                "name": "Band 3 (Sharps)",
+                "type": "BANDPRACTICE",
+                "start": "2020-07-12T13:00:00-0700",
+                "end": "2020-07-12T15:00:00-0700",
+                "locationName": "ICS",
+                "repeat": "WEEKDAYS",
+                "trackName": "Music"
+            },
+            {
+                "name": "Band 4 (Sharps)",
+                "type": "BANDPRACTICE",
+                "start": "2020-07-12T13:00:00-0700",
+                "end": "2020-07-12T15:00:00-0700",
+                "locationName": "ICS",
+                "repeat": "WEEKDAYS",
+                "trackName": "Music"
+            },
+            {
+                "name": "Band 5 (Sharps)",
+                "type": "BANDPRACTICE",
+                "start": "2020-07-12T13:00:00-0700",
+                "end": "2020-07-12T15:00:00-0700",
+                "locationName": "ICS",
+                "repeat": "WEEKDAYS",
+                "trackName": "Music"
+            },
+            {
+                "name": "Band 6 (Flats)",
+                "type": "BANDPRACTICE",
+                "start": "2020-07-12T15:00:00-0700",
+                "end": "2020-07-12T17:00:00-0700",
+                "locationName": "ICS",
+                "repeat": "WEEKDAYS",
+                "trackName": "Music"
+            },
+            {
+                "name": "Band 7 (Flats)",
+                "type": "BANDPRACTICE",
+                "start": "2020-07-12T15:00:00-0700",
+                "end": "2020-07-12T17:00:00-0700",
+                "locationName": "ICS",
+                "repeat": "WEEKDAYS",
+                "trackName": "Music"
+            },
+            {
+                "name": "Band 8 (Flats)",
+                "type": "BANDPRACTICE",
+                "start": "2020-07-12T15:00:00-0700",
+                "end": "2020-07-12T17:00:00-0700",
+                "locationName": "ICS",
+                "repeat": "WEEKDAYS",
+                "trackName": "Music"
+            },
+            {
+                "name": "Band 9 (Flats)",
+                "type": "BANDPRACTICE",
+                "start": "2020-07-12T15:00:00-0700",
+                "end": "2020-07-12T17:00:00-0700",
+                "locationName": "ICS",
+                "repeat": "WEEKDAYS",
+                "trackName": "Music"
+            },
+            {
+                "name": "Band 10 (Flats)",
+                "type": "BANDPRACTICE",
+                "start": "2020-07-12T15:00:00-0700",
+                "end": "2020-07-12T17:00:00-0700",
+                "locationName": "ICS",
+                "repeat": "WEEKDAYS",
+                "trackName": "Music"
+            },
+            {
+                "name": "Zines (Sharps)",
+                "type": "WORKSHOP",
+                "start": "2020-07-12T15:00:00-0700",
+                "end": "2020-07-12T17:00:00-0700",
+                "locationName": "ICS",
+                "roomNames": ["207"],
+                "repeat": "None"
+            },
+            {
+                "name": "Zines (Flats)",
+                "type": "WORKSHOP",
+                "start": "2020-07-12T13:00:00-0700",
+                "end": "2020-07-12T15:00:00-0700",
+                "locationName": "ICS",
+                "roomNames": ["207"],
+                "repeat": "None"
+            },
+            {
+                "name": "Afternoon assembly",
+                "description": "",
+                "notes": "",
+                "start": "2020-07-12T17:00:00-0700",
+                "end": "2020-07-12T17:15:00-0700",
+                "locationName": "ICS",
+                "roomNames": ["Assembly"],
+                "repeat": "WEEKDAYS"
+            },
+            {
+                "name": "Showcase: Load in",
+                "start":"2020-07-17T9:30:00-0700",
+                "end": "2020-07-17T11:30:00-0700",
+                "visibility": "STAFF",
+                "locationName": "Troubadour",
+                "repeat": "None"
+            },
+            {
+                "name": "Showcase: Campers arrive",
+                "start":"2020-07-17T11:30:00-0700",
+                "end": "2020-07-17T12:00:00-0700",
+                "locationName": "Troubadour",
+                "repeat": "None"
+            },
+            {
+                "name": "Showcase: Showtime",
+                "start":"2020-07-17T12:00:00-0700",
+                "end": "2020-07-17T15:00:00-0700",
+                "locationName": "Troubadour",
+                "repeat": "None"
+            },
+            {
+                "name": "Showcases: Load out",
+                "start":"2020-07-17T15:00:00-0700",
+                "end": "2020-07-17T16:00:00-0700",
+                "visibility": "STAFF",
+                "locationName": "Troubadour",
+                "repeat": "None"
+            }
+        ]
+    }
+]

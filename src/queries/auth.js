@@ -1,18 +1,18 @@
-const LOGIN = 
+const LOGIN = () => 
 `mutation ($input: AuthenticateInput!){
     authenticate(input: $input) {
         jwtToken
     }
 }`;
 
-const TEMPORARY_TOKEN = 
+const TEMPORARY_TOKEN = () => 
 `mutation ($input: CreateTemporaryTokenInput!) {
     createTemporaryToken(input: $input) {
         jwtToken
     }
 }`;
 
-const SET_PASSWORD = 
+const SET_PASSWORD = () => 
 `mutation ($input: SetPasswordInput!) {
     setPassword(input: $input) {
         clientMutationId

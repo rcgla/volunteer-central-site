@@ -1,5 +1,5 @@
 import express from 'express';
-import * as db from '../database.js';
+import * as db from '../database/index.js';
 import * as Q from '../queries/index.js';
 import * as utils from '../utils.js';
 import * as mail from '../mail.js';
@@ -23,7 +23,7 @@ router.post('/login',
         }
 
         let dbres = await db.query(
-            Q.AUTH.LOGIN, 
+            Q.AUTH.LOGIN(), 
             {   
                 input: {
                     email: req.body.email, 
@@ -73,7 +73,7 @@ router.post('/forgot-password',
         }
 
         let dbres = await db.query(
-            Q.AUTH.TEMPORARY_TOKEN,
+            Q.AUTH.TEMPORARY_TOKEN(),
             {
                 input: {
                     email: req.body.email
@@ -86,10 +86,10 @@ router.post('/forgot-password',
         let jwt = dbres.data.createTemporaryToken.jwtToken;
         let token = utils.parseToken(jwt);
         if (token) {
-            let resetUrl = process.env.MODE === 'LOCALDEV' ? 
-                `http://localhost:${process.env.PORT}/set-password?token=${jwt}`
+            let resetUrl = process.env.NODE_ENV === 'production' ? 
+                `http://vol.werock.la/set-password?token=${jwt}`
                 : 
-                `http://vol.werock.la/set-password?token=${jwt}`;
+                `http://localhost:${process.env.PORT}/set-password?token=${jwt}`;
             await mail.sendEmail(req.body.email, 
                 emails.reset.subject,
                 emails.reset.text(resetUrl),

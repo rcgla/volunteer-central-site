@@ -1,0 +1,14 @@
+{
+    "SUMMERCAMP": {
+        "campers": 50,
+        "staff": 30,
+        "percentFlats": 50,
+        "bandSize": 5
+    },
+    "LOADIN": {
+        "staff": 15
+    },
+    "LOADOUT": {
+        "staff": 15
+    }
+}

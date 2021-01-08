@@ -1,5 +1,5 @@
 import express from 'express';
-import * as db from '../database.js';
+import * as db from '../database/index.js';
 import * as Q from '../queries/index.js';
 import expressValidator from 'express-validator';
 const { validationResult, body } = expressValidator;
@@ -19,7 +19,7 @@ router.post('/set-password',
         }
 
         let dbres = await db.query(
-            Q.AUTH.SET_PASSWORD, 
+            Q.AUTH.SET_PASSWORD(), 
             {
                 input: {
                     userId: req.userId, 
@@ -54,7 +54,7 @@ router.post('/profile',
             website: req.body.website.indexOf("http://") === -1 ? 
                 `http://${req.body.website}` : req.body.website
         };
-        let dbres = await db.query(Q.USERS.UPDATE, {id: req.userId, data}, req.cookies.jwt);
+        let dbres = await db.query(Q.USERS.UPDATE(), {id: req.userId, data}, req.cookies.jwt);
         
         if (!dbres.success) {
             let message = "Error updating profile.";
@@ -66,7 +66,7 @@ router.post('/profile',
                 return res.status(422).redirect('/user/profile?message=' + encodeURIComponent(message));
             }
             dbres = await db.query(
-                Q.AUTH.SET_PASSWORD,
+                Q.AUTH.SET_PASSWORD(),
                 {
                     input: {
                         userId: req.userId, 

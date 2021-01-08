@@ -1,21 +1,40 @@
 import generate from './crudGenerator.js';
+import * as placements from './placements.js';
+import * as logins from './logins.js';
+import * as usersPrivateInfo from './usersPrivateInfo.js';
+import * as usersProtectedInfo from './usersProtectedInfo.js';
+import * as emergencyContacts from './emergencyContacts.js';
+import * as userGroups from './userGroups.js';
 
-// TODO finish fields list
-// test inclusion of UserProtected fields
-export const fragments = {
-    FIELDS:`
-    name
-    `,
-};
+const BASIC_FIELDS = () => `
+id
+name
+userType
+`;
 
-export const GET_EMAIL = 
-`query($id: Int!) {
-    user (id: $id) {
-        login{
-            email
-        }
-    }
-}`;
+const FIELDS = () => `
+${BASIC_FIELDS()}
+login {
+    ${logins.FIELDS()}
+}
+usersPrivateInfo {
+    ${usersPrivateInfo.FIELDS()}
+}
+usersProtectedInfo {
+    ${usersProtectedInfo.FIELDS()}
+}
+emergencyContacts {
+    ${emergencyContacts.FIELDS()}
+}
+placements {
+    ${placements.FIELDS_WITHOUT_USER()}
+}
+userGroups {
+    ${userGroups.FIELDS()}
+}
+`;
 
+export { BASIC_FIELDS, FIELDS };
+    
 export const {CREATE, DELETE, UPDATE, GET, GET_ALL} 
-    = generate("user", "users", fragments.FIELDS);
+    = generate("user", "users", FIELDS);

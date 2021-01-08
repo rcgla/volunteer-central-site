@@ -1,16 +1,7 @@
-import * as path from 'path';
-import dotenv from 'dotenv';
-import { fileURLToPath } from 'url';
-import { dirname } from 'path';
-
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = dirname(__filename);
-const envpath = path.join(__dirname, '../.env');
-dotenv.config({path: envpath});
-
 import jwt from 'jsonwebtoken';
-import * as db from './database.js';
+import * as db from './database/index.js';
 import * as Q from './queries/index.js';
+import winston from 'winston';
 
 function parseToken (token) {
     try {
@@ -29,7 +20,7 @@ function parseToken (token) {
         }
     }
     catch(err) {
-        console.log("Error decoding token", err);
+        winston.error("Error decoding token", err);
         return null;
     }
 }
@@ -38,7 +29,7 @@ function parseToken (token) {
 // just doing it in js for now... 
 // TODO: filter for whether a user has dropped or not
 async function getUsersBySessionAndRoleGroup(sessionId, roleGroupName, jwt) {
-    let dbres = await db.query(Q.USERS.GET_ALL, {}, jwt);
+    let dbres = await db.query(Q.USERS.GET_ALL(), {}, jwt);
     if (!dbres.success) {
         let err = new Error("Could not get users");
         return {success: false, errors: [err], users: []};

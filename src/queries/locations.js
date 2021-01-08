@@ -1,17 +1,22 @@
 import generate from './crudGenerator.js';
-import * as Rooms from './rooms.js';
+import * as rooms from './rooms.js';
 
-export const fragments = {
-    FIELDS:`
-    id
-    name
-    desc
-    roomsByLocationId {
-        ${Rooms.fragments.FIELDS}
-    }
-    `,
-};
+const BASIC_FIELDS = () => `
+id
+name
+description
+address
+notes
+`;
+
+const FIELDS = () => `
+${BASIC_FIELDS()}
+rooms {
+    ${rooms.BASIC_FIELDS()}
+}
+`;
+
+export { BASIC_FIELDS, FIELDS };
 
 export const {CREATE, DELETE, UPDATE, GET, GET_ALL} 
-    = generate("location", "locations", fragments.FIELDS);
-
+    = generate("location", "locations", FIELDS);

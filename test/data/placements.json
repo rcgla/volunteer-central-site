@@ -1,0 +1,4141 @@
+[
+  {
+    "eventName": "Load in summer 2021",
+    "users": [
+      {
+        "userName": "Kara Conroy",
+        "userAvailability": [
+          {
+            "start": "2020-07-09T12:00:00-07:00",
+            "end": "2020-07-09T17:00:00-07:00"
+          }
+        ],
+        "userRoles": [
+          "General support",
+          "Support"
+        ],
+        "userPhoto": "https://content.fakeface.rest/female_47_a58420ec461be7a18f94d1167f167de263a157fe.jpg",
+        "confirmed": true,
+        "dropped": false
+      },
+      {
+        "userName": "Sylvia Lindgren",
+        "userAvailability": [
+          {
+            "start": "2020-07-09T12:00:00-07:00",
+            "end": "2020-07-09T17:00:00-07:00"
+          }
+        ],
+        "userRoles": [
+          "General support",
+          "Support"
+        ],
+        "userPhoto": "https://content.fakeface.rest/female_24_90eb21031ecd48da6903242ea449791011dfdbb0.jpg",
+        "confirmed": true,
+        "dropped": false
+      },
+      {
+        "userName": "Carmen Price",
+        "userAvailability": [
+          {
+            "start": "2020-07-09T12:00:00-07:00",
+            "end": "2020-07-09T17:00:00-07:00"
+          }
+        ],
+        "userRoles": [
+          "General support",
+          "Support"
+        ],
+        "userPhoto": "https://content.fakeface.rest/female_29_acc90802f5432404b676f77f6e9bde3fa55b3fd3.jpg",
+        "confirmed": true,
+        "dropped": false
+      },
+      {
+        "userName": "Harriet Kuvalis",
+        "userAvailability": [
+          {
+            "start": "2020-07-09T12:00:00-07:00",
+            "end": "2020-07-09T17:00:00-07:00"
+          }
+        ],
+        "userRoles": [
+          "General support",
+          "Support"
+        ],
+        "userPhoto": "https://content.fakeface.rest/female_37_2a99d5fa9727a7ed595ab32d39689ebfa03ea6e0.jpg",
+        "confirmed": true,
+        "dropped": false
+      },
+      {
+        "userName": "Monique Konopelski",
+        "userAvailability": [
+          {
+            "start": "2020-07-09T12:00:00-07:00",
+            "end": "2020-07-09T17:00:00-07:00"
+          }
+        ],
+        "userRoles": [
+          "General support",
+          "Support"
+        ],
+        "userPhoto": "https://content.fakeface.rest/female_52_40112a61795ff5ffee2e7eac588a6c6fd2c9a5c0.jpg",
+        "confirmed": true,
+        "dropped": false
+      },
+      {
+        "userName": "Lola McCullough",
+        "userAvailability": [
+          {
+            "start": "2020-07-09T12:00:00-07:00",
+            "end": "2020-07-09T17:00:00-07:00"
+          }
+        ],
+        "userRoles": [
+          "General support",
+          "Support"
+        ],
+        "userPhoto": "https://content.fakeface.rest/female_22_85f4f1e7aeb7924457a39c096132d73f41d888e9.jpg",
+        "confirmed": true,
+        "dropped": false
+      },
+      {
+        "userName": "Brandi Conroy",
+        "userAvailability": [
+          {
+            "start": "2020-07-09T12:00:00-07:00",
+            "end": "2020-07-09T17:00:00-07:00"
+          }
+        ],
+        "userRoles": [
+          "General support",
+          "Support"
+        ],
+        "userPhoto": "https://content.fakeface.rest/female_51_2505d058dfabf7d5f466f2ec76ee4503ed909989.jpg",
+        "confirmed": true,
+        "dropped": false
+      },
+      {
+        "userName": "Josephine Cormier",
+        "userAvailability": [
+          {
+            "start": "2020-07-09T12:00:00-07:00",
+            "end": "2020-07-09T17:00:00-07:00"
+          }
+        ],
+        "userRoles": [
+          "General support",
+          "Support"
+        ],
+        "userPhoto": "https://content.fakeface.rest/female_24_07e0cfc786e37ad4ce1fe8c351a1a57bbeef00fd.jpg",
+        "confirmed": true,
+        "dropped": false
+      },
+      {
+        "userName": "Kristin Dach",
+        "userAvailability": [
+          {
+            "start": "2020-07-09T12:00:00-07:00",
+            "end": "2020-07-09T17:00:00-07:00"
+          }
+        ],
+        "userRoles": [
+          "General support",
+          "Support"
+        ],
+        "userPhoto": "https://content.fakeface.rest/female_50_8d0f068357956ed87c6eafc13e95170b703099fb.jpg",
+        "confirmed": true,
+        "dropped": false
+      },
+      {
+        "userName": "Hilda Sipes",
+        "userAvailability": [
+          {
+            "start": "2020-07-09T12:00:00-07:00",
+            "end": "2020-07-09T17:00:00-07:00"
+          }
+        ],
+        "userRoles": [
+          "General support",
+          "Support"
+        ],
+        "userPhoto": "https://content.fakeface.rest/female_35_997b1efe7a6d10c6f756529853ce9006cfeeb244.jpg",
+        "confirmed": true,
+        "dropped": false
+      },
+      {
+        "userName": "Tina Jakubowski",
+        "userAvailability": [
+          {
+            "start": "2020-07-09T12:00:00-07:00",
+            "end": "2020-07-09T17:00:00-07:00"
+          }
+        ],
+        "userRoles": [
+          "General support",
+          "Support"
+        ],
+        "userPhoto": "https://content.fakeface.rest/female_28_7d78ef76f5ccabe45c692479211271befbde4ad7.jpg",
+        "confirmed": true,
+        "dropped": false
+      },
+      {
+        "userName": "Vivian Erdman",
+        "userAvailability": [
+          {
+            "start": "2020-07-09T12:00:00-07:00",
+            "end": "2020-07-09T17:00:00-07:00"
+          }
+        ],
+        "userRoles": [
+          "General support",
+          "Support"
+        ],
+        "userPhoto": "https://content.fakeface.rest/female_46_2c7a8fc6648936bb8e81b334a018586973c6a52c.jpg",
+        "confirmed": true,
+        "dropped": false
+      },
+      {
+        "userName": "Jody Streich",
+        "userAvailability": [
+          {
+            "start": "2020-07-09T12:00:00-07:00",
+            "end": "2020-07-09T17:00:00-07:00"
+          }
+        ],
+        "userRoles": [
+          "General support",
+          "Support"
+        ],
+        "userPhoto": "https://content.fakeface.rest/female_27_292eecd5a965fe19671c2542141cf545b4b39c58.jpg",
+        "confirmed": true,
+        "dropped": false
+      },
+      {
+        "userName": "Diane Corkery",
+        "userAvailability": [
+          {
+            "start": "2020-07-09T12:00:00-07:00",
+            "end": "2020-07-09T17:00:00-07:00"
+          }
+        ],
+        "userRoles": [
+          "General support",
+          "Support"
+        ],
+        "userPhoto": "https://content.fakeface.rest/female_40_d1fcc30cf49dfbd2a9956545c566c150eb72af64.jpg",
+        "confirmed": true,
+        "dropped": false
+      },
+      {
+        "userName": "Erika Medhurst",
+        "userAvailability": [
+          {
+            "start": "2020-07-09T12:00:00-07:00",
+            "end": "2020-07-09T17:00:00-07:00"
+          }
+        ],
+        "userRoles": [
+          "General support",
+          "Support"
+        ],
+        "userPhoto": "https://content.fakeface.rest/female_22_a03e4286472756a444556480742b2dfadaddb6fc.jpg",
+        "confirmed": true,
+        "dropped": false
+      },
+      {
+        "userName": "Mayor of Awesometown",
+        "userAvailability": [
+          {
+            "start": "2020-07-09T08:00:00-07:00",
+            "end": "2020-07-09T17:00:00-07:00"
+          }
+        ],
+        "userRoles": [
+          "Mayor",
+          "Volunteer"
+        ],
+        "userPhoto": "https://content.fakeface.rest/female_40_6604b886e70d4537d21cdb1837717cc9f6c656e5.jpg",
+        "confirmed": true,
+        "dropped": false
+      },
+      {
+        "userName": "Julie Osinski",
+        "userAvailability": [
+          {
+            "start": "2020-07-09T08:00:00-07:00",
+            "end": "2020-07-09T17:00:00-07:00"
+          }
+        ],
+        "userRoles": [
+          "Co-director",
+          "Volunteer"
+        ],
+        "userPhoto": "https://content.fakeface.rest/female_50_e0d262e3d990ad74b1f96576e06437d1acb69d93.jpg",
+        "confirmed": true,
+        "dropped": false
+      },
+      {
+        "userName": "Opal Botsford",
+        "userAvailability": [
+          {
+            "start": "2020-07-09T08:00:00-07:00",
+            "end": "2020-07-09T17:00:00-07:00"
+          }
+        ],
+        "userRoles": [
+          "Co-director",
+          "Volunteer"
+        ],
+        "userPhoto": "https://content.fakeface.rest/female_21_e96de6cfc5b7a68557927d3730178d813f925a4f.jpg",
+        "confirmed": true,
+        "dropped": false
+      }
+    ],
+    "userGroups": []
+  },
+  {
+    "eventName": "Load out summer 2021",
+    "users": [
+      {
+        "userName": "Ida Littel",
+        "userAvailability": [
+          {
+            "start": "2020-07-19T12:00:00-07:00",
+            "end": "2020-07-19T17:00:00-07:00"
+          }
+        ],
+        "userRoles": [
+          "General support",
+          "Support"
+        ],
+        "userPhoto": "https://content.fakeface.rest/female_49_e17393ed4bb18e7edf09ae3cf14281fa282b701f.jpg",
+        "confirmed": true,
+        "dropped": false
+      },
+      {
+        "userName": "Patricia Beer",
+        "userAvailability": [
+          {
+            "start": "2020-07-19T12:00:00-07:00",
+            "end": "2020-07-19T17:00:00-07:00"
+          }
+        ],
+        "userRoles": [
+          "General support",
+          "Support"
+        ],
+        "userPhoto": "https://content.fakeface.rest/female_40_8f920d2f59e12e136069424e621ac27c85de5747.jpg",
+        "confirmed": true,
+        "dropped": false
+      },
+      {
+        "userName": "Vivian Erdman",
+        "userAvailability": [
+          {
+            "start": "2020-07-19T12:00:00-07:00",
+            "end": "2020-07-19T17:00:00-07:00"
+          }
+        ],
+        "userRoles": [
+          "General support",
+          "Support"
+        ],
+        "userPhoto": "https://content.fakeface.rest/female_52_40112a61795ff5ffee2e7eac588a6c6fd2c9a5c0.jpg",
+        "confirmed": true,
+        "dropped": false
+      },
+      {
+        "userName": "Joy Graham",
+        "userAvailability": [
+          {
+            "start": "2020-07-19T12:00:00-07:00",
+            "end": "2020-07-19T17:00:00-07:00"
+          }
+        ],
+        "userRoles": [
+          "General support",
+          "Support"
+        ],
+        "userPhoto": "https://content.fakeface.rest/female_26_1b6381efd71a916735dc2eee994ece0a219cd7cc.jpg",
+        "confirmed": true,
+        "dropped": false
+      },
+      {
+        "userName": "Tabitha Lesch",
+        "userAvailability": [
+          {
+            "start": "2020-07-19T12:00:00-07:00",
+            "end": "2020-07-19T17:00:00-07:00"
+          }
+        ],
+        "userRoles": [
+          "General support",
+          "Support"
+        ],
+        "userPhoto": "https://content.fakeface.rest/female_33_40997eea1d158b77dd0d4c36b3fa65214e3ac5b7.jpg",
+        "confirmed": true,
+        "dropped": false
+      },
+      {
+        "userName": "Diane Corkery",
+        "userAvailability": [
+          {
+            "start": "2020-07-19T12:00:00-07:00",
+            "end": "2020-07-19T17:00:00-07:00"
+          }
+        ],
+        "userRoles": [
+          "General support",
+          "Support"
+        ],
+        "userPhoto": "https://content.fakeface.rest/female_29_225174762642a1de079cbe793794b291a4bbb33a.jpg",
+        "confirmed": true,
+        "dropped": false
+      },
+      {
+        "userName": "Kristin Dach",
+        "userAvailability": [
+          {
+            "start": "2020-07-19T12:00:00-07:00",
+            "end": "2020-07-19T17:00:00-07:00"
+          }
+        ],
+        "userRoles": [
+          "General support",
+          "Support"
+        ],
+        "userPhoto": "https://content.fakeface.rest/female_32_e0190457de5cc5a34d90e58c139e4e4b5498d15a.jpg",
+        "confirmed": true,
+        "dropped": false
+      },
+      {
+        "userName": "Lula Walker",
+        "userAvailability": [
+          {
+            "start": "2020-07-19T12:00:00-07:00",
+            "end": "2020-07-19T17:00:00-07:00"
+          }
+        ],
+        "userRoles": [
+          "General support",
+          "Support"
+        ],
+        "userPhoto": "https://content.fakeface.rest/female_21_cf48d7eb8275c1f96a33f1847226eb953b484d82.jpg",
+        "confirmed": true,
+        "dropped": false
+      },
+      {
+        "userName": "Bethany Bogan",
+        "userAvailability": [
+          {
+            "start": "2020-07-19T12:00:00-07:00",
+            "end": "2020-07-19T17:00:00-07:00"
+          }
+        ],
+        "userRoles": [
+          "General support",
+          "Support"
+        ],
+        "userPhoto": "https://content.fakeface.rest/female_48_9cdb85e028aa0050a21c5eccc3e7818d42c062d1.jpg",
+        "confirmed": true,
+        "dropped": false
+      },
+      {
+        "userName": "Carmen Price",
+        "userAvailability": [
+          {
+            "start": "2020-07-19T12:00:00-07:00",
+            "end": "2020-07-19T17:00:00-07:00"
+          }
+        ],
+        "userRoles": [
+          "General support",
+          "Support"
+        ],
+        "userPhoto": "https://content.fakeface.rest/female_45_6abd8b31e9505017ba8c1feba363b37af9dc7ca3.jpg",
+        "confirmed": true,
+        "dropped": false
+      },
+      {
+        "userName": "Pam Ritchie",
+        "userAvailability": [
+          {
+            "start": "2020-07-19T12:00:00-07:00",
+            "end": "2020-07-19T17:00:00-07:00"
+          }
+        ],
+        "userRoles": [
+          "General support",
+          "Support"
+        ],
+        "userPhoto": "https://content.fakeface.rest/female_49_2d3142eab360020a6debca1ff7aef2f6c7f25bf7.jpg",
+        "confirmed": true,
+        "dropped": false
+      },
+      {
+        "userName": "Kara Conroy",
+        "userAvailability": [
+          {
+            "start": "2020-07-19T12:00:00-07:00",
+            "end": "2020-07-19T17:00:00-07:00"
+          }
+        ],
+        "userRoles": [
+          "General support",
+          "Support"
+        ],
+        "userPhoto": "https://content.fakeface.rest/female_34_1907047d728349a36a6620d5766587d8d225bee1.jpg",
+        "confirmed": true,
+        "dropped": false
+      },
+      {
+        "userName": "Kellie Bayer",
+        "userAvailability": [
+          {
+            "start": "2020-07-19T12:00:00-07:00",
+            "end": "2020-07-19T17:00:00-07:00"
+          }
+        ],
+        "userRoles": [
+          "General support",
+          "Support"
+        ],
+        "userPhoto": "https://content.fakeface.rest/female_36_9889dfdd0f7611c01fab84ac496b090fcd114b33.jpg",
+        "confirmed": true,
+        "dropped": false
+      },
+      {
+        "userName": "Erika Medhurst",
+        "userAvailability": [
+          {
+            "start": "2020-07-19T12:00:00-07:00",
+            "end": "2020-07-19T17:00:00-07:00"
+          }
+        ],
+        "userRoles": [
+          "General support",
+          "Support"
+        ],
+        "userPhoto": "https://content.fakeface.rest/female_34_0171a9722281a68c662567561db4b6a2954ef242.jpg",
+        "confirmed": true,
+        "dropped": false
+      },
+      {
+        "userName": "Monique Konopelski",
+        "userAvailability": [
+          {
+            "start": "2020-07-19T12:00:00-07:00",
+            "end": "2020-07-19T17:00:00-07:00"
+          }
+        ],
+        "userRoles": [
+          "General support",
+          "Support"
+        ],
+        "userPhoto": "https://content.fakeface.rest/female_57_bc76cdf3c00e2486ffca179451d78733c65f2bc2.jpg",
+        "confirmed": true,
+        "dropped": false
+      },
+      {
+        "userName": "Mayor of Awesometown",
+        "userAvailability": [
+          {
+            "start": "2020-07-19T08:00:00-07:00",
+            "end": "2020-07-19T17:00:00-07:00"
+          }
+        ],
+        "userRoles": [
+          "Mayor",
+          "Volunteer"
+        ],
+        "userPhoto": "https://content.fakeface.rest/female_50_ad9eff5a295c7376164d02a016b7c62d998aa468.jpg",
+        "confirmed": true,
+        "dropped": false
+      },
+      {
+        "userName": "Opal Botsford",
+        "userAvailability": [
+          {
+            "start": "2020-07-19T08:00:00-07:00",
+            "end": "2020-07-19T17:00:00-07:00"
+          }
+        ],
+        "userRoles": [
+          "Co-director",
+          "Volunteer"
+        ],
+        "userPhoto": "https://content.fakeface.rest/female_41_ad2d923c21057cfdd34981e1c3d0775c49fa5cbb.jpg",
+        "confirmed": true,
+        "dropped": false
+      },
+      {
+        "userName": "Julie Osinski",
+        "userAvailability": [
+          {
+            "start": "2020-07-19T08:00:00-07:00",
+            "end": "2020-07-19T17:00:00-07:00"
+          }
+        ],
+        "userRoles": [
+          "Co-director",
+          "Volunteer"
+        ],
+        "userPhoto": "https://content.fakeface.rest/female_45_1b313ff3d35467766350766047f1e6035b2e9d30.jpg",
+        "confirmed": true,
+        "dropped": false
+      }
+    ],
+    "userGroups": []
+  },
+  {
+    "eventName": "Week 1 Summer 2021",
+    "users": [
+      {
+        "userName": "Beulah Cremin",
+        "userAvailability": [
+          {
+            "start": "2020-07-11T08:00:00-07:00",
+            "end": "2020-07-11T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-12T08:00:00-07:00",
+            "end": "2020-07-12T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-13T08:00:00-07:00",
+            "end": "2020-07-13T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-14T08:00:00-07:00",
+            "end": "2020-07-14T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-15T08:00:00-07:00",
+            "end": "2020-07-15T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-16T08:00:00-07:00",
+            "end": "2020-07-16T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-17T08:00:00-07:00",
+            "end": "2020-07-17T17:00:00-07:00"
+          }
+        ],
+        "userRoles": [
+          "Flat",
+          "Drums",
+          "Camper"
+        ],
+        "userPhoto": "https://content.fakeface.rest/female_10_f6bc9dc06767df95395089f1c1ca72b8a572c1c7.jpg",
+        "confirmed": true,
+        "dropped": false
+      },
+      {
+        "userName": "Rosie Champlin",
+        "userAvailability": [
+          {
+            "start": "2020-07-11T08:00:00-07:00",
+            "end": "2020-07-11T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-12T08:00:00-07:00",
+            "end": "2020-07-12T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-13T08:00:00-07:00",
+            "end": "2020-07-13T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-14T08:00:00-07:00",
+            "end": "2020-07-14T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-15T08:00:00-07:00",
+            "end": "2020-07-15T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-16T08:00:00-07:00",
+            "end": "2020-07-16T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-17T08:00:00-07:00",
+            "end": "2020-07-17T17:00:00-07:00"
+          }
+        ],
+        "userRoles": [
+          "Flat",
+          "Guitar",
+          "Camper"
+        ],
+        "userPhoto": "https://content.fakeface.rest/female_9_6bc9858eb473aa338171f067ebab2d2922ee1135.jpg",
+        "confirmed": true,
+        "dropped": false
+      },
+      {
+        "userName": "Vera Kulas",
+        "userAvailability": [
+          {
+            "start": "2020-07-11T08:00:00-07:00",
+            "end": "2020-07-11T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-12T08:00:00-07:00",
+            "end": "2020-07-12T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-13T08:00:00-07:00",
+            "end": "2020-07-13T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-14T08:00:00-07:00",
+            "end": "2020-07-14T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-15T08:00:00-07:00",
+            "end": "2020-07-15T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-16T08:00:00-07:00",
+            "end": "2020-07-16T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-17T08:00:00-07:00",
+            "end": "2020-07-17T17:00:00-07:00"
+          }
+        ],
+        "userRoles": [
+          "Flat",
+          "Bass",
+          "Camper"
+        ],
+        "userPhoto": "https://content.fakeface.rest/female_10_383e9f6158888648fdfba558fa1bbafbe4bc00f2.jpg",
+        "confirmed": true,
+        "dropped": false
+      },
+      {
+        "userName": "Thelma Goodwin",
+        "userAvailability": [
+          {
+            "start": "2020-07-11T08:00:00-07:00",
+            "end": "2020-07-11T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-12T08:00:00-07:00",
+            "end": "2020-07-12T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-13T08:00:00-07:00",
+            "end": "2020-07-13T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-14T08:00:00-07:00",
+            "end": "2020-07-14T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-15T08:00:00-07:00",
+            "end": "2020-07-15T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-16T08:00:00-07:00",
+            "end": "2020-07-16T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-17T08:00:00-07:00",
+            "end": "2020-07-17T17:00:00-07:00"
+          }
+        ],
+        "userRoles": [
+          "Flat",
+          "Keys",
+          "Camper"
+        ],
+        "userPhoto": "https://content.fakeface.rest/female_9_a75e16417cbdd88635bb406fbfa4e9850a24d084.jpg",
+        "confirmed": true,
+        "dropped": false
+      },
+      {
+        "userName": "Ada Corwin",
+        "userAvailability": [
+          {
+            "start": "2020-07-11T08:00:00-07:00",
+            "end": "2020-07-11T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-12T08:00:00-07:00",
+            "end": "2020-07-12T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-13T08:00:00-07:00",
+            "end": "2020-07-13T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-14T08:00:00-07:00",
+            "end": "2020-07-14T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-15T08:00:00-07:00",
+            "end": "2020-07-15T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-16T08:00:00-07:00",
+            "end": "2020-07-16T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-17T08:00:00-07:00",
+            "end": "2020-07-17T17:00:00-07:00"
+          }
+        ],
+        "userRoles": [
+          "Flat",
+          "Vocals",
+          "Camper"
+        ],
+        "userPhoto": "https://content.fakeface.rest/female_11_da2f1e478e04995e203c0c2b5b468a01fdc1e732.jpg",
+        "confirmed": true,
+        "dropped": false
+      },
+      {
+        "userName": "Shelia Tillman",
+        "userAvailability": [
+          {
+            "start": "2020-07-11T08:00:00-07:00",
+            "end": "2020-07-11T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-12T08:00:00-07:00",
+            "end": "2020-07-12T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-13T08:00:00-07:00",
+            "end": "2020-07-13T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-14T08:00:00-07:00",
+            "end": "2020-07-14T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-15T08:00:00-07:00",
+            "end": "2020-07-15T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-16T08:00:00-07:00",
+            "end": "2020-07-16T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-17T08:00:00-07:00",
+            "end": "2020-07-17T17:00:00-07:00"
+          }
+        ],
+        "userRoles": [
+          "Flat",
+          "Drums",
+          "Camper"
+        ],
+        "userPhoto": "https://content.fakeface.rest/female_11_3d7c8368fb8ce6107372b1fe1f2834c5538d2a35.jpg",
+        "confirmed": true,
+        "dropped": false
+      },
+      {
+        "userName": "Sonia Sipes",
+        "userAvailability": [
+          {
+            "start": "2020-07-11T08:00:00-07:00",
+            "end": "2020-07-11T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-12T08:00:00-07:00",
+            "end": "2020-07-12T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-13T08:00:00-07:00",
+            "end": "2020-07-13T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-14T08:00:00-07:00",
+            "end": "2020-07-14T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-15T08:00:00-07:00",
+            "end": "2020-07-15T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-16T08:00:00-07:00",
+            "end": "2020-07-16T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-17T08:00:00-07:00",
+            "end": "2020-07-17T17:00:00-07:00"
+          }
+        ],
+        "userRoles": [
+          "Flat",
+          "Guitar",
+          "Camper"
+        ],
+        "userPhoto": "https://content.fakeface.rest/female_9_db07b32dff310bcc9aa0df52f33887fe9241dd3d.jpg",
+        "confirmed": true,
+        "dropped": false
+      },
+      {
+        "userName": "Rachel Hessel",
+        "userAvailability": [
+          {
+            "start": "2020-07-11T08:00:00-07:00",
+            "end": "2020-07-11T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-12T08:00:00-07:00",
+            "end": "2020-07-12T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-13T08:00:00-07:00",
+            "end": "2020-07-13T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-14T08:00:00-07:00",
+            "end": "2020-07-14T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-15T08:00:00-07:00",
+            "end": "2020-07-15T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-16T08:00:00-07:00",
+            "end": "2020-07-16T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-17T08:00:00-07:00",
+            "end": "2020-07-17T17:00:00-07:00"
+          }
+        ],
+        "userRoles": [
+          "Flat",
+          "Bass",
+          "Camper"
+        ],
+        "userPhoto": "https://content.fakeface.rest/female_9_b312153c132234d4eb60684c1e2c5f4b936040bb.jpg",
+        "confirmed": true,
+        "dropped": false
+      },
+      {
+        "userName": "Kristina Kihn",
+        "userAvailability": [
+          {
+            "start": "2020-07-11T08:00:00-07:00",
+            "end": "2020-07-11T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-12T08:00:00-07:00",
+            "end": "2020-07-12T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-13T08:00:00-07:00",
+            "end": "2020-07-13T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-14T08:00:00-07:00",
+            "end": "2020-07-14T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-15T08:00:00-07:00",
+            "end": "2020-07-15T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-16T08:00:00-07:00",
+            "end": "2020-07-16T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-17T08:00:00-07:00",
+            "end": "2020-07-17T17:00:00-07:00"
+          }
+        ],
+        "userRoles": [
+          "Flat",
+          "Keys",
+          "Camper"
+        ],
+        "userPhoto": "https://content.fakeface.rest/female_10_082cadd944c17e00231f157e39c86886edc4439a.jpg",
+        "confirmed": true,
+        "dropped": false
+      },
+      {
+        "userName": "Billie Goodwin",
+        "userAvailability": [
+          {
+            "start": "2020-07-11T08:00:00-07:00",
+            "end": "2020-07-11T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-12T08:00:00-07:00",
+            "end": "2020-07-12T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-13T08:00:00-07:00",
+            "end": "2020-07-13T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-14T08:00:00-07:00",
+            "end": "2020-07-14T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-15T08:00:00-07:00",
+            "end": "2020-07-15T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-16T08:00:00-07:00",
+            "end": "2020-07-16T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-17T08:00:00-07:00",
+            "end": "2020-07-17T17:00:00-07:00"
+          }
+        ],
+        "userRoles": [
+          "Flat",
+          "Vocals",
+          "Camper"
+        ],
+        "userPhoto": "https://content.fakeface.rest/female_11_24f55b074a4ad1911c42baa17e94994c4a8d8c41.jpg",
+        "confirmed": true,
+        "dropped": false
+      },
+      {
+        "userName": "Courtney Balistreri",
+        "userAvailability": [
+          {
+            "start": "2020-07-11T08:00:00-07:00",
+            "end": "2020-07-11T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-12T08:00:00-07:00",
+            "end": "2020-07-12T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-13T08:00:00-07:00",
+            "end": "2020-07-13T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-14T08:00:00-07:00",
+            "end": "2020-07-14T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-15T08:00:00-07:00",
+            "end": "2020-07-15T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-16T08:00:00-07:00",
+            "end": "2020-07-16T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-17T08:00:00-07:00",
+            "end": "2020-07-17T17:00:00-07:00"
+          }
+        ],
+        "userRoles": [
+          "Flat",
+          "Drums",
+          "Camper"
+        ],
+        "userPhoto": "https://content.fakeface.rest/female_11_5a46954bf50faeeff319679e0ed2badace8cb4d0.jpg",
+        "confirmed": true,
+        "dropped": false
+      },
+      {
+        "userName": "Lila Boyer",
+        "userAvailability": [
+          {
+            "start": "2020-07-11T08:00:00-07:00",
+            "end": "2020-07-11T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-12T08:00:00-07:00",
+            "end": "2020-07-12T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-13T08:00:00-07:00",
+            "end": "2020-07-13T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-14T08:00:00-07:00",
+            "end": "2020-07-14T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-15T08:00:00-07:00",
+            "end": "2020-07-15T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-16T08:00:00-07:00",
+            "end": "2020-07-16T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-17T08:00:00-07:00",
+            "end": "2020-07-17T17:00:00-07:00"
+          }
+        ],
+        "userRoles": [
+          "Flat",
+          "Guitar",
+          "Camper"
+        ],
+        "userPhoto": "https://content.fakeface.rest/female_9_bb1ce07cd043a4108fda5962bd011805c92063a9.jpg",
+        "confirmed": true,
+        "dropped": false
+      },
+      {
+        "userName": "Ashley Roob",
+        "userAvailability": [
+          {
+            "start": "2020-07-11T08:00:00-07:00",
+            "end": "2020-07-11T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-12T08:00:00-07:00",
+            "end": "2020-07-12T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-13T08:00:00-07:00",
+            "end": "2020-07-13T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-14T08:00:00-07:00",
+            "end": "2020-07-14T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-15T08:00:00-07:00",
+            "end": "2020-07-15T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-16T08:00:00-07:00",
+            "end": "2020-07-16T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-17T08:00:00-07:00",
+            "end": "2020-07-17T17:00:00-07:00"
+          }
+        ],
+        "userRoles": [
+          "Flat",
+          "Bass",
+          "Camper"
+        ],
+        "userPhoto": "https://content.fakeface.rest/female_9_946187ecccf853acb971cabd5da601c10edaa46e.jpg",
+        "confirmed": true,
+        "dropped": false
+      },
+      {
+        "userName": "Madeline Dickinson",
+        "userAvailability": [
+          {
+            "start": "2020-07-11T08:00:00-07:00",
+            "end": "2020-07-11T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-12T08:00:00-07:00",
+            "end": "2020-07-12T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-13T08:00:00-07:00",
+            "end": "2020-07-13T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-14T08:00:00-07:00",
+            "end": "2020-07-14T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-15T08:00:00-07:00",
+            "end": "2020-07-15T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-16T08:00:00-07:00",
+            "end": "2020-07-16T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-17T08:00:00-07:00",
+            "end": "2020-07-17T17:00:00-07:00"
+          }
+        ],
+        "userRoles": [
+          "Flat",
+          "Keys",
+          "Camper"
+        ],
+        "userPhoto": "https://content.fakeface.rest/female_10_e8f56336211156c22c51d194950fc4cbf6a24076.jpg",
+        "confirmed": true,
+        "dropped": false
+      },
+      {
+        "userName": "Natalie Lemke",
+        "userAvailability": [
+          {
+            "start": "2020-07-11T08:00:00-07:00",
+            "end": "2020-07-11T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-12T08:00:00-07:00",
+            "end": "2020-07-12T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-13T08:00:00-07:00",
+            "end": "2020-07-13T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-14T08:00:00-07:00",
+            "end": "2020-07-14T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-15T08:00:00-07:00",
+            "end": "2020-07-15T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-16T08:00:00-07:00",
+            "end": "2020-07-16T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-17T08:00:00-07:00",
+            "end": "2020-07-17T17:00:00-07:00"
+          }
+        ],
+        "userRoles": [
+          "Flat",
+          "Vocals",
+          "Camper"
+        ],
+        "userPhoto": "https://content.fakeface.rest/female_10_01cf38494ff524f5ef396970c2e0c1b320d4424a.jpg",
+        "confirmed": true,
+        "dropped": false
+      },
+      {
+        "userName": "Rachel Leuschke",
+        "userAvailability": [
+          {
+            "start": "2020-07-11T08:00:00-07:00",
+            "end": "2020-07-11T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-12T08:00:00-07:00",
+            "end": "2020-07-12T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-13T08:00:00-07:00",
+            "end": "2020-07-13T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-14T08:00:00-07:00",
+            "end": "2020-07-14T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-15T08:00:00-07:00",
+            "end": "2020-07-15T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-16T08:00:00-07:00",
+            "end": "2020-07-16T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-17T08:00:00-07:00",
+            "end": "2020-07-17T17:00:00-07:00"
+          }
+        ],
+        "userRoles": [
+          "Flat",
+          "Drums",
+          "Camper"
+        ],
+        "userPhoto": "https://content.fakeface.rest/female_11_98398cd423cd5df108cc8ba5c1e95e452b5f3e1b.jpg",
+        "confirmed": true,
+        "dropped": false
+      },
+      {
+        "userName": "Rosa McKenzie",
+        "userAvailability": [
+          {
+            "start": "2020-07-11T08:00:00-07:00",
+            "end": "2020-07-11T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-12T08:00:00-07:00",
+            "end": "2020-07-12T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-13T08:00:00-07:00",
+            "end": "2020-07-13T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-14T08:00:00-07:00",
+            "end": "2020-07-14T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-15T08:00:00-07:00",
+            "end": "2020-07-15T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-16T08:00:00-07:00",
+            "end": "2020-07-16T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-17T08:00:00-07:00",
+            "end": "2020-07-17T17:00:00-07:00"
+          }
+        ],
+        "userRoles": [
+          "Flat",
+          "Guitar",
+          "Camper"
+        ],
+        "userPhoto": "https://content.fakeface.rest/female_11_fa9b0060f55e1b326ecdb97339ba8eb01724f9ad.jpg",
+        "confirmed": true,
+        "dropped": false
+      },
+      {
+        "userName": "Heidi Kulas",
+        "userAvailability": [
+          {
+            "start": "2020-07-11T08:00:00-07:00",
+            "end": "2020-07-11T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-12T08:00:00-07:00",
+            "end": "2020-07-12T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-13T08:00:00-07:00",
+            "end": "2020-07-13T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-14T08:00:00-07:00",
+            "end": "2020-07-14T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-15T08:00:00-07:00",
+            "end": "2020-07-15T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-16T08:00:00-07:00",
+            "end": "2020-07-16T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-17T08:00:00-07:00",
+            "end": "2020-07-17T17:00:00-07:00"
+          }
+        ],
+        "userRoles": [
+          "Flat",
+          "Bass",
+          "Camper"
+        ],
+        "userPhoto": "https://content.fakeface.rest/female_12_d2112e424547f559ae9d86ec28930cc52b3927a2.jpg",
+        "confirmed": true,
+        "dropped": false
+      },
+      {
+        "userName": "Tracey Harber",
+        "userAvailability": [
+          {
+            "start": "2020-07-11T08:00:00-07:00",
+            "end": "2020-07-11T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-12T08:00:00-07:00",
+            "end": "2020-07-12T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-13T08:00:00-07:00",
+            "end": "2020-07-13T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-14T08:00:00-07:00",
+            "end": "2020-07-14T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-15T08:00:00-07:00",
+            "end": "2020-07-15T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-16T08:00:00-07:00",
+            "end": "2020-07-16T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-17T08:00:00-07:00",
+            "end": "2020-07-17T17:00:00-07:00"
+          }
+        ],
+        "userRoles": [
+          "Flat",
+          "Keys",
+          "Camper"
+        ],
+        "userPhoto": "https://content.fakeface.rest/female_10_fd5c2ae902ea919dc6f7813f93302ac2c345a016.jpg",
+        "confirmed": true,
+        "dropped": false
+      },
+      {
+        "userName": "Clara Flatley",
+        "userAvailability": [
+          {
+            "start": "2020-07-11T08:00:00-07:00",
+            "end": "2020-07-11T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-12T08:00:00-07:00",
+            "end": "2020-07-12T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-13T08:00:00-07:00",
+            "end": "2020-07-13T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-14T08:00:00-07:00",
+            "end": "2020-07-14T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-15T08:00:00-07:00",
+            "end": "2020-07-15T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-16T08:00:00-07:00",
+            "end": "2020-07-16T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-17T08:00:00-07:00",
+            "end": "2020-07-17T17:00:00-07:00"
+          }
+        ],
+        "userRoles": [
+          "Flat",
+          "Vocals",
+          "Camper"
+        ],
+        "userPhoto": "https://content.fakeface.rest/female_10_e57f1569f216c6c9803204ab84aa931a79f898ec.jpg",
+        "confirmed": true,
+        "dropped": false
+      },
+      {
+        "userName": "Lynn Smitham",
+        "userAvailability": [
+          {
+            "start": "2020-07-11T08:00:00-07:00",
+            "end": "2020-07-11T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-12T08:00:00-07:00",
+            "end": "2020-07-12T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-13T08:00:00-07:00",
+            "end": "2020-07-13T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-14T08:00:00-07:00",
+            "end": "2020-07-14T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-15T08:00:00-07:00",
+            "end": "2020-07-15T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-16T08:00:00-07:00",
+            "end": "2020-07-16T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-17T08:00:00-07:00",
+            "end": "2020-07-17T17:00:00-07:00"
+          }
+        ],
+        "userRoles": [
+          "Flat",
+          "Drums",
+          "Camper"
+        ],
+        "userPhoto": "https://content.fakeface.rest/female_10_3e6b766dcf75cd949ce2a607934e8e0f99ed44fe.jpg",
+        "confirmed": true,
+        "dropped": false
+      },
+      {
+        "userName": "Christie Ritchie",
+        "userAvailability": [
+          {
+            "start": "2020-07-11T08:00:00-07:00",
+            "end": "2020-07-11T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-12T08:00:00-07:00",
+            "end": "2020-07-12T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-13T08:00:00-07:00",
+            "end": "2020-07-13T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-14T08:00:00-07:00",
+            "end": "2020-07-14T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-15T08:00:00-07:00",
+            "end": "2020-07-15T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-16T08:00:00-07:00",
+            "end": "2020-07-16T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-17T08:00:00-07:00",
+            "end": "2020-07-17T17:00:00-07:00"
+          }
+        ],
+        "userRoles": [
+          "Flat",
+          "Guitar",
+          "Camper"
+        ],
+        "userPhoto": "https://content.fakeface.rest/female_11_f65397e7547d5784fa2976ee2c25cd786613d6ef.jpg",
+        "confirmed": true,
+        "dropped": false
+      },
+      {
+        "userName": "Nellie Klocko",
+        "userAvailability": [
+          {
+            "start": "2020-07-11T08:00:00-07:00",
+            "end": "2020-07-11T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-12T08:00:00-07:00",
+            "end": "2020-07-12T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-13T08:00:00-07:00",
+            "end": "2020-07-13T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-14T08:00:00-07:00",
+            "end": "2020-07-14T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-15T08:00:00-07:00",
+            "end": "2020-07-15T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-16T08:00:00-07:00",
+            "end": "2020-07-16T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-17T08:00:00-07:00",
+            "end": "2020-07-17T17:00:00-07:00"
+          }
+        ],
+        "userRoles": [
+          "Flat",
+          "Bass",
+          "Camper"
+        ],
+        "userPhoto": "https://content.fakeface.rest/female_9_72d31133522861bf12c86d5a52d46b05d49c2852.jpg",
+        "confirmed": true,
+        "dropped": false
+      },
+      {
+        "userName": "Alison Glover",
+        "userAvailability": [
+          {
+            "start": "2020-07-11T08:00:00-07:00",
+            "end": "2020-07-11T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-12T08:00:00-07:00",
+            "end": "2020-07-12T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-13T08:00:00-07:00",
+            "end": "2020-07-13T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-14T08:00:00-07:00",
+            "end": "2020-07-14T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-15T08:00:00-07:00",
+            "end": "2020-07-15T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-16T08:00:00-07:00",
+            "end": "2020-07-16T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-17T08:00:00-07:00",
+            "end": "2020-07-17T17:00:00-07:00"
+          }
+        ],
+        "userRoles": [
+          "Flat",
+          "Keys",
+          "Camper"
+        ],
+        "userPhoto": "https://content.fakeface.rest/female_10_bb6c9374875d56bad48fd2a4871736037b1a3c0b.jpg",
+        "confirmed": true,
+        "dropped": false
+      },
+      {
+        "userName": "Ernestine Bernier",
+        "userAvailability": [
+          {
+            "start": "2020-07-11T08:00:00-07:00",
+            "end": "2020-07-11T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-12T08:00:00-07:00",
+            "end": "2020-07-12T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-13T08:00:00-07:00",
+            "end": "2020-07-13T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-14T08:00:00-07:00",
+            "end": "2020-07-14T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-15T08:00:00-07:00",
+            "end": "2020-07-15T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-16T08:00:00-07:00",
+            "end": "2020-07-16T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-17T08:00:00-07:00",
+            "end": "2020-07-17T17:00:00-07:00"
+          }
+        ],
+        "userRoles": [
+          "Flat",
+          "Vocals",
+          "Camper"
+        ],
+        "userPhoto": "https://content.fakeface.rest/female_9_484f51dc81f06bb92a31e85b9d305b02e222ded0.jpg",
+        "confirmed": true,
+        "dropped": false
+      },
+      {
+        "userName": "Vicky Kohler",
+        "userAvailability": [
+          {
+            "start": "2020-07-11T08:00:00-07:00",
+            "end": "2020-07-11T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-12T08:00:00-07:00",
+            "end": "2020-07-12T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-13T08:00:00-07:00",
+            "end": "2020-07-13T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-14T08:00:00-07:00",
+            "end": "2020-07-14T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-15T08:00:00-07:00",
+            "end": "2020-07-15T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-16T08:00:00-07:00",
+            "end": "2020-07-16T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-17T08:00:00-07:00",
+            "end": "2020-07-17T17:00:00-07:00"
+          }
+        ],
+        "userRoles": [
+          "Sharp",
+          "Drums",
+          "Camper"
+        ],
+        "userPhoto": "https://content.fakeface.rest/female_14_134592b568159cc198ec0cf3efab70569efef016.jpg",
+        "confirmed": true,
+        "dropped": false
+      },
+      {
+        "userName": "Peggy Dicki",
+        "userAvailability": [
+          {
+            "start": "2020-07-11T08:00:00-07:00",
+            "end": "2020-07-11T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-12T08:00:00-07:00",
+            "end": "2020-07-12T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-13T08:00:00-07:00",
+            "end": "2020-07-13T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-14T08:00:00-07:00",
+            "end": "2020-07-14T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-15T08:00:00-07:00",
+            "end": "2020-07-15T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-16T08:00:00-07:00",
+            "end": "2020-07-16T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-17T08:00:00-07:00",
+            "end": "2020-07-17T17:00:00-07:00"
+          }
+        ],
+        "userRoles": [
+          "Sharp",
+          "Guitar",
+          "Camper"
+        ],
+        "userPhoto": "https://content.fakeface.rest/female_13_f9137191515319e205e65a609eeecd32f0c70c71.jpg",
+        "confirmed": true,
+        "dropped": false
+      },
+      {
+        "userName": "Adrienne Kutch",
+        "userAvailability": [
+          {
+            "start": "2020-07-11T08:00:00-07:00",
+            "end": "2020-07-11T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-12T08:00:00-07:00",
+            "end": "2020-07-12T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-13T08:00:00-07:00",
+            "end": "2020-07-13T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-14T08:00:00-07:00",
+            "end": "2020-07-14T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-15T08:00:00-07:00",
+            "end": "2020-07-15T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-16T08:00:00-07:00",
+            "end": "2020-07-16T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-17T08:00:00-07:00",
+            "end": "2020-07-17T17:00:00-07:00"
+          }
+        ],
+        "userRoles": [
+          "Sharp",
+          "Bass",
+          "Camper"
+        ],
+        "userPhoto": "https://content.fakeface.rest/female_13_1780350304af6a4925a549418f1815be09579a42.jpg",
+        "confirmed": true,
+        "dropped": false
+      },
+      {
+        "userName": "Melody Renner",
+        "userAvailability": [
+          {
+            "start": "2020-07-11T08:00:00-07:00",
+            "end": "2020-07-11T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-12T08:00:00-07:00",
+            "end": "2020-07-12T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-13T08:00:00-07:00",
+            "end": "2020-07-13T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-14T08:00:00-07:00",
+            "end": "2020-07-14T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-15T08:00:00-07:00",
+            "end": "2020-07-15T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-16T08:00:00-07:00",
+            "end": "2020-07-16T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-17T08:00:00-07:00",
+            "end": "2020-07-17T17:00:00-07:00"
+          }
+        ],
+        "userRoles": [
+          "Sharp",
+          "Keys",
+          "Camper"
+        ],
+        "userPhoto": "https://content.fakeface.rest/female_17_d01d91ba68eb9a0aa381df914f631ffd235c37c2.jpg",
+        "confirmed": true,
+        "dropped": false
+      },
+      {
+        "userName": "Monica Gleason",
+        "userAvailability": [
+          {
+            "start": "2020-07-11T08:00:00-07:00",
+            "end": "2020-07-11T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-12T08:00:00-07:00",
+            "end": "2020-07-12T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-13T08:00:00-07:00",
+            "end": "2020-07-13T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-14T08:00:00-07:00",
+            "end": "2020-07-14T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-15T08:00:00-07:00",
+            "end": "2020-07-15T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-16T08:00:00-07:00",
+            "end": "2020-07-16T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-17T08:00:00-07:00",
+            "end": "2020-07-17T17:00:00-07:00"
+          }
+        ],
+        "userRoles": [
+          "Sharp",
+          "Vocals",
+          "Camper"
+        ],
+        "userPhoto": "https://content.fakeface.rest/female_15_b7d23ac385eb6aee70881a3e23925e59eaea188c.jpg",
+        "confirmed": true,
+        "dropped": false
+      },
+      {
+        "userName": "Marilyn Kiehn",
+        "userAvailability": [
+          {
+            "start": "2020-07-11T08:00:00-07:00",
+            "end": "2020-07-11T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-12T08:00:00-07:00",
+            "end": "2020-07-12T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-13T08:00:00-07:00",
+            "end": "2020-07-13T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-14T08:00:00-07:00",
+            "end": "2020-07-14T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-15T08:00:00-07:00",
+            "end": "2020-07-15T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-16T08:00:00-07:00",
+            "end": "2020-07-16T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-17T08:00:00-07:00",
+            "end": "2020-07-17T17:00:00-07:00"
+          }
+        ],
+        "userRoles": [
+          "Sharp",
+          "Drums",
+          "Camper"
+        ],
+        "userPhoto": "https://content.fakeface.rest/female_12_5b38e27fdb105ce55cd30c069808940784323acd.jpg",
+        "confirmed": true,
+        "dropped": false
+      },
+      {
+        "userName": "Karen Nitzsche",
+        "userAvailability": [
+          {
+            "start": "2020-07-11T08:00:00-07:00",
+            "end": "2020-07-11T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-12T08:00:00-07:00",
+            "end": "2020-07-12T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-13T08:00:00-07:00",
+            "end": "2020-07-13T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-14T08:00:00-07:00",
+            "end": "2020-07-14T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-15T08:00:00-07:00",
+            "end": "2020-07-15T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-16T08:00:00-07:00",
+            "end": "2020-07-16T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-17T08:00:00-07:00",
+            "end": "2020-07-17T17:00:00-07:00"
+          }
+        ],
+        "userRoles": [
+          "Sharp",
+          "Guitar",
+          "Camper"
+        ],
+        "userPhoto": "https://content.fakeface.rest/female_17_92ec989d90774ba9636e808dc16fe37a77964332.jpg",
+        "confirmed": true,
+        "dropped": false
+      },
+      {
+        "userName": "Whitney Krajcik",
+        "userAvailability": [
+          {
+            "start": "2020-07-11T08:00:00-07:00",
+            "end": "2020-07-11T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-12T08:00:00-07:00",
+            "end": "2020-07-12T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-13T08:00:00-07:00",
+            "end": "2020-07-13T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-14T08:00:00-07:00",
+            "end": "2020-07-14T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-15T08:00:00-07:00",
+            "end": "2020-07-15T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-16T08:00:00-07:00",
+            "end": "2020-07-16T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-17T08:00:00-07:00",
+            "end": "2020-07-17T17:00:00-07:00"
+          }
+        ],
+        "userRoles": [
+          "Sharp",
+          "Bass",
+          "Camper"
+        ],
+        "userPhoto": "https://content.fakeface.rest/female_15_b488598ec372601c0a5546872a58d74343d755ef.jpg",
+        "confirmed": true,
+        "dropped": false
+      },
+      {
+        "userName": "Karen Towne",
+        "userAvailability": [
+          {
+            "start": "2020-07-11T08:00:00-07:00",
+            "end": "2020-07-11T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-12T08:00:00-07:00",
+            "end": "2020-07-12T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-13T08:00:00-07:00",
+            "end": "2020-07-13T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-14T08:00:00-07:00",
+            "end": "2020-07-14T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-15T08:00:00-07:00",
+            "end": "2020-07-15T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-16T08:00:00-07:00",
+            "end": "2020-07-16T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-17T08:00:00-07:00",
+            "end": "2020-07-17T17:00:00-07:00"
+          }
+        ],
+        "userRoles": [
+          "Sharp",
+          "Keys",
+          "Camper"
+        ],
+        "userPhoto": "https://content.fakeface.rest/female_15_290f58b71c6347a5f6f0fdfd5b679db2688e9f23.jpg",
+        "confirmed": true,
+        "dropped": false
+      },
+      {
+        "userName": "Yvonne Steuber",
+        "userAvailability": [
+          {
+            "start": "2020-07-11T08:00:00-07:00",
+            "end": "2020-07-11T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-12T08:00:00-07:00",
+            "end": "2020-07-12T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-13T08:00:00-07:00",
+            "end": "2020-07-13T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-14T08:00:00-07:00",
+            "end": "2020-07-14T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-15T08:00:00-07:00",
+            "end": "2020-07-15T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-16T08:00:00-07:00",
+            "end": "2020-07-16T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-17T08:00:00-07:00",
+            "end": "2020-07-17T17:00:00-07:00"
+          }
+        ],
+        "userRoles": [
+          "Sharp",
+          "Vocals",
+          "Camper"
+        ],
+        "userPhoto": "https://content.fakeface.rest/female_14_bb1b4ea52de67623d19be6a12f585eb168be6020.jpg",
+        "confirmed": true,
+        "dropped": false
+      },
+      {
+        "userName": "Janice Sipes",
+        "userAvailability": [
+          {
+            "start": "2020-07-11T08:00:00-07:00",
+            "end": "2020-07-11T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-12T08:00:00-07:00",
+            "end": "2020-07-12T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-13T08:00:00-07:00",
+            "end": "2020-07-13T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-14T08:00:00-07:00",
+            "end": "2020-07-14T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-15T08:00:00-07:00",
+            "end": "2020-07-15T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-16T08:00:00-07:00",
+            "end": "2020-07-16T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-17T08:00:00-07:00",
+            "end": "2020-07-17T17:00:00-07:00"
+          }
+        ],
+        "userRoles": [
+          "Sharp",
+          "Drums",
+          "Camper"
+        ],
+        "userPhoto": "https://content.fakeface.rest/female_13_010f6146106adf404a2566ea4581fdbe744909ea.jpg",
+        "confirmed": true,
+        "dropped": false
+      },
+      {
+        "userName": "Tamara Cruickshank",
+        "userAvailability": [
+          {
+            "start": "2020-07-11T08:00:00-07:00",
+            "end": "2020-07-11T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-12T08:00:00-07:00",
+            "end": "2020-07-12T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-13T08:00:00-07:00",
+            "end": "2020-07-13T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-14T08:00:00-07:00",
+            "end": "2020-07-14T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-15T08:00:00-07:00",
+            "end": "2020-07-15T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-16T08:00:00-07:00",
+            "end": "2020-07-16T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-17T08:00:00-07:00",
+            "end": "2020-07-17T17:00:00-07:00"
+          }
+        ],
+        "userRoles": [
+          "Sharp",
+          "Guitar",
+          "Camper"
+        ],
+        "userPhoto": "https://content.fakeface.rest/female_12_d07b715a5cccaf4ba9d005dabe9785712c643196.jpg",
+        "confirmed": true,
+        "dropped": false
+      },
+      {
+        "userName": "Dora Mohr",
+        "userAvailability": [
+          {
+            "start": "2020-07-11T08:00:00-07:00",
+            "end": "2020-07-11T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-12T08:00:00-07:00",
+            "end": "2020-07-12T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-13T08:00:00-07:00",
+            "end": "2020-07-13T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-14T08:00:00-07:00",
+            "end": "2020-07-14T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-15T08:00:00-07:00",
+            "end": "2020-07-15T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-16T08:00:00-07:00",
+            "end": "2020-07-16T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-17T08:00:00-07:00",
+            "end": "2020-07-17T17:00:00-07:00"
+          }
+        ],
+        "userRoles": [
+          "Sharp",
+          "Bass",
+          "Camper"
+        ],
+        "userPhoto": "https://content.fakeface.rest/female_14_a57f34030c4e5f55ff0b0c4aa1d4ae0e9511854f.jpg",
+        "confirmed": true,
+        "dropped": false
+      },
+      {
+        "userName": "Madeline Rowe",
+        "userAvailability": [
+          {
+            "start": "2020-07-11T08:00:00-07:00",
+            "end": "2020-07-11T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-12T08:00:00-07:00",
+            "end": "2020-07-12T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-13T08:00:00-07:00",
+            "end": "2020-07-13T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-14T08:00:00-07:00",
+            "end": "2020-07-14T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-15T08:00:00-07:00",
+            "end": "2020-07-15T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-16T08:00:00-07:00",
+            "end": "2020-07-16T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-17T08:00:00-07:00",
+            "end": "2020-07-17T17:00:00-07:00"
+          }
+        ],
+        "userRoles": [
+          "Sharp",
+          "Keys",
+          "Camper"
+        ],
+        "userPhoto": "https://content.fakeface.rest/female_15_92b75a9fdd0c9be496c7939d22354fbaee24174a.jpg",
+        "confirmed": true,
+        "dropped": false
+      },
+      {
+        "userName": "Colleen Murray",
+        "userAvailability": [
+          {
+            "start": "2020-07-11T08:00:00-07:00",
+            "end": "2020-07-11T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-12T08:00:00-07:00",
+            "end": "2020-07-12T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-13T08:00:00-07:00",
+            "end": "2020-07-13T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-14T08:00:00-07:00",
+            "end": "2020-07-14T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-15T08:00:00-07:00",
+            "end": "2020-07-15T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-16T08:00:00-07:00",
+            "end": "2020-07-16T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-17T08:00:00-07:00",
+            "end": "2020-07-17T17:00:00-07:00"
+          }
+        ],
+        "userRoles": [
+          "Sharp",
+          "Vocals",
+          "Camper"
+        ],
+        "userPhoto": "https://content.fakeface.rest/female_15_23ea25fc5e379d3a09af8cda4db2260319bd0728.jpg",
+        "confirmed": true,
+        "dropped": false
+      },
+      {
+        "userName": "Kate Mueller",
+        "userAvailability": [
+          {
+            "start": "2020-07-11T08:00:00-07:00",
+            "end": "2020-07-11T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-12T08:00:00-07:00",
+            "end": "2020-07-12T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-13T08:00:00-07:00",
+            "end": "2020-07-13T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-14T08:00:00-07:00",
+            "end": "2020-07-14T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-15T08:00:00-07:00",
+            "end": "2020-07-15T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-16T08:00:00-07:00",
+            "end": "2020-07-16T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-17T08:00:00-07:00",
+            "end": "2020-07-17T17:00:00-07:00"
+          }
+        ],
+        "userRoles": [
+          "Sharp",
+          "Drums",
+          "Camper"
+        ],
+        "userPhoto": "https://content.fakeface.rest/female_14_20c0af5b4daedeccfcf927c3e8fa064823d20b00.jpg",
+        "confirmed": true,
+        "dropped": false
+      },
+      {
+        "userName": "Nettie Orn",
+        "userAvailability": [
+          {
+            "start": "2020-07-11T08:00:00-07:00",
+            "end": "2020-07-11T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-12T08:00:00-07:00",
+            "end": "2020-07-12T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-13T08:00:00-07:00",
+            "end": "2020-07-13T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-14T08:00:00-07:00",
+            "end": "2020-07-14T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-15T08:00:00-07:00",
+            "end": "2020-07-15T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-16T08:00:00-07:00",
+            "end": "2020-07-16T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-17T08:00:00-07:00",
+            "end": "2020-07-17T17:00:00-07:00"
+          }
+        ],
+        "userRoles": [
+          "Sharp",
+          "Guitar",
+          "Camper"
+        ],
+        "userPhoto": "https://content.fakeface.rest/female_16_e3216963f63f3dd5eeebe88f0c9569a0756b165d.jpg",
+        "confirmed": true,
+        "dropped": false
+      },
+      {
+        "userName": "Cheryl Swaniawski",
+        "userAvailability": [
+          {
+            "start": "2020-07-11T08:00:00-07:00",
+            "end": "2020-07-11T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-12T08:00:00-07:00",
+            "end": "2020-07-12T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-13T08:00:00-07:00",
+            "end": "2020-07-13T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-14T08:00:00-07:00",
+            "end": "2020-07-14T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-15T08:00:00-07:00",
+            "end": "2020-07-15T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-16T08:00:00-07:00",
+            "end": "2020-07-16T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-17T08:00:00-07:00",
+            "end": "2020-07-17T17:00:00-07:00"
+          }
+        ],
+        "userRoles": [
+          "Sharp",
+          "Bass",
+          "Camper"
+        ],
+        "userPhoto": "https://content.fakeface.rest/female_17_a99d931511185afe7bd113d2876ffcf5f89ebb98.jpg",
+        "confirmed": true,
+        "dropped": false
+      },
+      {
+        "userName": "Rachael Anderson",
+        "userAvailability": [
+          {
+            "start": "2020-07-11T08:00:00-07:00",
+            "end": "2020-07-11T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-12T08:00:00-07:00",
+            "end": "2020-07-12T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-13T08:00:00-07:00",
+            "end": "2020-07-13T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-14T08:00:00-07:00",
+            "end": "2020-07-14T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-15T08:00:00-07:00",
+            "end": "2020-07-15T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-16T08:00:00-07:00",
+            "end": "2020-07-16T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-17T08:00:00-07:00",
+            "end": "2020-07-17T17:00:00-07:00"
+          }
+        ],
+        "userRoles": [
+          "Sharp",
+          "Keys",
+          "Camper"
+        ],
+        "userPhoto": "https://content.fakeface.rest/female_18_6a0db1094510a15b087684a564bd7ece4ee1cf8a.jpg",
+        "confirmed": true,
+        "dropped": false
+      },
+      {
+        "userName": "Arlene Gerlach",
+        "userAvailability": [
+          {
+            "start": "2020-07-11T08:00:00-07:00",
+            "end": "2020-07-11T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-12T08:00:00-07:00",
+            "end": "2020-07-12T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-13T08:00:00-07:00",
+            "end": "2020-07-13T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-14T08:00:00-07:00",
+            "end": "2020-07-14T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-15T08:00:00-07:00",
+            "end": "2020-07-15T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-16T08:00:00-07:00",
+            "end": "2020-07-16T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-17T08:00:00-07:00",
+            "end": "2020-07-17T17:00:00-07:00"
+          }
+        ],
+        "userRoles": [
+          "Sharp",
+          "Vocals",
+          "Camper"
+        ],
+        "userPhoto": "https://content.fakeface.rest/female_16_f3388d86e421a04771b74f2a8f3e7ee8f7f538ab.jpg",
+        "confirmed": true,
+        "dropped": false
+      },
+      {
+        "userName": "Jeannette Watsica",
+        "userAvailability": [
+          {
+            "start": "2020-07-11T08:00:00-07:00",
+            "end": "2020-07-11T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-12T08:00:00-07:00",
+            "end": "2020-07-12T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-13T08:00:00-07:00",
+            "end": "2020-07-13T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-14T08:00:00-07:00",
+            "end": "2020-07-14T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-15T08:00:00-07:00",
+            "end": "2020-07-15T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-16T08:00:00-07:00",
+            "end": "2020-07-16T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-17T08:00:00-07:00",
+            "end": "2020-07-17T17:00:00-07:00"
+          }
+        ],
+        "userRoles": [
+          "Sharp",
+          "Drums",
+          "Camper"
+        ],
+        "userPhoto": "https://content.fakeface.rest/female_18_e61431163ae17a215b163ab7a12ba15edcf98a3e.jpg",
+        "confirmed": true,
+        "dropped": false
+      },
+      {
+        "userName": "Julie Hilll",
+        "userAvailability": [
+          {
+            "start": "2020-07-11T08:00:00-07:00",
+            "end": "2020-07-11T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-12T08:00:00-07:00",
+            "end": "2020-07-12T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-13T08:00:00-07:00",
+            "end": "2020-07-13T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-14T08:00:00-07:00",
+            "end": "2020-07-14T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-15T08:00:00-07:00",
+            "end": "2020-07-15T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-16T08:00:00-07:00",
+            "end": "2020-07-16T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-17T08:00:00-07:00",
+            "end": "2020-07-17T17:00:00-07:00"
+          }
+        ],
+        "userRoles": [
+          "Sharp",
+          "Guitar",
+          "Camper"
+        ],
+        "userPhoto": "https://content.fakeface.rest/female_14_a781d0d4599abfd48328c6d328b29aaeaa48de7f.jpg",
+        "confirmed": true,
+        "dropped": false
+      },
+      {
+        "userName": "Kendra Oberbrunner",
+        "userAvailability": [
+          {
+            "start": "2020-07-11T08:00:00-07:00",
+            "end": "2020-07-11T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-12T08:00:00-07:00",
+            "end": "2020-07-12T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-13T08:00:00-07:00",
+            "end": "2020-07-13T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-14T08:00:00-07:00",
+            "end": "2020-07-14T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-15T08:00:00-07:00",
+            "end": "2020-07-15T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-16T08:00:00-07:00",
+            "end": "2020-07-16T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-17T08:00:00-07:00",
+            "end": "2020-07-17T17:00:00-07:00"
+          }
+        ],
+        "userRoles": [
+          "Sharp",
+          "Bass",
+          "Camper"
+        ],
+        "userPhoto": "https://content.fakeface.rest/female_15_ef64b7081470f2254f2ece50a8db1c868590ddfa.jpg",
+        "confirmed": true,
+        "dropped": false
+      },
+      {
+        "userName": "Chelsea Simonis",
+        "userAvailability": [
+          {
+            "start": "2020-07-11T08:00:00-07:00",
+            "end": "2020-07-11T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-12T08:00:00-07:00",
+            "end": "2020-07-12T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-13T08:00:00-07:00",
+            "end": "2020-07-13T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-14T08:00:00-07:00",
+            "end": "2020-07-14T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-15T08:00:00-07:00",
+            "end": "2020-07-15T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-16T08:00:00-07:00",
+            "end": "2020-07-16T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-17T08:00:00-07:00",
+            "end": "2020-07-17T17:00:00-07:00"
+          }
+        ],
+        "userRoles": [
+          "Sharp",
+          "Keys",
+          "Camper"
+        ],
+        "userPhoto": "https://content.fakeface.rest/female_15_7e64a2cdc41cceef7a861073f888898d54ef4a87.jpg",
+        "confirmed": true,
+        "dropped": false
+      },
+      {
+        "userName": "Marjorie Lebsack",
+        "userAvailability": [
+          {
+            "start": "2020-07-11T08:00:00-07:00",
+            "end": "2020-07-11T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-12T08:00:00-07:00",
+            "end": "2020-07-12T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-13T08:00:00-07:00",
+            "end": "2020-07-13T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-14T08:00:00-07:00",
+            "end": "2020-07-14T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-15T08:00:00-07:00",
+            "end": "2020-07-15T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-16T08:00:00-07:00",
+            "end": "2020-07-16T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-17T08:00:00-07:00",
+            "end": "2020-07-17T17:00:00-07:00"
+          }
+        ],
+        "userRoles": [
+          "Sharp",
+          "Vocals",
+          "Camper"
+        ],
+        "userPhoto": "https://content.fakeface.rest/female_13_7402ab7b778a4d9e2e3332bc6b842494c4fc1fc8.jpg",
+        "confirmed": true,
+        "dropped": false
+      },
+      {
+        "userName": "Josephine Cormier",
+        "userAvailability": [
+          {
+            "start": "2020-07-11T08:00:00-07:00",
+            "end": "2020-07-11T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-12T08:00:00-07:00",
+            "end": "2020-07-12T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-13T08:00:00-07:00",
+            "end": "2020-07-13T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-14T08:00:00-07:00",
+            "end": "2020-07-14T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-15T08:00:00-07:00",
+            "end": "2020-07-15T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-16T08:00:00-07:00",
+            "end": "2020-07-16T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-17T08:00:00-07:00",
+            "end": "2020-07-17T17:00:00-07:00"
+          }
+        ],
+        "userRoles": [
+          "Counselor",
+          "Flat",
+          "Volunteer"
+        ],
+        "userPhoto": "https://content.fakeface.rest/female_51_c633d517f35d2379140abc61a2c7c7f3ed54bb27.jpg",
+        "confirmed": true,
+        "dropped": false
+      },
+      {
+        "userName": "Hilda Sipes",
+        "userAvailability": [
+          {
+            "start": "2020-07-11T08:00:00-07:00",
+            "end": "2020-07-11T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-12T08:00:00-07:00",
+            "end": "2020-07-12T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-13T08:00:00-07:00",
+            "end": "2020-07-13T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-14T08:00:00-07:00",
+            "end": "2020-07-14T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-15T08:00:00-07:00",
+            "end": "2020-07-15T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-16T08:00:00-07:00",
+            "end": "2020-07-16T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-17T08:00:00-07:00",
+            "end": "2020-07-17T17:00:00-07:00"
+          }
+        ],
+        "userRoles": [
+          "Counselor",
+          "Flat",
+          "Volunteer"
+        ],
+        "userPhoto": "https://content.fakeface.rest/female_39_2b2e1b662b1e58036ee62e0ba0cbccace036395a.jpg",
+        "confirmed": true,
+        "dropped": false
+      },
+      {
+        "userName": "Vivian Erdman",
+        "userAvailability": [
+          {
+            "start": "2020-07-11T08:00:00-07:00",
+            "end": "2020-07-11T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-12T08:00:00-07:00",
+            "end": "2020-07-12T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-13T08:00:00-07:00",
+            "end": "2020-07-13T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-14T08:00:00-07:00",
+            "end": "2020-07-14T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-15T08:00:00-07:00",
+            "end": "2020-07-15T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-16T08:00:00-07:00",
+            "end": "2020-07-16T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-17T08:00:00-07:00",
+            "end": "2020-07-17T17:00:00-07:00"
+          }
+        ],
+        "userRoles": [
+          "Counselor",
+          "Flat",
+          "Volunteer"
+        ],
+        "userPhoto": "https://content.fakeface.rest/female_43_5f695606f951c2b7d7981d6fa5f86c5f8f570e2a.jpg",
+        "confirmed": true,
+        "dropped": false
+      },
+      {
+        "userName": "Harriet Kuvalis",
+        "userAvailability": [
+          {
+            "start": "2020-07-11T08:00:00-07:00",
+            "end": "2020-07-11T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-12T08:00:00-07:00",
+            "end": "2020-07-12T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-13T08:00:00-07:00",
+            "end": "2020-07-13T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-14T08:00:00-07:00",
+            "end": "2020-07-14T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-15T08:00:00-07:00",
+            "end": "2020-07-15T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-16T08:00:00-07:00",
+            "end": "2020-07-16T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-17T08:00:00-07:00",
+            "end": "2020-07-17T17:00:00-07:00"
+          }
+        ],
+        "userRoles": [
+          "Counselor",
+          "Flat",
+          "Volunteer"
+        ],
+        "userPhoto": "https://content.fakeface.rest/female_22_c969a45595ee837d6a169697148928f2033f75ad.jpg",
+        "confirmed": true,
+        "dropped": false
+      },
+      {
+        "userName": "Brandi Conroy",
+        "userAvailability": [
+          {
+            "start": "2020-07-11T08:00:00-07:00",
+            "end": "2020-07-11T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-12T08:00:00-07:00",
+            "end": "2020-07-12T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-13T08:00:00-07:00",
+            "end": "2020-07-13T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-14T08:00:00-07:00",
+            "end": "2020-07-14T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-15T08:00:00-07:00",
+            "end": "2020-07-15T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-16T08:00:00-07:00",
+            "end": "2020-07-16T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-17T08:00:00-07:00",
+            "end": "2020-07-17T17:00:00-07:00"
+          }
+        ],
+        "userRoles": [
+          "Counselor",
+          "Flat",
+          "Volunteer"
+        ],
+        "userPhoto": "https://content.fakeface.rest/female_34_1907047d728349a36a6620d5766587d8d225bee1.jpg",
+        "confirmed": true,
+        "dropped": false
+      },
+      {
+        "userName": "Erika Medhurst",
+        "userAvailability": [
+          {
+            "start": "2020-07-11T08:00:00-07:00",
+            "end": "2020-07-11T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-12T08:00:00-07:00",
+            "end": "2020-07-12T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-13T08:00:00-07:00",
+            "end": "2020-07-13T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-14T08:00:00-07:00",
+            "end": "2020-07-14T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-15T08:00:00-07:00",
+            "end": "2020-07-15T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-16T08:00:00-07:00",
+            "end": "2020-07-16T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-17T08:00:00-07:00",
+            "end": "2020-07-17T17:00:00-07:00"
+          }
+        ],
+        "userRoles": [
+          "Counselor",
+          "Sharp",
+          "Volunteer"
+        ],
+        "userPhoto": "https://content.fakeface.rest/female_22_dafda7be7a821f2ea96e41fd179b05e60b348ab9.jpg",
+        "confirmed": true,
+        "dropped": false
+      },
+      {
+        "userName": "Ida Littel",
+        "userAvailability": [
+          {
+            "start": "2020-07-11T08:00:00-07:00",
+            "end": "2020-07-11T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-12T08:00:00-07:00",
+            "end": "2020-07-12T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-13T08:00:00-07:00",
+            "end": "2020-07-13T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-14T08:00:00-07:00",
+            "end": "2020-07-14T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-15T08:00:00-07:00",
+            "end": "2020-07-15T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-16T08:00:00-07:00",
+            "end": "2020-07-16T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-17T08:00:00-07:00",
+            "end": "2020-07-17T17:00:00-07:00"
+          }
+        ],
+        "userRoles": [
+          "Counselor",
+          "Sharp",
+          "Volunteer"
+        ],
+        "userPhoto": "https://content.fakeface.rest/female_30_2c97a9b5dabc8de6b5b0beec9f5fef0e4c02e0d4.jpg",
+        "confirmed": true,
+        "dropped": false
+      },
+      {
+        "userName": "Juana Gutkowski",
+        "userAvailability": [
+          {
+            "start": "2020-07-11T08:00:00-07:00",
+            "end": "2020-07-11T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-12T08:00:00-07:00",
+            "end": "2020-07-12T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-13T08:00:00-07:00",
+            "end": "2020-07-13T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-14T08:00:00-07:00",
+            "end": "2020-07-14T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-15T08:00:00-07:00",
+            "end": "2020-07-15T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-16T08:00:00-07:00",
+            "end": "2020-07-16T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-17T08:00:00-07:00",
+            "end": "2020-07-17T17:00:00-07:00"
+          }
+        ],
+        "userRoles": [
+          "Counselor",
+          "Sharp",
+          "Volunteer"
+        ],
+        "userPhoto": "https://content.fakeface.rest/female_57_aa2493ff847264f401a3b12f686630213bedee53.jpg",
+        "confirmed": true,
+        "dropped": false
+      },
+      {
+        "userName": "Diane Corkery",
+        "userAvailability": [
+          {
+            "start": "2020-07-11T08:00:00-07:00",
+            "end": "2020-07-11T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-12T08:00:00-07:00",
+            "end": "2020-07-12T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-13T08:00:00-07:00",
+            "end": "2020-07-13T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-14T08:00:00-07:00",
+            "end": "2020-07-14T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-15T08:00:00-07:00",
+            "end": "2020-07-15T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-16T08:00:00-07:00",
+            "end": "2020-07-16T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-17T08:00:00-07:00",
+            "end": "2020-07-17T17:00:00-07:00"
+          }
+        ],
+        "userRoles": [
+          "Counselor",
+          "Sharp",
+          "Volunteer"
+        ],
+        "userPhoto": "https://content.fakeface.rest/female_50_58145c501814b7d15773ccb8528b4e5b3b103c72.jpg",
+        "confirmed": true,
+        "dropped": false
+      },
+      {
+        "userName": "Patricia Beer",
+        "userAvailability": [
+          {
+            "start": "2020-07-11T08:00:00-07:00",
+            "end": "2020-07-11T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-12T08:00:00-07:00",
+            "end": "2020-07-12T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-13T08:00:00-07:00",
+            "end": "2020-07-13T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-14T08:00:00-07:00",
+            "end": "2020-07-14T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-15T08:00:00-07:00",
+            "end": "2020-07-15T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-16T08:00:00-07:00",
+            "end": "2020-07-16T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-17T08:00:00-07:00",
+            "end": "2020-07-17T17:00:00-07:00"
+          }
+        ],
+        "userRoles": [
+          "Counselor",
+          "Sharp",
+          "Volunteer"
+        ],
+        "userPhoto": "https://content.fakeface.rest/female_36_f03a8c9b281931222c608523b2408c2315b4dffe.jpg",
+        "confirmed": true,
+        "dropped": false
+      },
+      {
+        "userName": "Tabitha Lesch",
+        "userAvailability": [
+          {
+            "start": "2020-07-11T08:00:00-07:00",
+            "end": "2020-07-11T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-12T08:00:00-07:00",
+            "end": "2020-07-12T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-13T08:00:00-07:00",
+            "end": "2020-07-13T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-14T08:00:00-07:00",
+            "end": "2020-07-14T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-15T08:00:00-07:00",
+            "end": "2020-07-15T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-16T08:00:00-07:00",
+            "end": "2020-07-16T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-17T08:00:00-07:00",
+            "end": "2020-07-17T17:00:00-07:00"
+          }
+        ],
+        "userRoles": [
+          "Coach",
+          "Flat",
+          "Drums",
+          "Instructor",
+          "Volunteer"
+        ],
+        "userPhoto": "https://content.fakeface.rest/female_23_0c5281500d8ca2dd9e6dc0e339c9feaaaeef10bb.jpg",
+        "confirmed": true,
+        "dropped": false
+      },
+      {
+        "userName": "Melanie Rosenbaum",
+        "userAvailability": [
+          {
+            "start": "2020-07-11T08:00:00-07:00",
+            "end": "2020-07-11T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-12T08:00:00-07:00",
+            "end": "2020-07-12T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-13T08:00:00-07:00",
+            "end": "2020-07-13T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-14T08:00:00-07:00",
+            "end": "2020-07-14T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-15T08:00:00-07:00",
+            "end": "2020-07-15T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-16T08:00:00-07:00",
+            "end": "2020-07-16T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-17T08:00:00-07:00",
+            "end": "2020-07-17T17:00:00-07:00"
+          }
+        ],
+        "userRoles": [
+          "Coach",
+          "Flat",
+          "Guitar",
+          "Instructor",
+          "Volunteer"
+        ],
+        "userPhoto": "https://content.fakeface.rest/female_32_231650ccb0a21ff2c8421e4f458cd6dcf7f6ca9c.jpg",
+        "confirmed": true,
+        "dropped": false
+      },
+      {
+        "userName": "Margaret DuBuque",
+        "userAvailability": [
+          {
+            "start": "2020-07-11T08:00:00-07:00",
+            "end": "2020-07-11T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-12T08:00:00-07:00",
+            "end": "2020-07-12T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-13T08:00:00-07:00",
+            "end": "2020-07-13T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-14T08:00:00-07:00",
+            "end": "2020-07-14T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-15T08:00:00-07:00",
+            "end": "2020-07-15T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-16T08:00:00-07:00",
+            "end": "2020-07-16T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-17T08:00:00-07:00",
+            "end": "2020-07-17T17:00:00-07:00"
+          }
+        ],
+        "userRoles": [
+          "Coach",
+          "Flat",
+          "Bass",
+          "Instructor",
+          "Volunteer"
+        ],
+        "userPhoto": "https://content.fakeface.rest/female_33_e56eca2aab347a695a37fd8e0aba89e4c1c9f86e.jpg",
+        "confirmed": true,
+        "dropped": false
+      },
+      {
+        "userName": "Joy Graham",
+        "userAvailability": [
+          {
+            "start": "2020-07-11T08:00:00-07:00",
+            "end": "2020-07-11T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-12T08:00:00-07:00",
+            "end": "2020-07-12T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-13T08:00:00-07:00",
+            "end": "2020-07-13T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-14T08:00:00-07:00",
+            "end": "2020-07-14T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-15T08:00:00-07:00",
+            "end": "2020-07-15T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-16T08:00:00-07:00",
+            "end": "2020-07-16T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-17T08:00:00-07:00",
+            "end": "2020-07-17T17:00:00-07:00"
+          }
+        ],
+        "userRoles": [
+          "Coach",
+          "Flat",
+          "Keys",
+          "Instructor",
+          "Volunteer"
+        ],
+        "userPhoto": "https://content.fakeface.rest/female_57_d1527c5e1f0c62e22d16b5062a3c9594bb504d41.jpg",
+        "confirmed": true,
+        "dropped": false
+      },
+      {
+        "userName": "Carmen Price",
+        "userAvailability": [
+          {
+            "start": "2020-07-11T08:00:00-07:00",
+            "end": "2020-07-11T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-12T08:00:00-07:00",
+            "end": "2020-07-12T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-13T08:00:00-07:00",
+            "end": "2020-07-13T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-14T08:00:00-07:00",
+            "end": "2020-07-14T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-15T08:00:00-07:00",
+            "end": "2020-07-15T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-16T08:00:00-07:00",
+            "end": "2020-07-16T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-17T08:00:00-07:00",
+            "end": "2020-07-17T17:00:00-07:00"
+          }
+        ],
+        "userRoles": [
+          "Coach",
+          "Flat",
+          "Vocals",
+          "Instructor",
+          "Volunteer"
+        ],
+        "userPhoto": "https://content.fakeface.rest/female_35_c9df15281f46277431cb56aed3a15e867e17abab.jpg",
+        "confirmed": true,
+        "dropped": false
+      },
+      {
+        "userName": "Lula Walker",
+        "userAvailability": [
+          {
+            "start": "2020-07-11T08:00:00-07:00",
+            "end": "2020-07-11T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-12T08:00:00-07:00",
+            "end": "2020-07-12T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-13T08:00:00-07:00",
+            "end": "2020-07-13T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-14T08:00:00-07:00",
+            "end": "2020-07-14T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-15T08:00:00-07:00",
+            "end": "2020-07-15T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-16T08:00:00-07:00",
+            "end": "2020-07-16T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-17T08:00:00-07:00",
+            "end": "2020-07-17T17:00:00-07:00"
+          }
+        ],
+        "userRoles": [
+          "Coach",
+          "Sharp",
+          "Drums",
+          "Instructor",
+          "Volunteer"
+        ],
+        "userPhoto": "https://content.fakeface.rest/female_29_672de49e1476ff4c9589a123478db89b99e2a9af.jpg",
+        "confirmed": true,
+        "dropped": false
+      },
+      {
+        "userName": "Julie Schmitt",
+        "userAvailability": [
+          {
+            "start": "2020-07-11T08:00:00-07:00",
+            "end": "2020-07-11T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-12T08:00:00-07:00",
+            "end": "2020-07-12T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-13T08:00:00-07:00",
+            "end": "2020-07-13T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-14T08:00:00-07:00",
+            "end": "2020-07-14T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-15T08:00:00-07:00",
+            "end": "2020-07-15T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-16T08:00:00-07:00",
+            "end": "2020-07-16T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-17T08:00:00-07:00",
+            "end": "2020-07-17T17:00:00-07:00"
+          }
+        ],
+        "userRoles": [
+          "Coach",
+          "Sharp",
+          "Guitar",
+          "Instructor",
+          "Volunteer"
+        ],
+        "userPhoto": "https://content.fakeface.rest/female_33_67ea0bade3dbc4b526f76254096031809cab8b73.jpg",
+        "confirmed": true,
+        "dropped": false
+      },
+      {
+        "userName": "Kara Conroy",
+        "userAvailability": [
+          {
+            "start": "2020-07-11T08:00:00-07:00",
+            "end": "2020-07-11T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-12T08:00:00-07:00",
+            "end": "2020-07-12T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-13T08:00:00-07:00",
+            "end": "2020-07-13T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-14T08:00:00-07:00",
+            "end": "2020-07-14T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-15T08:00:00-07:00",
+            "end": "2020-07-15T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-16T08:00:00-07:00",
+            "end": "2020-07-16T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-17T08:00:00-07:00",
+            "end": "2020-07-17T17:00:00-07:00"
+          }
+        ],
+        "userRoles": [
+          "Coach",
+          "Sharp",
+          "Bass",
+          "Instructor",
+          "Volunteer"
+        ],
+        "userPhoto": "https://content.fakeface.rest/female_32_d1c5a05b33c8c998e3930f5837c355d45afb68d4.jpg",
+        "confirmed": true,
+        "dropped": false
+      },
+      {
+        "userName": "Lola McCullough",
+        "userAvailability": [
+          {
+            "start": "2020-07-11T08:00:00-07:00",
+            "end": "2020-07-11T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-12T08:00:00-07:00",
+            "end": "2020-07-12T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-13T08:00:00-07:00",
+            "end": "2020-07-13T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-14T08:00:00-07:00",
+            "end": "2020-07-14T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-15T08:00:00-07:00",
+            "end": "2020-07-15T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-16T08:00:00-07:00",
+            "end": "2020-07-16T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-17T08:00:00-07:00",
+            "end": "2020-07-17T17:00:00-07:00"
+          }
+        ],
+        "userRoles": [
+          "Coach",
+          "Sharp",
+          "Keys",
+          "Instructor",
+          "Volunteer"
+        ],
+        "userPhoto": "https://content.fakeface.rest/female_24_90eb21031ecd48da6903242ea449791011dfdbb0.jpg",
+        "confirmed": true,
+        "dropped": false
+      },
+      {
+        "userName": "Bertha Wyman",
+        "userAvailability": [
+          {
+            "start": "2020-07-11T08:00:00-07:00",
+            "end": "2020-07-11T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-12T08:00:00-07:00",
+            "end": "2020-07-12T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-13T08:00:00-07:00",
+            "end": "2020-07-13T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-14T08:00:00-07:00",
+            "end": "2020-07-14T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-15T08:00:00-07:00",
+            "end": "2020-07-15T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-16T08:00:00-07:00",
+            "end": "2020-07-16T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-17T08:00:00-07:00",
+            "end": "2020-07-17T17:00:00-07:00"
+          }
+        ],
+        "userRoles": [
+          "Coach",
+          "Sharp",
+          "Vocals",
+          "Instructor",
+          "Volunteer"
+        ],
+        "userPhoto": "https://content.fakeface.rest/female_29_be20304fb784bf8a079a7ae82a8f38aec906aee5.jpg",
+        "confirmed": true,
+        "dropped": false
+      },
+      {
+        "userName": "Jody Streich",
+        "userAvailability": [
+          {
+            "start": "2020-07-11T08:00:00-07:00",
+            "end": "2020-07-11T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-12T08:00:00-07:00",
+            "end": "2020-07-12T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-13T08:00:00-07:00",
+            "end": "2020-07-13T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-14T08:00:00-07:00",
+            "end": "2020-07-14T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-15T08:00:00-07:00",
+            "end": "2020-07-15T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-16T08:00:00-07:00",
+            "end": "2020-07-16T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-17T08:00:00-07:00",
+            "end": "2020-07-17T17:00:00-07:00"
+          }
+        ],
+        "userRoles": [
+          "Roadie",
+          "Volunteer",
+          "Support"
+        ],
+        "userPhoto": "https://content.fakeface.rest/female_39_33f401489c8834c8d591146455f5a9b1ffad70fa.jpg",
+        "confirmed": true,
+        "dropped": false
+      },
+      {
+        "userName": "Kristin Dach",
+        "userAvailability": [
+          {
+            "start": "2020-07-11T08:00:00-07:00",
+            "end": "2020-07-11T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-12T08:00:00-07:00",
+            "end": "2020-07-12T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-13T08:00:00-07:00",
+            "end": "2020-07-13T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-14T08:00:00-07:00",
+            "end": "2020-07-14T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-15T08:00:00-07:00",
+            "end": "2020-07-15T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-16T08:00:00-07:00",
+            "end": "2020-07-16T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-17T08:00:00-07:00",
+            "end": "2020-07-17T17:00:00-07:00"
+          }
+        ],
+        "userRoles": [
+          "General support",
+          "Volunteer",
+          "Support"
+        ],
+        "userPhoto": "https://content.fakeface.rest/female_31_fbaafab1299501436890c3427c4fcb305ed2cb9b.jpg",
+        "confirmed": true,
+        "dropped": false
+      },
+      {
+        "userName": "Lorena Fadel",
+        "userAvailability": [
+          {
+            "start": "2020-07-11T08:00:00-07:00",
+            "end": "2020-07-11T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-12T08:00:00-07:00",
+            "end": "2020-07-12T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-13T08:00:00-07:00",
+            "end": "2020-07-13T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-14T08:00:00-07:00",
+            "end": "2020-07-14T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-15T08:00:00-07:00",
+            "end": "2020-07-15T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-16T08:00:00-07:00",
+            "end": "2020-07-16T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-17T08:00:00-07:00",
+            "end": "2020-07-17T17:00:00-07:00"
+          }
+        ],
+        "userRoles": [
+          "Roadie",
+          "Volunteer",
+          "Support"
+        ],
+        "userPhoto": "https://content.fakeface.rest/female_54_eadd88edb1925d42f4ae6a2611ea76a889f78ede.jpg",
+        "confirmed": true,
+        "dropped": false
+      },
+      {
+        "userName": "Sylvia Lindgren",
+        "userAvailability": [
+          {
+            "start": "2020-07-11T08:00:00-07:00",
+            "end": "2020-07-11T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-12T08:00:00-07:00",
+            "end": "2020-07-12T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-13T08:00:00-07:00",
+            "end": "2020-07-13T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-14T08:00:00-07:00",
+            "end": "2020-07-14T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-15T08:00:00-07:00",
+            "end": "2020-07-15T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-16T08:00:00-07:00",
+            "end": "2020-07-16T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-17T08:00:00-07:00",
+            "end": "2020-07-17T17:00:00-07:00"
+          }
+        ],
+        "userRoles": [
+          "General support",
+          "Volunteer",
+          "Support"
+        ],
+        "userPhoto": "https://content.fakeface.rest/female_30_7bb7b565c8235d1e9caabb2866939107932bd062.jpg",
+        "confirmed": true,
+        "dropped": false
+      },
+      {
+        "userName": "Kellie Bayer",
+        "userAvailability": [
+          {
+            "start": "2020-07-11T08:00:00-07:00",
+            "end": "2020-07-11T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-12T08:00:00-07:00",
+            "end": "2020-07-12T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-13T08:00:00-07:00",
+            "end": "2020-07-13T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-14T08:00:00-07:00",
+            "end": "2020-07-14T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-15T08:00:00-07:00",
+            "end": "2020-07-15T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-16T08:00:00-07:00",
+            "end": "2020-07-16T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-17T08:00:00-07:00",
+            "end": "2020-07-17T17:00:00-07:00"
+          }
+        ],
+        "userRoles": [
+          "Roadie",
+          "Volunteer",
+          "Support"
+        ],
+        "userPhoto": "https://content.fakeface.rest/female_36_da515d6f906698d0f5f4b748a63893481efce40f.jpg",
+        "confirmed": true,
+        "dropped": false
+      },
+      {
+        "userName": "Tina Jakubowski",
+        "userAvailability": [
+          {
+            "start": "2020-07-11T08:00:00-07:00",
+            "end": "2020-07-11T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-12T08:00:00-07:00",
+            "end": "2020-07-12T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-13T08:00:00-07:00",
+            "end": "2020-07-13T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-14T08:00:00-07:00",
+            "end": "2020-07-14T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-15T08:00:00-07:00",
+            "end": "2020-07-15T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-16T08:00:00-07:00",
+            "end": "2020-07-16T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-17T08:00:00-07:00",
+            "end": "2020-07-17T17:00:00-07:00"
+          }
+        ],
+        "userRoles": [
+          "General support",
+          "Volunteer",
+          "Support"
+        ],
+        "userPhoto": "https://content.fakeface.rest/female_42_cb9c0e5118f82090c6482dd3ab036b684297e60a.jpg",
+        "confirmed": true,
+        "dropped": false
+      },
+      {
+        "userName": "Bethany Bogan",
+        "userAvailability": [
+          {
+            "start": "2020-07-11T08:00:00-07:00",
+            "end": "2020-07-11T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-12T08:00:00-07:00",
+            "end": "2020-07-12T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-13T08:00:00-07:00",
+            "end": "2020-07-13T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-14T08:00:00-07:00",
+            "end": "2020-07-14T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-15T08:00:00-07:00",
+            "end": "2020-07-15T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-16T08:00:00-07:00",
+            "end": "2020-07-16T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-17T08:00:00-07:00",
+            "end": "2020-07-17T17:00:00-07:00"
+          }
+        ],
+        "userRoles": [
+          "Roadie",
+          "Volunteer",
+          "Support"
+        ],
+        "userPhoto": "https://content.fakeface.rest/female_42_17ab3b4a1ec8c30d40d270315b5ad3ba4d2c7553.jpg",
+        "confirmed": true,
+        "dropped": false
+      },
+      {
+        "userName": "Rebecca Hyatt",
+        "userAvailability": [
+          {
+            "start": "2020-07-11T08:00:00-07:00",
+            "end": "2020-07-11T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-12T08:00:00-07:00",
+            "end": "2020-07-12T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-13T08:00:00-07:00",
+            "end": "2020-07-13T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-14T08:00:00-07:00",
+            "end": "2020-07-14T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-15T08:00:00-07:00",
+            "end": "2020-07-15T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-16T08:00:00-07:00",
+            "end": "2020-07-16T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-17T08:00:00-07:00",
+            "end": "2020-07-17T17:00:00-07:00"
+          }
+        ],
+        "userRoles": [
+          "General support",
+          "Volunteer",
+          "Support"
+        ],
+        "userPhoto": "https://content.fakeface.rest/female_42_e3a9905eb906e5d57642a2fc6a6c65b70bca7cbb.jpg",
+        "confirmed": true,
+        "dropped": false
+      },
+      {
+        "userName": "Monique Konopelski",
+        "userAvailability": [
+          {
+            "start": "2020-07-11T08:00:00-07:00",
+            "end": "2020-07-11T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-12T08:00:00-07:00",
+            "end": "2020-07-12T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-13T08:00:00-07:00",
+            "end": "2020-07-13T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-14T08:00:00-07:00",
+            "end": "2020-07-14T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-15T08:00:00-07:00",
+            "end": "2020-07-15T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-16T08:00:00-07:00",
+            "end": "2020-07-16T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-17T08:00:00-07:00",
+            "end": "2020-07-17T17:00:00-07:00"
+          }
+        ],
+        "userRoles": [
+          "Roadie",
+          "Volunteer",
+          "Support"
+        ],
+        "userPhoto": "https://content.fakeface.rest/female_55_3809b7941b310d146dddb26607a44c82058e73b4.jpg",
+        "confirmed": true,
+        "dropped": false
+      },
+      {
+        "userName": "Pam Ritchie",
+        "userAvailability": [
+          {
+            "start": "2020-07-13T08:00:00-07:00",
+            "end": "2020-07-13T12:00:00-07:00"
+          },
+          {
+            "start": "2020-07-14T12:00:00-07:00",
+            "end": "2020-07-14T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-15T12:00:00-07:00",
+            "end": "2020-07-15T17:00:00-07:00"
+          }
+        ],
+        "userRoles": [
+          "General support",
+          "Volunteer",
+          "Support"
+        ],
+        "userPhoto": "https://content.fakeface.rest/female_38_98a17ec5fedc7a6fed342b51f057140551d7f62d.jpg",
+        "confirmed": true,
+        "dropped": false
+      },
+      {
+        "userName": "Mayor of Awesometown",
+        "userAvailability": [
+          {
+            "start": "2020-07-11T08:00:00-07:00",
+            "end": "2020-07-11T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-12T08:00:00-07:00",
+            "end": "2020-07-12T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-13T08:00:00-07:00",
+            "end": "2020-07-13T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-14T08:00:00-07:00",
+            "end": "2020-07-14T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-15T08:00:00-07:00",
+            "end": "2020-07-15T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-16T08:00:00-07:00",
+            "end": "2020-07-16T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-17T08:00:00-07:00",
+            "end": "2020-07-17T17:00:00-07:00"
+          }
+        ],
+        "userRoles": [
+          "Mayor",
+          "Volunteer"
+        ],
+        "userPhoto": "https://content.fakeface.rest/female_33_7ed2e40df87e34acae6203dc57a5dd6737679896.jpg",
+        "confirmed": true,
+        "dropped": false
+      },
+      {
+        "userName": "Julie Osinski",
+        "userAvailability": [
+          {
+            "start": "2020-07-11T08:00:00-07:00",
+            "end": "2020-07-11T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-12T08:00:00-07:00",
+            "end": "2020-07-12T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-13T08:00:00-07:00",
+            "end": "2020-07-13T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-14T08:00:00-07:00",
+            "end": "2020-07-14T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-15T08:00:00-07:00",
+            "end": "2020-07-15T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-16T08:00:00-07:00",
+            "end": "2020-07-16T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-17T08:00:00-07:00",
+            "end": "2020-07-17T17:00:00-07:00"
+          }
+        ],
+        "userRoles": [
+          "Co-director",
+          "Volunteer"
+        ],
+        "userPhoto": "https://content.fakeface.rest/female_49_1d1ad67f4bdce31144bd8cdfe13fe7418f0f29d5.jpg",
+        "confirmed": true,
+        "dropped": false
+      },
+      {
+        "userName": "Opal Botsford",
+        "userAvailability": [
+          {
+            "start": "2020-07-11T08:00:00-07:00",
+            "end": "2020-07-11T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-12T08:00:00-07:00",
+            "end": "2020-07-12T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-13T08:00:00-07:00",
+            "end": "2020-07-13T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-14T08:00:00-07:00",
+            "end": "2020-07-14T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-15T08:00:00-07:00",
+            "end": "2020-07-15T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-16T08:00:00-07:00",
+            "end": "2020-07-16T17:00:00-07:00"
+          },
+          {
+            "start": "2020-07-17T08:00:00-07:00",
+            "end": "2020-07-17T17:00:00-07:00"
+          }
+        ],
+        "userRoles": [
+          "Co-director",
+          "Volunteer"
+        ],
+        "userPhoto": "https://content.fakeface.rest/female_24_30b99865f124ae51ed24e0ad28088325f8105961.jpg",
+        "confirmed": true,
+        "dropped": false
+      }
+    ],
+    "userGroups": [
+      {
+        "name": "Band 1 (Sharps)",
+        "track": "MUSIC",
+        "userGroupType": "BAND",
+        "users": [
+          "Vicky Kohler",
+          "Monica Gleason",
+          "Melody Renner",
+          "Peggy Dicki",
+          "Adrienne Kutch",
+          "Erika Medhurst",
+          "Lula Walker"
+        ]
+      },
+      {
+        "name": "Band 2 (Sharps)",
+        "track": "MUSIC",
+        "userGroupType": "BAND",
+        "users": [
+          "Marilyn Kiehn",
+          "Yvonne Steuber",
+          "Karen Towne",
+          "Karen Nitzsche",
+          "Whitney Krajcik",
+          "Ida Littel",
+          "Julie Schmitt"
+        ]
+      },
+      {
+        "name": "Band 3 (Sharps)",
+        "track": "MUSIC",
+        "userGroupType": "BAND",
+        "users": [
+          "Janice Sipes",
+          "Colleen Murray",
+          "Madeline Rowe",
+          "Tamara Cruickshank",
+          "Dora Mohr",
+          "Juana Gutkowski",
+          "Kara Conroy"
+        ]
+      },
+      {
+        "name": "Band 4 (Sharps)",
+        "track": "MUSIC",
+        "userGroupType": "BAND",
+        "users": [
+          "Kate Mueller",
+          "Arlene Gerlach",
+          "Rachael Anderson",
+          "Nettie Orn",
+          "Cheryl Swaniawski",
+          "Diane Corkery",
+          "Lola McCullough"
+        ]
+      },
+      {
+        "name": "Band 5 (Sharps)",
+        "track": "MUSIC",
+        "userGroupType": "BAND",
+        "users": [
+          "Jeannette Watsica",
+          "Marjorie Lebsack",
+          "Chelsea Simonis",
+          "Julie Hilll",
+          "Kendra Oberbrunner",
+          "Patricia Beer",
+          "Bertha Wyman"
+        ]
+      },
+      {
+        "name": "Band 6 (Flats)",
+        "track": "MUSIC",
+        "userGroupType": "BAND",
+        "users": [
+          "Beulah Cremin",
+          "Ada Corwin",
+          "Thelma Goodwin",
+          "Rosie Champlin",
+          "Vera Kulas",
+          "Josephine Cormier",
+          "Tabitha Lesch"
+        ]
+      },
+      {
+        "name": "Band 7 (Flats)",
+        "track": "MUSIC",
+        "userGroupType": "BAND",
+        "users": [
+          "Shelia Tillman",
+          "Billie Goodwin",
+          "Kristina Kihn",
+          "Sonia Sipes",
+          "Rachel Hessel",
+          "Hilda Sipes",
+          "Melanie Rosenbaum"
+        ]
+      },
+      {
+        "name": "Band 8 (Flats)",
+        "track": "MUSIC",
+        "userGroupType": "BAND",
+        "users": [
+          "Courtney Balistreri",
+          "Natalie Lemke",
+          "Madeline Dickinson",
+          "Lila Boyer",
+          "Ashley Roob",
+          "Vivian Erdman",
+          "Margaret DuBuque"
+        ]
+      },
+      {
+        "name": "Band 9 (Flats)",
+        "track": "MUSIC",
+        "userGroupType": "BAND",
+        "users": [
+          "Rachel Leuschke",
+          "Clara Flatley",
+          "Tracey Harber",
+          "Rosa McKenzie",
+          "Heidi Kulas",
+          "Harriet Kuvalis",
+          "Joy Graham"
+        ]
+      },
+      {
+        "name": "Band 10 (Flats)",
+        "track": "MUSIC",
+        "userGroupType": "BAND",
+        "users": [
+          "Lynn Smitham",
+          "Ernestine Bernier",
+          "Alison Glover",
+          "Christie Ritchie",
+          "Nellie Klocko",
+          "Brandi Conroy",
+          "Carmen Price"
+        ]
+      }
+    ]
+  }
+]

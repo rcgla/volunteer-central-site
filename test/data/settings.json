@@ -1,0 +1,144 @@
+{
+    "eventTypes": [
+        "SUMMERCAMP", 
+        "ROCKCAMPEXPRESS",
+        "LRC",
+        "LOADIN",
+        "LOADOUT",
+        "SHOWCASE"
+    ],
+    "activityTypes": [
+        "INSTRUCTION",
+        "WORKSHOP",
+        "BANDPRACTICE"
+    ],
+    "trackTypes": [
+        "MUSIC",
+        "MVP"
+    ],
+    "userGroupTypes": [
+        "BAND"
+    ],
+    "tShirtSizes": [
+        {
+            "name": "X-Small",
+            "order": 100
+        },
+        {
+            "name": "Small",
+            "order": 200
+        },
+        {
+            "name": "Medium",
+            "order": 210
+        },
+        {
+            "name": "Large",
+            "order": 220
+        },
+        {
+            "name": "X-Large",
+            "order": 230
+        },
+        {
+            "name": "XX-Large",
+            "order": 240
+        },
+        {
+            "name": "XXX-Large",
+            "order": 250
+        }
+    ],
+    "roles": [
+        "Camper",
+        "Volunteer",
+        "Counselor",
+        "Coach",
+        "Flat",
+        "Sharp",
+        "Instructor",
+        "Roadie",
+        "General support",
+        "Co-director",
+        "Mayor",
+        "Bass",
+        "Drums",
+        "Keys",
+        "Guitar",
+        "Vocals",
+        "Support"
+    ],
+    "locations": [
+        {
+            "name": "ICS",
+            "description": "",
+            "address": "830 Green Ave, Los Angeles, CA 90017",
+            "notes": "",
+            "rooms": [
+                {
+                    "name": "100",
+                    "description": "Awesometown"
+                },
+                {
+                    "name": "101",
+                    "description": "Pre-K"
+                },
+                {
+                    "name": "102"
+                },
+                {
+                    "name": "103"
+                },
+                {
+                    "name": "104"
+                },
+                {
+                    "name": "105"
+                },
+                {
+                    "name": "201",
+                    "description": "Library"
+                },
+                {
+                    "name": "200",
+                    "description": "Computer room"
+                },
+                {
+                    "name": "202"
+                },
+                {
+                    "name": "203"
+                },
+                {
+                    "name": "204"
+                },
+                {
+                    "name": "205"
+                },
+                {
+                    "name": "206"
+                },
+                {
+                    "name": "208"
+                },
+                {
+                    "name": "207",
+                    "description": "Rock room"
+                },
+                {
+                    "name": "Blacktop"
+                },
+                {
+                    "name": "Assembly"
+                },
+                {
+                    "name": "Front desk"
+                }
+            ]
+        },
+        {
+            "name": "Troubadour",
+            "address": "9081 N Santa Monica Blvd, West Hollywood, CA 90069"
+        }
+    ]
+}

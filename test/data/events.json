@@ -54,7 +54,7 @@
                 "roomNames": ["207"],
                 "visibility": "STAFF",
                 "repeat": "None",
-                "roles": ["Volunteer"]
+                "roles": [["Volunteer"]]
             },
             {
                 "name": "Morning assembly",
@@ -65,7 +65,7 @@
                 "repeat": "WEEKDAYS",
                 "locationName": "ICS",
                 "roomNames": ["Assembly"],
-                "roles": ["Volunteer", "Camper"]
+                "roles": [["Volunteer"]]
             },
             {
                 "name": "Guitar (sharps)",
@@ -78,7 +78,7 @@
                 "roomNames": ["102", "104"],
                 "type": "INSTRUCTION",
                 "trackName": "Music",
-                "roles": ["Guitar,Sharp,Camper", "Guitar,Instructor"]
+                "roles": [["Guitar", "Sharp", "Camper"], ["Guitar", "Instructor"]]
             },
             {
                 "name": "Drums (sharps)",
@@ -205,7 +205,7 @@
                 "roomNames": ["207"],
                 "type": "WORKSHOP",
                 "repeat": "None",
-                "roles": ["Flat", "Camper"]
+                "roles": [["Flat", "Camper"]]
             },
             {
                 "name": "Radical Empathy (sharps)",
@@ -215,14 +215,14 @@
                 "roomNames": ["207"],
                 "type": "WORKSHOP",
                 "repeat": "None",
-                "roles": ["Sharp", "Camper"]
+                "roles": [["Sharp", "Camper"]]
             },
             {
                 "name": "Lunch",
                 "start": "2020-07-12T12:00:00-0700",
                 "end": "2020-07-12T13:00:00-0700",
                 "repeat": "WEEKDAYS",
-                "roles": ["Camper", "Volunteer"]
+                "roles": [["Camper", "Volunteer"]]
             },
             {
                 "name": "Band 1 (Sharps)",
@@ -231,7 +231,8 @@
                 "end": "2020-07-12T15:00:00-0700",
                 "locationName": "ICS",
                 "repeat": "WEEKDAYS",
-                "trackName": "Music"
+                "trackName": "Music",
+                "userGroups": ["Band 1 (Sharps)"]
             },
             {
                 "name": "Band 2 (Sharps)",
@@ -240,7 +241,8 @@
                 "end": "2020-07-12T15:00:00-0700",
                 "locationName": "ICS",
                 "repeat": "WEEKDAYS",
-                "trackName": "Music"
+                "trackName": "Music",
+                "userGroups": ["Band 2 (Sharps)"]
             },
             {
                 "name": "Band 3 (Sharps)",
@@ -249,7 +251,8 @@
                 "end": "2020-07-12T15:00:00-0700",
                 "locationName": "ICS",
                 "repeat": "WEEKDAYS",
-                "trackName": "Music"
+                "trackName": "Music",
+                "userGroups": ["Band 3 (Sharps)"]
             },
             {
                 "name": "Band 4 (Sharps)",
@@ -258,7 +261,8 @@
                 "end": "2020-07-12T15:00:00-0700",
                 "locationName": "ICS",
                 "repeat": "WEEKDAYS",
-                "trackName": "Music"
+                "trackName": "Music",
+                "userGroups": ["Band 4 (Sharps)"]
             },
             {
                 "name": "Band 5 (Sharps)",
@@ -267,7 +271,8 @@
                 "end": "2020-07-12T15:00:00-0700",
                 "locationName": "ICS",
                 "repeat": "WEEKDAYS",
-                "trackName": "Music"
+                "trackName": "Music",
+                "userGroups": ["Band 5 (Sharps)"]
             },
             {
                 "name": "Band 6 (Flats)",
@@ -276,7 +281,8 @@
                 "end": "2020-07-12T17:00:00-0700",
                 "locationName": "ICS",
                 "repeat": "WEEKDAYS",
-                "trackName": "Music"
+                "trackName": "Music",
+                "userGroups": ["Band 6 (Flats)"]
             },
             {
                 "name": "Band 7 (Flats)",
@@ -285,7 +291,8 @@
                 "end": "2020-07-12T17:00:00-0700",
                 "locationName": "ICS",
                 "repeat": "WEEKDAYS",
-                "trackName": "Music"
+                "trackName": "Music",
+                "userGroups": ["Band 7 (Flats)"]
             },
             {
                 "name": "Band 8 (Flats)",
@@ -294,7 +301,8 @@
                 "end": "2020-07-12T17:00:00-0700",
                 "locationName": "ICS",
                 "repeat": "WEEKDAYS",
-                "trackName": "Music"
+                "trackName": "Music",
+                "userGroups": ["Band 8 (Flats)"]
             },
             {
                 "name": "Band 9 (Flats)",
@@ -303,7 +311,8 @@
                 "end": "2020-07-12T17:00:00-0700",
                 "locationName": "ICS",
                 "repeat": "WEEKDAYS",
-                "trackName": "Music"
+                "trackName": "Music",
+                "userGroups": ["Band 9 (Flats)"]
             },
             {
                 "name": "Band 10 (Flats)",
@@ -312,7 +321,8 @@
                 "end": "2020-07-12T17:00:00-0700",
                 "locationName": "ICS",
                 "repeat": "WEEKDAYS",
-                "trackName": "Music"
+                "trackName": "Music",
+                "userGroups": ["Band 10 (Flats)"]
             },
             {
                 "name": "Zines (Sharps)",
@@ -321,7 +331,8 @@
                 "end": "2020-07-12T17:00:00-0700",
                 "locationName": "ICS",
                 "roomNames": ["207"],
-                "repeat": "None"
+                "repeat": "None",
+                "roles": [["Sharp", "Campers"], ["Sharp", "Counselor"]]
             },
             {
                 "name": "Zines (Flats)",
@@ -330,7 +341,8 @@
                 "end": "2020-07-12T15:00:00-0700",
                 "locationName": "ICS",
                 "roomNames": ["207"],
-                "repeat": "None"
+                "repeat": "None",
+                "roles": [["Flat", "Campers"], ["Flat", "Counselor"]]
             },
             {
                 "name": "Afternoon assembly",
@@ -340,7 +352,8 @@
                 "end": "2020-07-12T17:15:00-0700",
                 "locationName": "ICS",
                 "roomNames": ["Assembly"],
-                "repeat": "WEEKDAYS"
+                "repeat": "WEEKDAYS",
+                "roles": [["Camper", "Volunteer"]]
             },
             {
                 "name": "Showcase: Load in",
@@ -348,21 +361,24 @@
                 "end": "2020-07-17T11:30:00-0700",
                 "visibility": "STAFF",
                 "locationName": "Troubadour",
-                "repeat": "None"
+                "repeat": "None",
+                "roles": [["Volunteer"]]
             },
             {
                 "name": "Showcase: Campers arrive",
                 "start":"2020-07-17T11:30:00-0700",
                 "end": "2020-07-17T12:00:00-0700",
                 "locationName": "Troubadour",
-                "repeat": "None"
+                "repeat": "None",
+                "roles": [["Volunteer"]]
             },
             {
                 "name": "Showcase: Showtime",
                 "start":"2020-07-17T12:00:00-0700",
                 "end": "2020-07-17T15:00:00-0700",
                 "locationName": "Troubadour",
-                "repeat": "None"
+                "repeat": "None",
+                "roles": [["Volunteer"], ["Camper"]]
             },
             {
                 "name": "Showcases: Load out",
@@ -370,7 +386,8 @@
                 "end": "2020-07-17T16:00:00-0700",
                 "visibility": "STAFF",
                 "locationName": "Troubadour",
-                "repeat": "None"
+                "repeat": "None",
+                "roles": [["Volunteer"]]
             }
         ]
     }

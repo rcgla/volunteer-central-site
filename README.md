@@ -179,14 +179,9 @@ E.g., an event that is client-visible, such as camp week, has a start date and t
 * In addition to usertype visibility, activities may be restricted in visibility to only the roles and user groups participating in that activity. 
 
 TODO 
-
-* role participation for activities
-* optional "restrict visibility to participants" setting for activities
-* RLS policies for activity visibility restriction
-
-Activities
 * user groups may participate in activities, e.g. band practice with "band #2"
-* roles may participate in activities, e.g. front desk checkin with "Front desk team"
+* roles may participate in activities, e.g. front desk checkin with "Front desk support". It's complicated (see events.json 'roles' property).
+* restrictVisibility option 
 
 #### Photos
 

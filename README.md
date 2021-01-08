@@ -4,14 +4,7 @@ This is a website. It attaches to a database, which you have to also setup. Inst
 
 ## Database setup
 
-You only have to do this once.
-
-1. Install PostgreSQL on your machine. There are many options, just google it.
-1. Clone the volunteer central [database project](https://github.com/rcgla/volunteer-central-db). 
-1. Switch to the `dev` branch
-1. Open a terminal and go to the directory where you've cloned it.
-1. Copy the environment variables file: `cp example.env .env`
-1. Create a fresh (empty) database: `run-to-init-test-db.sh`
+Follow the instructions at [volunteer-central-db](https://github.com/rcgla/volunteer-central-db/tree/dev)
 
 ## Loading test data
 
@@ -35,7 +28,7 @@ You only have to do this once, or anytime you need to refresh the database.
 
 * Express running on Node
 * [Nunjucks](https://mozilla.github.io/nunjucks) templates
-* Interacts with database by submitting GraphQL queries on the server. This reflects a personal preference for writing GraphQL instead of SQL. 
+* Server uses graphQL internally (this reflects a personal preference for writing GraphQL instead of SQL). There is no production endpoint (at this time) for handling data queries (e.g. HTML + API style of client)
 
 ### Philosophy
 

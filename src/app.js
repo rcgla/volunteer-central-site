@@ -17,9 +17,9 @@ import { options as postgraphileOptions } from './database/postgraphileOptions.j
 import * as middleware from './middleware.js';
 import { router as loginRouter } from './routes/login.js';
 import { router as logoutRouter } from './routes/logout.js';
-import { router as userRouter } from './routes/users.js';
-import { router as userGroupRouter } from './routes/user-groups.js';
-
+import { router as usersRouter } from './routes/users.js';
+import { router as userGroupsRouter } from './routes/user-groups.js';
+import { router as eventsRouter } from './routes/events.js';
 
 async function initExpressApp() {
     const app = express();    
@@ -50,17 +50,10 @@ async function initExpressApp() {
     app.get('/forgot-password', (req, res) => res.render('forgot-password.njk'));
     app.use('/login', loginRouter);
     app.use('/logout', logoutRouter);
-    app.use('/users', userRouter);
-    app.use('/user-groups', userGroupRouter);
-
+    app.use('/events', eventsRouter);
+    app.use('/users', usersRouter);
+    app.use('/user-groups', userGroupsRouter);
     
-    // app.use('/', publicRoutes);
-    // app.use('/user', middleware.isAuthenticated, userRoutes);
-    // app.use('/admin', middleware.isAuthenticated, middleware.isAdmin, adminRoutes);
-    // app.use('/forms', apiLimiter, publicFormRoutes);
-    // app.use('/user/forms', middleware.isAuthenticated, userFormRoutes);
-    // app.use('/admin/forms', middleware.isAuthenticated, middleware.isAdmin, adminFormRoutes);
-
     // for testing only!!  creates /graphql endpoint
     // it's way easier to test queries this way, via an external tool like graphiql
     if (process.env.NODE_ENV != 'production') {    

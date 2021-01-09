@@ -1,0 +1,14 @@
+{%- extends 'base/base.njk' -%}
+{%- set title = "All users" -%}
+{%- block content -%}
+
+<main>
+    <h2>User groups</h2>
+    <ul>
+        {%- for userGroup in userGroups -%}
+        <li><a href="/user-groups/{{userGroup.id}}">{{userGroup.name}}</a></li>
+        {%- endfor -%}
+    </ul>
+</main>
+
+{%- endblock -%}

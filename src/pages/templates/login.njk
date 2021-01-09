@@ -1,0 +1,24 @@
+{%- extends 'base/base.njk' -%}
+{%- set title="Login" -%}
+{%- block content -%}
+
+<main>
+    <form method="POST" action="/login">
+            <div>
+                <label for="username">Username</label>
+                <input name="username" required/>
+            </div>
+                    
+            <div>
+                <label for="password">Password</label>
+                <input type="password" name="password" required/>
+            </div>
+
+            <div class="actions">
+                <input type="submit" name="submit" value="Login" />
+                <a href="/forgot-password">Forgot password?</a>
+            </div>
+    </form>
+</main>
+
+{%- endblock -%}

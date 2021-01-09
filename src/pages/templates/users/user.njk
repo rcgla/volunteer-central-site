@@ -1,0 +1,41 @@
+{%- extends 'base/base.njk' -%}
+{%- set title = "User profile" -%}
+{%- block content -%}
+
+<main>
+    <h2>User profile</h2>
+    <ul>
+        <li>Name: {{ user.name }}</li>
+        <li>Email: {{ user.usersPrivateInfo.email }}</li>
+        <li>Phone: {{ user.usersPrivateInfo.phone }} </li>
+        <li>Address: {{ user.usersPrivateInfo.address }}</li>
+        <li>Bio: {{ user.usersPrivateInfo.bio }}</li>
+        <li>Meal pref: {{ user.usersProtectedInfo.mealPref }}</li>
+        <li>T-shirt size: {{ user.usersProtectedInfo.tShirtSize.name }}</li>
+        <li>Food allergies: 
+            {%- if user.usersProtectedInfo.foodAllergies -%}
+                {{ user.usersProtectedInfo.foodAllergies }}
+            {%- else -%}
+                None listed
+            {%- endif -%}
+        </li>
+        <li>Medical: 
+            {%- if user.usersProtectedInfo.medical -%}
+                {{ user.usersProtectedInfo.medical }}
+            {%- else -%}
+                None listed
+            {%- endif -%}
+        </li>
+        <li>Emergency contacts: 
+            {%- if user.emergencyContacts -%}
+            <ul>
+                {%- for emergencyContact in user.emergencyContacts -%}
+                <li>{{ emergencyContact.name }} ({{ emergencyContact.relation }}), {{ emergencyContact.phone}}</li>
+                {%- endfor -%}
+            </ul>
+            {%- endif -%}
+        </li>
+    </ul>
+</main>
+
+{%- endblock -%}

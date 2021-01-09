@@ -38,3 +38,11 @@ export { BASIC_FIELDS, FIELDS };
     
 export const {CREATE, DELETE, UPDATE, GET, GET_ALL} 
     = generate("user", "users", FIELDS);
+
+export const GET_ALL_SORTED = () => `
+query {
+    users(orderBy: NAME_ASC) {
+        ${FIELDS()}
+    }
+}
+`;

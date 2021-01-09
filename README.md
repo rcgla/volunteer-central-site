@@ -40,96 +40,73 @@ You only have to do this once, or anytime you need to refresh the database.
 
 ### Routes
 
-`/`
+In the routes below, the version of the page that a user gets and also sometimes access to the route at all depends on their access level (ADMIN, STAFF, CLIENT)
+
+* `/`
     home
-
-`/login`
+* `/login`
     login form
+* `/logout`
+    logout
 
-`/users/:ID/`
+#### Users
+* `/users/dashboard/`
+    user dashboard
+* `/users/`
+    all the users ever
+* `/users/:ID/`
     profile
+* `/users/new`
+    add a new person
+* `/users/:ID/edit`
+    edit person details
+* `/users/:ID/delete`
+    confirm delete a participant
+* `/users/role/:ROLEID`
+    all the users ever, with the given role
 
-`/users/:ID/events/`
-    camp events you're participating in
-
-`/users/:ID/events/:ID/`
-    event details
-
-`/users/:ID/events/:ID/schedule`
-    event schedule
-    your events are highlighted (e.g. giving a workshop, teaching a class)
-
-`/users/:ID/events/:ID/schedule/:ID`
-    schedule entry details
-
-`/users/:ID/events/:ID/groups`
-    your groups (bands, crews, huddles)
-
-`/admin/events/`
+#### Events
+* `/events`
     all events
-
-`/admin/events/:ID`
-    event details
-
-`/admin/events/new`
+* `/events/new`
     add a new event
-
-`/admin/events/:ID/delete`
+* `/events/:ID`
+    event details
+* `/events/:ID/delete`
     confirm delete an event
 
-`/admin/events/:ID/schedule`
-    event schedule
+Subtopics within events, e.g. 
+* `/events/:ID/users`
+* `/events/:ID/schedule` (activities)
 
-`/admin/events/:ID/schedule/:ID`
-    schedule entry details
+#### Activities
 
-`/admin/events/:ID/participants`
-    participants (e.g. vols and campers) for an event
+Following the same pattern as above
 
-`/admin/events/:ID/participants/volunteers`
-    volunteers for an event
+* `/activities`
+* `/activities/:ID`
+* `/activities/new`
+* `/activities/:ID/delete`
 
-`/admin/events/:ID/participants/campers`
-    campers for an event
 
-`/admin/events/:ID/tracks`
-    tracks in an event
+#### Tracks
+* `/tracks`
+* `/tracks/:ID`
+* `/tracks/new`
+* `/tracks/:ID/delete`
 
-`/admin/events/:ID/tracks/:ID`
-    track details
 
-`/admin/events/:ID/tracks/:ID/groups`
-    groups for an event track
+#### User groups
 
-`/admin/groups/:ID`
-    group details
+* `/user-groups`
+* `/user-groups/:ID`
+* `/user-groups/new`
+* `/user-groups/:ID/delete`
 
-`/admin/participants/`
-    all the participants ever
+#### Settings
 
-`/admin/participants/:ID`
-    volunteer details
-
-`/admin/participants/campers`
-    all the campers ever
-
-`/admin/participants/volunteers`
-    all the volunteers ever
-
-`/admin/participants/new`
-    add a new person
-
-`/admin/participants/:ID/edit`
-    edit person details
-
-`/admin/participants/:ID/delete`
-    confirm delete a participant
-
-`/admin/events/:ID/schedule/new`
-    new schedule entry
-
-`/admin/events/:ID/schedule/:ID/delete`
-    confirm delete schedule entry
+* `/settings`
+    Edit enums (User Group Types, Track Types, Roles, etc)
 
 ## Featureset 
 
@@ -145,9 +122,9 @@ You only have to do this once, or anytime you need to refresh the database.
 * Band formation tool: based on a set of rules, create bands. Allow adjusting and regenerating.
 * Visualize camp schedule: who goes where when. Possibly superimposed on a map of camp.
 * Carpooler: Who can carpool based on address.
-* Switch logins quickly: maybe work with cookies and swap out the token behind the scenes
+* Switch logins quickly: For parents with multiple campers enrolled. maybe work with cookies and swap out the token behind the scenes
 
-### Caveats
+### Caveats and other thoughts
 
 #### UI for scheduling
 Editing for repeating events can be for:
@@ -171,13 +148,20 @@ E.g., an event that is client-visible, such as camp week, has a start date and t
 * Activities should inherit the usertype visibility of their parent event, and are also able to narrow it down further via applying a different usertype that has a narrower scope than the event setting.
 * In addition to usertype visibility, activities may be restricted in visibility to only the roles and user groups participating in that activity. 
 
-TODO 
-* user groups may participate in activities, e.g. band practice with "band #2"
-* roles may participate in activities, e.g. front desk checkin with "Front desk support". It's complicated (see events.json 'roles' property).
-* restrictVisibility option 
-
 #### Photos
 
 Photos are organized by user and event; a standalone user does not have a photo, but when they are placed in an event, they can have a photo.
 
 UI idea: import user's most recent photo to new event placements
+
+## TODO
+
+### Activities + role, activities + user groups
+* user groups may participate in activities, e.g. band practice with "band #2"
+* roles may participate in activities, e.g. front desk checkin with "Front desk support". It's complicated (see events.json 'roles' property for a sketch of what we need to store in DB).
+* restrictVisibility option 
+
+### Document templates
+
+* See `volunteer-central-db/initial-schema/tables/TODO` for an outline of the document template system.
+* This will be used for creating application, waiver, and other user form data storage.

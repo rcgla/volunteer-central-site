@@ -7,10 +7,18 @@ function parseToken (token) {
     try {
         const decoded = jwt.verify(token, process.env.JWT_SECRET);
         if (decoded && decoded.expires > Date.now().valueOf() / 1000) {
+            let accessLevel = 'public';
+            if (decoded.role == 'rcglavc_admin_role') {
+                accessLevel = 'admin';
+            }
+            else if (decoded.role == 'rcglavc_staff_role') {
+                accessLevel = 'staff';
+            }
+            else if (decoded.role == 'rcglavc_client_role') {
+                accessLevel = 'client';
+            }
             return {
-                accessLevel: decoded.role === 'rcglavc_user_role' ? 'user' 
-                : 
-                decoded.role === 'rcglavc_admin_role' ? 'admin' : 'public',
+                accessLevel,
                 userId: decoded.user_id,
                 expires: decoded.expires
             }

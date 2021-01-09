@@ -1,18 +1,11 @@
-{%- extends 'base/htmleton.html' -%}
+{%- extends 'base/htmleton.njk' -%}
 {%- block head -%}
 <title>Volunteer Central{%- if title -%}: {{ title }}{%- endif -%}</title>
 {%- endblock -%}
 {%- block body -%}
 
-<header {%if landing %}class="landing" {% endif %}>
-    {%- if landing -%} 
-    <div class="hero">
-        <h1 class="title">Volunteer Central</h1>
-    </div>
-    {%- endif -%}
-    {%- if not landing -%}
-    <h1 class="title"><a href="/">Volunteer Central</a></h1>
-    {%- endif -%}
+<header>
+    <h1><a href="/">Volunteer Central</a></h1>
     
     <nav aria-label="Top-level navigation">
         <ul>
@@ -20,12 +13,11 @@
             <li><a href='/login'>Login</a></li>
         {%- else -%}
             {%- if accessLevel == 'admin' -%}
-            <li><a href="/admin">Admin</a></li>
+            {# save room for special top-level nav admin links #}
             {%- endif -%}
-            <li><a href='/user/dashboard'>Dashboard</a></li>
-            <li><a href='/user/profile'>Profile</a></li>
+            <li><a href='/users/dashboard'>Dashboard</a></li>
             <li>
-                <form method="POST" action="/forms/logout">
+                <form method="POST" action="/logout">
                     <input type="submit" name="submit" value="Logout"/>
                 </form>
             </li>
@@ -34,12 +26,8 @@
     </nav>
     
 </header>
-<main>
-    
-
-    {%- block content -%}
-    {%- endblock -%}
-</main>
+{%- block content -%}
+{%- endblock -%}
 <footer>
 <span>© 2020 <a href="http://werock.la">Rock n' Roll Camp for Girls Los Angeles</a></span>
 </footer>

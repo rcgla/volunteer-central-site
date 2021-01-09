@@ -1,0 +1,31 @@
+{%- extends 'base/base.njk' -%}
+{%- set title = "Dashboard" -%}
+{%- block content -%}
+
+<main>
+    <h2>Dashboard</h2>
+    <pre>
+        IDEAS:
+
+        Show welcome message
+
+        Show user's upcoming session schedule(s)
+
+        Show any actions required (e.g. "confirm your participation")
+    </pre>
+    <ul>
+        <li><a href="/users/{{user.id}}">My profile</a></li>
+    </ul>
+
+    {% if accessLevel == 'admin' -%}
+    <h3>Admin</h3>
+    <pre>Administrative links can go here</pre>
+    <ul>
+        <li><a href="/users">All users</a></li>
+        <li><a href="/user-groups">All user groups</a></li>
+    </ul>
+    {%- endif -%}
+
+</main>
+
+{%- endblock -%}

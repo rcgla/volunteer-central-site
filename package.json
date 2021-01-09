@@ -13,7 +13,7 @@
   },
   "scripts": {
     "start": "node src/start.js",
-    "dev": "nodemon src/start.js --exec \"node --require dotenv/config\"",
+    "dev": "nodemon -e js,html,njk,css src/start.js --exec \"node --require dotenv/config\"",
     "load-test-data": "node --require dotenv/config other-test-scripts/load-test-data.js dotenv_config_path=./test/.env",
     "test": "mocha --env dotenv_config_path=test/.env --require dotenv/config test/*js ",
     "gendata": "node other-test-scripts/gendata/index.js"

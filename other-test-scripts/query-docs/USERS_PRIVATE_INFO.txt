@@ -1,0 +1,28 @@
+USERS_PRIVATE_INFO
+----------
+GET:
+query($id: Int!) {
+	usersPrivateInfo (id: $id) {
+		id
+		phone
+		address
+		bio
+		email
+
+	}
+}
+
+GET_ALL:
+query {
+	usersPrivateInfos {
+		id
+		phone
+		address
+		bio
+		email
+
+	}
+}
+
+
+

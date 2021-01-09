@@ -1,0 +1,22 @@
+USER_GROUP_TYPES
+----------
+GET:
+query($id: Int!) {
+	userGroupType (id: $id) {
+		id
+		name
+
+	}
+}
+
+GET_ALL:
+query {
+	userGroupTypes {
+		id
+		name
+
+	}
+}
+
+
+

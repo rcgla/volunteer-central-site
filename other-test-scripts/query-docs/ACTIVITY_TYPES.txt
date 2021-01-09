@@ -1,0 +1,22 @@
+ACTIVITY_TYPES
+----------
+GET:
+query($id: Int!) {
+	activityType (id: $id) {
+		id
+		name
+
+	}
+}
+
+GET_ALL:
+query {
+	activityTypes {
+		id
+		name
+
+	}
+}
+
+
+

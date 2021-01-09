@@ -1,0 +1,36 @@
+USERS_PROTECTED_INFO
+----------
+GET:
+query($id: Int!) {
+	usersProtectedInfo (id: $id) {
+		id
+		foodAllergies
+		medical
+		tShirtSize {
+			id
+			name
+			order
+		}
+		mealPref
+
+	}
+}
+
+GET_ALL:
+query {
+	usersProtectedInfos {
+		id
+		foodAllergies
+		medical
+		tShirtSize {
+			id
+			name
+			order
+		}
+		mealPref
+
+	}
+}
+
+
+

@@ -1,0 +1,24 @@
+ACTIVITIES_ROOMS
+----------
+GET:
+query($id: Int!) {
+	activitiesRoom (id: $id) {
+		id
+		activityId
+		roomId
+
+	}
+}
+
+GET_ALL:
+query {
+	activitiesRooms {
+		id
+		activityId
+		roomId
+
+	}
+}
+
+
+

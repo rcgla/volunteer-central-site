@@ -1,0 +1,24 @@
+EVENTS_LOCATIONS
+----------
+GET:
+query($id: Int!) {
+	eventsLocation (id: $id) {
+		id
+		eventId
+		locationId
+
+	}
+}
+
+GET_ALL:
+query {
+	eventsLocations {
+		id
+		eventId
+		locationId
+
+	}
+}
+
+
+

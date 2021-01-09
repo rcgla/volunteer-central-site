@@ -1,0 +1,22 @@
+EVENT_TYPES
+----------
+GET:
+query($id: Int!) {
+	eventType (id: $id) {
+		id
+		name
+
+	}
+}
+
+GET_ALL:
+query {
+	eventTypes {
+		id
+		name
+
+	}
+}
+
+
+

@@ -1,0 +1,22 @@
+ROLES
+----------
+GET:
+query($id: Int!) {
+	role (id: $id) {
+		id
+		name
+
+	}
+}
+
+GET_ALL:
+query {
+	roles {
+		id
+		name
+
+	}
+}
+
+
+

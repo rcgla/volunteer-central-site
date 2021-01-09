@@ -1,0 +1,26 @@
+LOGINS
+----------
+GET:
+query($id: Int!) {
+	login (id: $id) {
+		id
+		username
+		lastSeen
+		active
+
+	}
+}
+
+GET_ALL:
+query {
+	logins {
+		id
+		username
+		lastSeen
+		active
+
+	}
+}
+
+
+

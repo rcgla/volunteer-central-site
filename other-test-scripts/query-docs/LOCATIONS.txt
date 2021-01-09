@@ -1,0 +1,44 @@
+LOCATIONS
+----------
+GET:
+query($id: Int!) {
+	location (id: $id) {
+		id
+		name
+		description
+		address
+		notes
+
+		rooms {
+			id
+			name
+			description
+			notes
+
+		}
+
+	}
+}
+
+GET_ALL:
+query {
+	locations {
+		id
+		name
+		description
+		address
+		notes
+
+		rooms {
+			id
+			name
+			description
+			notes
+
+		}
+
+	}
+}
+
+
+

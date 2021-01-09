@@ -1,0 +1,928 @@
+USERS_USER_GROUPS
+----------
+GET:
+query($id: Int!) {
+	usersUserGroup (id: $id) {
+		id
+		user {
+			id
+			name
+			userType
+
+			login {
+				id
+				username
+				lastSeen
+				active
+
+			}
+			usersPrivateInfo {
+				id
+				phone
+				address
+				bio
+				email
+
+			}
+			usersProtectedInfo {
+				id
+				foodAllergies
+				medical
+				tShirtSize {
+					id
+					name
+					order
+				}
+				mealPref
+
+			}
+			emergencyContacts {
+				id
+				name
+				phone
+				relation
+
+			}
+			placements {
+				id
+				confirmed
+				dropped
+
+				event {
+					id
+					name
+					description
+					start
+					end
+					visibility
+
+				}
+				role {
+					id
+					name
+
+				}
+
+			}
+			userGroups {
+				id
+				name
+				event {
+					id
+					name
+					description
+					start
+					end
+					visibility
+
+					eventType {
+						id
+						name
+
+					}
+					tracks {
+						id
+						name
+						description
+						start
+						end
+
+						trackType {
+							id
+							name
+
+						}
+						event {
+							id
+							name
+							description
+							start
+							end
+							visibility
+
+						}
+
+					}
+					activities {
+						id
+						name
+						description
+						notes
+						start
+						end
+						repeat
+						visibility
+						restrictVisibility
+						event {
+							id
+							name
+							description
+							start
+							end
+							visibility
+
+						}
+						activityType {
+							id
+							name
+
+						}
+						location {
+							id
+							name
+							description
+							address
+							notes
+
+							rooms {
+								id
+								name
+								description
+								notes
+
+							}
+
+						}
+						track {
+							id
+							name
+							description
+							start
+							end
+
+							trackType {
+								id
+								name
+
+							}
+							event {
+								id
+								name
+								description
+								start
+								end
+								visibility
+
+							}
+
+						}
+						rooms {
+							id
+							name
+							description
+							notes
+
+							location {
+								id
+								name
+								description
+								address
+								notes
+
+							}
+
+						}
+
+					}
+					locations {
+						id
+						name
+						description
+						address
+						notes
+
+						rooms {
+							id
+							name
+							description
+							notes
+
+						}
+
+					}
+					placements {
+						id
+						confirmed
+						dropped
+
+						event {
+							id
+							name
+							description
+							start
+							end
+							visibility
+
+						}
+						role {
+							id
+							name
+
+						}
+
+						user {
+							id
+							name
+							userType
+
+						}
+
+					}
+
+				}
+				track {
+					id
+					name
+					description
+					start
+					end
+
+					trackType {
+						id
+						name
+
+					}
+					event {
+						id
+						name
+						description
+						start
+						end
+						visibility
+
+					}
+
+				}
+				userGroupType {
+					id
+					name
+
+				}
+
+			}
+
+		}
+		userGroup {
+			id
+			name
+			event {
+				id
+				name
+				description
+				start
+				end
+				visibility
+
+				eventType {
+					id
+					name
+
+				}
+				tracks {
+					id
+					name
+					description
+					start
+					end
+
+					trackType {
+						id
+						name
+
+					}
+					event {
+						id
+						name
+						description
+						start
+						end
+						visibility
+
+					}
+
+				}
+				activities {
+					id
+					name
+					description
+					notes
+					start
+					end
+					repeat
+					visibility
+					restrictVisibility
+					event {
+						id
+						name
+						description
+						start
+						end
+						visibility
+
+					}
+					activityType {
+						id
+						name
+
+					}
+					location {
+						id
+						name
+						description
+						address
+						notes
+
+						rooms {
+							id
+							name
+							description
+							notes
+
+						}
+
+					}
+					track {
+						id
+						name
+						description
+						start
+						end
+
+						trackType {
+							id
+							name
+
+						}
+						event {
+							id
+							name
+							description
+							start
+							end
+							visibility
+
+						}
+
+					}
+					rooms {
+						id
+						name
+						description
+						notes
+
+						location {
+							id
+							name
+							description
+							address
+							notes
+
+						}
+
+					}
+
+				}
+				locations {
+					id
+					name
+					description
+					address
+					notes
+
+					rooms {
+						id
+						name
+						description
+						notes
+
+					}
+
+				}
+				placements {
+					id
+					confirmed
+					dropped
+
+					event {
+						id
+						name
+						description
+						start
+						end
+						visibility
+
+					}
+					role {
+						id
+						name
+
+					}
+
+					user {
+						id
+						name
+						userType
+
+					}
+
+				}
+
+			}
+			track {
+				id
+				name
+				description
+				start
+				end
+
+				trackType {
+					id
+					name
+
+				}
+				event {
+					id
+					name
+					description
+					start
+					end
+					visibility
+
+				}
+
+			}
+			userGroupType {
+				id
+				name
+
+			}
+
+		}
+
+	}
+}
+
+GET_ALL:
+query {
+	usersUserGroups {
+		id
+		user {
+			id
+			name
+			userType
+
+			login {
+				id
+				username
+				lastSeen
+				active
+
+			}
+			usersPrivateInfo {
+				id
+				phone
+				address
+				bio
+				email
+
+			}
+			usersProtectedInfo {
+				id
+				foodAllergies
+				medical
+				tShirtSize {
+					id
+					name
+					order
+				}
+				mealPref
+
+			}
+			emergencyContacts {
+				id
+				name
+				phone
+				relation
+
+			}
+			placements {
+				id
+				confirmed
+				dropped
+
+				event {
+					id
+					name
+					description
+					start
+					end
+					visibility
+
+				}
+				role {
+					id
+					name
+
+				}
+
+			}
+			userGroups {
+				id
+				name
+				event {
+					id
+					name
+					description
+					start
+					end
+					visibility
+
+					eventType {
+						id
+						name
+
+					}
+					tracks {
+						id
+						name
+						description
+						start
+						end
+
+						trackType {
+							id
+							name
+
+						}
+						event {
+							id
+							name
+							description
+							start
+							end
+							visibility
+
+						}
+
+					}
+					activities {
+						id
+						name
+						description
+						notes
+						start
+						end
+						repeat
+						visibility
+						restrictVisibility
+						event {
+							id
+							name
+							description
+							start
+							end
+							visibility
+
+						}
+						activityType {
+							id
+							name
+
+						}
+						location {
+							id
+							name
+							description
+							address
+							notes
+
+							rooms {
+								id
+								name
+								description
+								notes
+
+							}
+
+						}
+						track {
+							id
+							name
+							description
+							start
+							end
+
+							trackType {
+								id
+								name
+
+							}
+							event {
+								id
+								name
+								description
+								start
+								end
+								visibility
+
+							}
+
+						}
+						rooms {
+							id
+							name
+							description
+							notes
+
+							location {
+								id
+								name
+								description
+								address
+								notes
+
+							}
+
+						}
+
+					}
+					locations {
+						id
+						name
+						description
+						address
+						notes
+
+						rooms {
+							id
+							name
+							description
+							notes
+
+						}
+
+					}
+					placements {
+						id
+						confirmed
+						dropped
+
+						event {
+							id
+							name
+							description
+							start
+							end
+							visibility
+
+						}
+						role {
+							id
+							name
+
+						}
+
+						user {
+							id
+							name
+							userType
+
+						}
+
+					}
+
+				}
+				track {
+					id
+					name
+					description
+					start
+					end
+
+					trackType {
+						id
+						name
+
+					}
+					event {
+						id
+						name
+						description
+						start
+						end
+						visibility
+
+					}
+
+				}
+				userGroupType {
+					id
+					name
+
+				}
+
+			}
+
+		}
+		userGroup {
+			id
+			name
+			event {
+				id
+				name
+				description
+				start
+				end
+				visibility
+
+				eventType {
+					id
+					name
+
+				}
+				tracks {
+					id
+					name
+					description
+					start
+					end
+
+					trackType {
+						id
+						name
+
+					}
+					event {
+						id
+						name
+						description
+						start
+						end
+						visibility
+
+					}
+
+				}
+				activities {
+					id
+					name
+					description
+					notes
+					start
+					end
+					repeat
+					visibility
+					restrictVisibility
+					event {
+						id
+						name
+						description
+						start
+						end
+						visibility
+
+					}
+					activityType {
+						id
+						name
+
+					}
+					location {
+						id
+						name
+						description
+						address
+						notes
+
+						rooms {
+							id
+							name
+							description
+							notes
+
+						}
+
+					}
+					track {
+						id
+						name
+						description
+						start
+						end
+
+						trackType {
+							id
+							name
+
+						}
+						event {
+							id
+							name
+							description
+							start
+							end
+							visibility
+
+						}
+
+					}
+					rooms {
+						id
+						name
+						description
+						notes
+
+						location {
+							id
+							name
+							description
+							address
+							notes
+
+						}
+
+					}
+
+				}
+				locations {
+					id
+					name
+					description
+					address
+					notes
+
+					rooms {
+						id
+						name
+						description
+						notes
+
+					}
+
+				}
+				placements {
+					id
+					confirmed
+					dropped
+
+					event {
+						id
+						name
+						description
+						start
+						end
+						visibility
+
+					}
+					role {
+						id
+						name
+
+					}
+
+					user {
+						id
+						name
+						userType
+
+					}
+
+				}
+
+			}
+			track {
+				id
+				name
+				description
+				start
+				end
+
+				trackType {
+					id
+					name
+
+				}
+				event {
+					id
+					name
+					description
+					start
+					end
+					visibility
+
+				}
+
+			}
+			userGroupType {
+				id
+				name
+
+			}
+
+		}
+
+	}
+}
+
+
+

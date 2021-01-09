@@ -1,0 +1,338 @@
+EVENTS
+----------
+GET:
+query($id: Int!) {
+	event (id: $id) {
+		id
+		name
+		description
+		start
+		end
+		visibility
+
+		eventType {
+			id
+			name
+
+		}
+		tracks {
+			id
+			name
+			description
+			start
+			end
+
+			trackType {
+				id
+				name
+
+			}
+			event {
+				id
+				name
+				description
+				start
+				end
+				visibility
+
+			}
+
+		}
+		activities {
+			id
+			name
+			description
+			notes
+			start
+			end
+			repeat
+			visibility
+			restrictVisibility
+			event {
+				id
+				name
+				description
+				start
+				end
+				visibility
+
+			}
+			activityType {
+				id
+				name
+
+			}
+			location {
+				id
+				name
+				description
+				address
+				notes
+
+				rooms {
+					id
+					name
+					description
+					notes
+
+				}
+
+			}
+			track {
+				id
+				name
+				description
+				start
+				end
+
+				trackType {
+					id
+					name
+
+				}
+				event {
+					id
+					name
+					description
+					start
+					end
+					visibility
+
+				}
+
+			}
+			rooms {
+				id
+				name
+				description
+				notes
+
+				location {
+					id
+					name
+					description
+					address
+					notes
+
+				}
+
+			}
+
+		}
+		locations {
+			id
+			name
+			description
+			address
+			notes
+
+			rooms {
+				id
+				name
+				description
+				notes
+
+			}
+
+		}
+		placements {
+			id
+			confirmed
+			dropped
+
+			event {
+				id
+				name
+				description
+				start
+				end
+				visibility
+
+			}
+			role {
+				id
+				name
+
+			}
+
+			user {
+				id
+				name
+				userType
+
+			}
+
+		}
+
+	}
+}
+
+GET_ALL:
+query {
+	events {
+		id
+		name
+		description
+		start
+		end
+		visibility
+
+		eventType {
+			id
+			name
+
+		}
+		tracks {
+			id
+			name
+			description
+			start
+			end
+
+			trackType {
+				id
+				name
+
+			}
+			event {
+				id
+				name
+				description
+				start
+				end
+				visibility
+
+			}
+
+		}
+		activities {
+			id
+			name
+			description
+			notes
+			start
+			end
+			repeat
+			visibility
+			restrictVisibility
+			event {
+				id
+				name
+				description
+				start
+				end
+				visibility
+
+			}
+			activityType {
+				id
+				name
+
+			}
+			location {
+				id
+				name
+				description
+				address
+				notes
+
+				rooms {
+					id
+					name
+					description
+					notes
+
+				}
+
+			}
+			track {
+				id
+				name
+				description
+				start
+				end
+
+				trackType {
+					id
+					name
+
+				}
+				event {
+					id
+					name
+					description
+					start
+					end
+					visibility
+
+				}
+
+			}
+			rooms {
+				id
+				name
+				description
+				notes
+
+				location {
+					id
+					name
+					description
+					address
+					notes
+
+				}
+
+			}
+
+		}
+		locations {
+			id
+			name
+			description
+			address
+			notes
+
+			rooms {
+				id
+				name
+				description
+				notes
+
+			}
+
+		}
+		placements {
+			id
+			confirmed
+			dropped
+
+			event {
+				id
+				name
+				description
+				start
+				end
+				visibility
+
+			}
+			role {
+				id
+				name
+
+			}
+
+			user {
+				id
+				name
+				userType
+
+			}
+
+		}
+
+	}
+}
+
+
+

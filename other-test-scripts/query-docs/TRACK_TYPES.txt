@@ -1,0 +1,22 @@
+TRACK_TYPES
+----------
+GET:
+query($id: Int!) {
+	trackType (id: $id) {
+		id
+		name
+
+	}
+}
+
+GET_ALL:
+query {
+	trackTypes {
+		id
+		name
+
+	}
+}
+
+
+

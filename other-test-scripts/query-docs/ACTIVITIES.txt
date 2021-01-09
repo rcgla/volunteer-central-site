@@ -1,0 +1,174 @@
+ACTIVITIES
+----------
+GET:
+query($id: Int!) {
+	activity (id: $id) {
+		id
+		name
+		description
+		notes
+		start
+		end
+		repeat
+		visibility
+		restrictVisibility
+		event {
+			id
+			name
+			description
+			start
+			end
+			visibility
+
+		}
+		activityType {
+			id
+			name
+
+		}
+		location {
+			id
+			name
+			description
+			address
+			notes
+
+			rooms {
+				id
+				name
+				description
+				notes
+
+			}
+
+		}
+		track {
+			id
+			name
+			description
+			start
+			end
+
+			trackType {
+				id
+				name
+
+			}
+			event {
+				id
+				name
+				description
+				start
+				end
+				visibility
+
+			}
+
+		}
+		rooms {
+			id
+			name
+			description
+			notes
+
+			location {
+				id
+				name
+				description
+				address
+				notes
+
+			}
+
+		}
+
+	}
+}
+
+GET_ALL:
+query {
+	activities {
+		id
+		name
+		description
+		notes
+		start
+		end
+		repeat
+		visibility
+		restrictVisibility
+		event {
+			id
+			name
+			description
+			start
+			end
+			visibility
+
+		}
+		activityType {
+			id
+			name
+
+		}
+		location {
+			id
+			name
+			description
+			address
+			notes
+
+			rooms {
+				id
+				name
+				description
+				notes
+
+			}
+
+		}
+		track {
+			id
+			name
+			description
+			start
+			end
+
+			trackType {
+				id
+				name
+
+			}
+			event {
+				id
+				name
+				description
+				start
+				end
+				visibility
+
+			}
+
+		}
+		rooms {
+			id
+			name
+			description
+			notes
+
+			location {
+				id
+				name
+				description
+				address
+				notes
+
+			}
+
+		}
+
+	}
+}
+
+
+

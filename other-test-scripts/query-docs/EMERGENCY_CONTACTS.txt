@@ -1,0 +1,26 @@
+EMERGENCY_CONTACTS
+----------
+GET:
+query($id: Int!) {
+	emergencyContact (id: $id) {
+		id
+		name
+		phone
+		relation
+
+	}
+}
+
+GET_ALL:
+query {
+	emergencyContacts {
+		id
+		name
+		phone
+		relation
+
+	}
+}
+
+
+

@@ -1,0 +1,34 @@
+TSHIRT_SIZES
+----------
+GET:
+query($id: Int!) {
+	tShirtSize (id: $id) {
+		id
+		name
+		order
+
+	}
+}
+
+GET_ALL:
+query {
+	tShirtSizes(orderBy: ORDER_ASC) {
+		id
+		name
+		order
+
+	}
+}
+
+GET_BY_SIZE:
+query {
+	tShirtSizes(condition: { name: "undefined"}) {
+		id
+		name
+		order
+
+	}
+}
+
+
+

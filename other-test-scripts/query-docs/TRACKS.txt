@@ -1,0 +1,58 @@
+TRACKS
+----------
+GET:
+query($id: Int!) {
+	track (id: $id) {
+		id
+		name
+		description
+		start
+		end
+
+		trackType {
+			id
+			name
+
+		}
+		event {
+			id
+			name
+			description
+			start
+			end
+			visibility
+
+		}
+
+	}
+}
+
+GET_ALL:
+query {
+	tracks {
+		id
+		name
+		description
+		start
+		end
+
+		trackType {
+			id
+			name
+
+		}
+		event {
+			id
+			name
+			description
+			start
+			end
+			visibility
+
+		}
+
+	}
+}
+
+
+

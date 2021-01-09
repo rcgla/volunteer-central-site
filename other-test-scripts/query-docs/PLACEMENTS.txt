@@ -1,0 +1,68 @@
+PLACEMENTS
+----------
+GET:
+query($id: Int!) {
+	placement (id: $id) {
+		id
+		confirmed
+		dropped
+
+		event {
+			id
+			name
+			description
+			start
+			end
+			visibility
+
+		}
+		role {
+			id
+			name
+
+		}
+
+		user {
+			id
+			name
+			userType
+
+		}
+
+	}
+}
+
+GET_ALL:
+query {
+	placements {
+		id
+		confirmed
+		dropped
+
+		event {
+			id
+			name
+			description
+			start
+			end
+			visibility
+
+		}
+		role {
+			id
+			name
+
+		}
+
+		user {
+			id
+			name
+			userType
+
+		}
+
+	}
+}
+
+
+

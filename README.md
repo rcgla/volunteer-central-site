@@ -10,6 +10,7 @@ Follow the instructions at [volunteer-central-db](https://github.com/rcgla/volun
 
 You only have to do this once, or anytime you need to refresh the database.
 
+1. Copy `example.env` to `.env` and to `/test/.env`
 1. From the `volunteer-central-site` directory: `npm run load-test-data`
 
 ## Starting the site

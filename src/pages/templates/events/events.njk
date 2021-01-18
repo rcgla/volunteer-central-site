@@ -1,1 +1,19 @@
-TODO
+{%- extends 'base/base.njk' -%}
+{%- set title = "All events" -%}
+{%- block content -%}
+
+<main>
+    <h2>Events</h2>
+    <pre>
+    Note: 
+    
+    This is a long alphabetical list of all events. 
+    </pre>
+    <ul>
+        {%- for event in events -%}
+        <li><a href="/events/{{event.id}}">{{event.name}}</a></li>
+        {%- endfor -%}
+    </ul>
+</main>
+
+{%- endblock -%}

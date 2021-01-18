@@ -1,1 +1,16 @@
-TODO
+{%- extends 'base/base.njk' -%}
+{%- set title = "Event profile" -%}
+{%- block content -%}
+
+<main>
+    <h2>Event profile</h2>
+    <ul>
+        <li>Name: {{ event.name }}</li>
+        <li>Event Type: {{ event.eventType.name }}</li>
+        <li>Description: {{ event.description }} </li>
+        <li>Start Date: {{ event.start }}</li>
+        <li>End Date: {{ event.end }}</li>
+    </ul>
+</main>
+
+{%- endblock -%}

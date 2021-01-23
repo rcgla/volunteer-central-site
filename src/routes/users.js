@@ -32,16 +32,30 @@ router.get('/dashboard',  middleware.isAuthenticated, async (req, res) => {
     return res.render('./users/dashboard.njk', { user });
 });
 
-// get user profile
-router.get('/:id',  middleware.isAuthenticated, async (req, res, next) => {
-    let jwt = req.cookies.jwt;
+// get form to create a new user
+router.get('/new',  middleware.isAuthenticated, middleware.isAdmin, async (req, res, next) => {
+    return res.render('./users/new-user.njk');
+});
+
+// handle form to create a new user
+router.post('/new',  middleware.isAuthenticated, middleware.isAdmin, async (req, res, next) => {
+    return next(new Error("TODO"));
+});
+
+// get form to confirm deleting a user
+router.get('/:id/delete',  middleware.isAuthenticated, middleware.isAdmin, async (req, res, next) => {
     let dbres = await db.query(Q.USERS.GET(), { id: parseInt(req.params.id) }, jwt);
     if (!dbres.success) {
         let err = new Error(dbres.errors.map(e => e.message).join(','));
-        next(err);
+        return next(err);
     }
     let user = dbres.data.user;
-    return res.render('./users/user.njk', { user });
+    return res.render('./users/confirm-delete-user.njk', { user });    
+});
+
+// handle form to confirm deleting a user
+router.post('/:id/delete',  middleware.isAuthenticated, middleware.isAdmin, async (req, res, next) => {
+    return next(new Error("TODO"));
 });
 
 // edit user profile
@@ -55,34 +69,20 @@ router.get('/:id/edit',  middleware.isAuthenticated, async (req, res, next) => {
     return res.render('./users/edit-user.njk', { user });    
 });
 
-// handle user profile edit form submission
-router.post('/:id',  middleware.isAuthenticated, async (req, res, next) => {
-    return next(new Error("TODO"));
-});
-
-// get form to create a new user
-router.get('/new',  middleware.isAuthenticated, middleware.isAdmin, async (req, res, next) => {
-    return res.render('./users/new-user.njk');
-});
-
-// handle form to create a new user
-router.post('/new',  middleware.isAuthenticated, middleware.isAdmin, async (req, res, next) => {
-    return next(new Error("TODO"));
-});
-
-// get form to confirm deleting a user
-router.get('/:ID/delete',  middleware.isAuthenticated, middleware.isAdmin, async (req, res, next) => {
+// get user profile
+router.get('/:id',  middleware.isAuthenticated, async (req, res, next) => {
+    let jwt = req.cookies.jwt;
     let dbres = await db.query(Q.USERS.GET(), { id: parseInt(req.params.id) }, jwt);
     if (!dbres.success) {
         let err = new Error(dbres.errors.map(e => e.message).join(','));
-        return next(err);
+        next(err);
     }
     let user = dbres.data.user;
-    return res.render('./users/confirm-delete-user.njk', { user });    
+    return res.render('./users/user.njk', { user });
 });
 
-// handle form to confirm deleting a user
-router.post('/:ID/delete',  middleware.isAuthenticated, middleware.isAdmin, async (req, res, next) => {
+// handle user profile edit form submission
+router.post('/:id',  middleware.isAuthenticated, async (req, res, next) => {
     return next(new Error("TODO"));
 });
 

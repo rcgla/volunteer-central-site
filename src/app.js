@@ -20,6 +20,7 @@ import { router as logoutRouter } from './routes/logout.js';
 import { router as usersRouter } from './routes/users.js';
 import { router as userGroupsRouter } from './routes/user-groups.js';
 import { router as eventsRouter } from './routes/events.js';
+import { router as activitiesRouter } from './routes/activities.js';
 
 async function initExpressApp() {
     const app = express();    
@@ -54,7 +55,7 @@ async function initExpressApp() {
     app.use('/events', eventsRouter);
     app.use('/users', usersRouter);
     app.use('/user-groups', userGroupsRouter);
-    
+    app.use('/activities', activitiesRouter);
     // for testing only!!  creates /graphql endpoint
     // it's way easier to test queries this way, via an external tool like graphiql
     if (process.env.NODE_ENV != 'production') {    

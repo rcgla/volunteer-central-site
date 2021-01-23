@@ -3,7 +3,7 @@ import * as db from '../database/index.js';
 import * as Q from '../queries/index.js';
 import * as middleware from '../middleware.js';
 
-const router = express.Router();
+const router = express.Router(); 
 
 // get all the events
 router.get('/',  middleware.isAuthenticated, middleware.isAdmin, async (req, res, next) => {
@@ -15,6 +15,15 @@ router.get('/',  middleware.isAuthenticated, middleware.isAdmin, async (req, res
     }
     let events = dbres.data.events;
     return res.render('./events/events.njk', { events });
+});
+// get form to create a new event
+router.get('/new',  middleware.isAuthenticated, middleware.isAdmin, async (req, res, next) => {
+    return res.render('./events/new-event.njk');
+});
+
+// handle form to create a new event
+router.post('/new',  middleware.isAuthenticated, middleware.isAdmin, async (req, res, next) => {
+    return next(new Error("TODO"));
 });
 
 // get event
@@ -40,23 +49,8 @@ router.get('/:id/edit',  middleware.isAuthenticated, async (req, res, next) => {
     return res.render('./events/edit-event.njk', { event });    
 });
 
-// handle event edit form submission
-router.post('/:id',  middleware.isAuthenticated, async (req, res, next) => {
-    return next(new Error("TODO"));
-});
-
-// get form to create a new event
-router.get('/new',  middleware.isAuthenticated, middleware.isAdmin, async (req, res, next) => {
-    return res.render('./events/new-event.njk');
-});
-
-// handle form to create a new event
-router.post('/new',  middleware.isAuthenticated, middleware.isAdmin, async (req, res, next) => {
-    return next(new Error("TODO"));
-});
-
 // get form to confirm deleting an event
-router.get('/:ID/delete',  middleware.isAuthenticated, middleware.isAdmin, async (req, res, next) => {
+router.get('/:id/delete',  middleware.isAuthenticated, middleware.isAdmin, async (req, res, next) => {
     let dbres = await db.query(Q.EVENTS.GET(), { id: parseInt(req.params.id) }, jwt);
     if (!dbres.success) {
         let err = new Error(dbres.errors.map(e => e.message).join(','));
@@ -67,9 +61,13 @@ router.get('/:ID/delete',  middleware.isAuthenticated, middleware.isAdmin, async
 });
 
 // handle form to confirm deleting an event
-router.post('/:ID/delete',  middleware.isAuthenticated, middleware.isAdmin, async (req, res, next) => {
+router.post('/:id/delete',  middleware.isAuthenticated, middleware.isAdmin, async (req, res, next) => {
     return next(new Error("TODO"));
 });
 
+// handle event edit form submission
+router.post('/:id',  middleware.isAuthenticated, async (req, res, next) => {
+    return next(new Error("TODO"));
+});
 
 export { router };

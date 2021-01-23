@@ -53,16 +53,4 @@ router.post('/',
     }
 );
 
-
-// submit logout
-router.post('/logout', apiLimiter, (req, res) => {
-    res
-        .status(200)
-        .clearCookie('jwt', {
-            path: '/'
-        })
-        .redirect('/');
-});
-
-
 export { router };

@@ -1,1 +1,15 @@
-TODO
+{%- extends 'base/base.njk' -%}
+{%- set title = "Create Event" -%}
+{%- block content -%}
+
+<main>
+    <h2>{{title}}</h2>
+        <form action="{{action}}" method="POST" class="simple">
+            <div>
+                <label for="name">Name</label>
+                <input type="text" label="Name" name="name" id="name" required>
+            </div>
+        </form>
+</main>
+
+{%- endblock -%}

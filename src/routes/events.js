@@ -62,22 +62,29 @@ async (req, res, next) => {
         return next(err);
     }
     let name = req.body.name;
-    let description = req.body.description ?? '';
+    let description = req.body.description;
     let start = req.body.start;
     let end = req.body.end;
     let visibility = req.body.visibility;
     let eventTypeId = parseInt(req.body.eventType);
     let jwt = req.cookies.jwt;
+    // required values
+    let input = {
+        name,
+        start,
+        end,
+        eventTypeId
+    };
+    // optional values
+    if (description) {
+        input.description = description;
+    }
+    if (visibility) {
+        input.visibility = visibility;
+    }
     let dbres = await db.query(Q.EVENTS.CREATE(),
         {
-            input: {
-                name, 
-                description,
-                start,
-                end,
-                visibility,
-                eventTypeId
-            }
+            input
         },
         jwt
     );

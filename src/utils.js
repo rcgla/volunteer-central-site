@@ -64,7 +64,22 @@ async function getUsersBySessionAndRoleGroup(sessionId, roleGroupName, jwt) {
     return {success: true, errors: [], users: usersInGroup};
 }
 
+// format message from an error object (which could have many different forms)
+function formatErrorMessage(error) {
+
+    // it's probably a validator message from the form validator
+    if (error.hasOwnProperty('msg') && error.hasOwnProperty("value")) {
+        return `${error.msg} "${error.value}" for parameter "${error.param}"`;
+    }
+    // it's probably a database error
+    // TODO check this more thoroughly
+    else {
+        return error.message;
+    }
+}
+
 export {
     parseToken,
-    getUsersBySessionAndRoleGroup
+    getUsersBySessionAndRoleGroup,
+    formatErrorMessage
 };

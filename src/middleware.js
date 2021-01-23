@@ -40,7 +40,11 @@ function error (err, req, res, next) {
     if (!err.statusCode) {
         err.statusCode = 500;
     }
-    res.status(err.statusCode).redirect(`/error?code=${err.statusCode}&error=${err.message}`);
+    let errorMessage = err.message;
+    if (err.errors) {
+        errorMessage = `${errorMessage}: ${err.errors.map(e => utils.formatErrorMessage(e)).join(', ')}`;
+    }
+    res.status(err.statusCode).redirect(`/error?code=${err.statusCode}&error=${errorMessage}`);
 }
 
 export {

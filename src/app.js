@@ -48,6 +48,7 @@ async function initExpressApp() {
 
     app.get('/', (req, res) => res.render('index.njk'));
     app.get('/forgot-password', (req, res) => res.render('forgot-password.njk'));
+    app.get('/error', (req, res) => res.render('error.njk'));
     app.use('/login', loginRouter);
     app.use('/logout', logoutRouter);
     app.use('/events', eventsRouter);

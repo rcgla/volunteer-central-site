@@ -38,11 +38,11 @@
         const params = new URLSearchParams(window.location.search);  
         let header = document.querySelector("header");
         if (params.has("error")) {
-            let elm = document.createElement("p");
+            /*let elm = document.createElement("p");
             elm.classList.add("alert");
             elm.textContent = params.get("error");
             elm.style.display = "block";
-            header.prepend(elm);
+            header.prepend(elm);*/
         }
         else if (params.has("message")) {
             let elm = document.createElement("p");

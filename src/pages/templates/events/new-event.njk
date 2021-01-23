@@ -3,12 +3,43 @@
 {%- block content -%}
 
 <main>
-    <h2>{{title}}</h2>
-        <form action="{{action}}" method="POST" class="simple">
+    <h2>Create event</h2>
+        <form action="/events/new" method="POST">
             <div>
                 <label for="name">Name</label>
-                <input type="text" label="Name" name="name" id="name" required>
+                <input type="text" name="name" id="name" required>
             </div>
+            <div>
+                <label for="description">Description</label>
+                <input type="text" name="description" id="description">
+            </div>
+            <!-- TODO include start and end times -->
+            <div>
+                <label for="start">Starts</label>
+                <input type="date" name="start" id="start">
+            </div>
+            <div>
+                <label for="end">Ends</label>
+                <input type="date" name="end" id="end">
+            </div>
+            <div>
+                <label for="eventType">Event Type</label>
+                <select name="eventType">
+                    {%- for eventType in eventTypes -%}
+                    <option value="{{eventType.id}}">{{eventType.name}}</option>
+                    {%- endfor -%}
+                </select>
+            </div>
+            <div>
+                <!-- TODO is 'visibility' the clearest word to use here? -->
+                <label for="visibility">Visibility</label>
+                <select name="visibility">
+                    <option value="CLIENT">Campers</option>
+                    <option value="STAFF">Volunteers</option>
+                    <option value="ADMIN">Admins</option>
+                </select>
+            </div>
+            <input type="submit" value="Save">
         </form>
 </main>
 

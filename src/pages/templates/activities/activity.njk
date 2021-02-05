@@ -1,0 +1,16 @@
+{%- extends 'base/base.njk' -%}
+{%- set title = "Activity profile" -%}
+{%- block content -%}
+
+<main>
+    <h2>Activity profile</h2>
+    <ul>
+        <li>Name: {{ activity.name }}</li>
+        <li>Activity Type: {{ activity.activityType.name }}</li>
+        <li>Description: {{ activity.description }} </li>
+        <li>Start Date: {{ activity.start }}</li>
+        <li>End Date: {{ activity.end }}</li>
+    </ul>
+</main>
+
+{%- endblock -%}

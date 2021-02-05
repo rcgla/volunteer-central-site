@@ -1,0 +1,19 @@
+{%- extends 'base/base.njk' -%}
+{%- set title = "All activities" -%}
+{%- block content -%}
+
+<main>
+    <h2>Activities</h2>
+    <pre>
+    Note: 
+    
+    This is a long alphabetical list of all activities. 
+    </pre>
+    <ul>
+        {%- for activity in activities -%}
+        <li><a href="/activities/{{activity.id}}">{{activity.name}}</a></li>
+        {%- endfor -%}
+    </ul>
+</main>
+
+{%- endblock -%}

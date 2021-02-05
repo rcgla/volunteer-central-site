@@ -1,0 +1,58 @@
+{%- extends 'base/base.njk' -%}
+{%- set title = "Create Activity" -%}
+{%- block content -%}
+
+<main>
+    <h2>Create Activity</h2>
+        <form action="/events/new" method="POST">
+            <div>
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name" required>
+            </div>
+            <div>
+                <label for="description">Description</label>
+                <input type="text" name="description" id="description">
+            </div>
+            <div>
+                <label for="notes">Notes</label>
+                <input type="text" name="notes" id="notes">
+            </div>
+            <!-- TODO include start and end times -->
+            <div>
+                <label for="start">Starts</label>
+                <input type="date" name="start" id="start">
+            </div>
+            <div>
+                <label for="end">Ends</label>
+                <input type="date" name="end" id="end">
+            </div>
+            <div>
+                <label for="repeat">Repeats</label>
+                <input type="checkbox" name="repeat" id="repeat">
+            </div>
+            <div>
+                <label for="activityType">Activity Type</label>
+                <select name="activityType">
+                    {%- for activityType in activityTypes -%}
+                    <option value="{{activityType.id}}">{{activityType.name}}</option>
+                    {%- endfor -%}
+                </select>
+            </div>
+            <div>
+                <!-- TODO is 'visibility' the clearest word to use here? -->
+                <label for="visibility">Visibility</label>
+                <select name="visibility">
+                    <option value="CLIENT">Campers</option>
+                    <option value="STAFF">Volunteers</option>
+                    <option value="ADMIN">Admins</option>
+                </select>
+            </div>
+            <div>
+                <label for="restrictVisibility">Restrict Visibility</label>
+                <input type="checkbox" name="restrictVisibility" id="restrictVisibility">
+            </div>
+            <input type="submit" value="Save">
+        </form>
+</main>
+
+{%- endblock -%}

@@ -20,7 +20,14 @@ router.get('/',  middleware.isAuthenticated, middleware.isAdmin, async (req, res
 
 // get form to create a new activity
 router.get('/new',  middleware.isAuthenticated, middleware.isAdmin, async (req, res, next) => {
-    return res.render('./activities/new-activity.njk');
+    let jwt = req.cookies.jwt;
+    let dbres = await db.query(Q.ACTIVITY_TYPES.GET_ALL(), {}, jwt);
+    if (!dbres.success) {
+        let err = new Error(dbres.errors.map(e => e.message).join(','));
+        return next(err);
+    }
+    let activityTypes = dbres.data.activityTypes;
+    return res.render('./activities/new-activity.njk', {activityTypes});
 });
 
 // handle form to create a new activity

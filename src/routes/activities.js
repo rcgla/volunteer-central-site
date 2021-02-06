@@ -9,13 +9,13 @@ const router = express.Router();
 // get all the activities
 router.get('/',  middleware.isAuthenticated, middleware.isAdmin, async (req, res, next) => {
     let jwt = req.cookies.jwt;
-    let dbres = await db.query(Q.ACTIVITIES_GET_ALL(), {}, jwt);
+    let dbres = await db.query(Q.ACTIVITIES.GET_ALL(), {}, jwt);
     if (!dbres.success) {
         let err = new Error(dbres.errors.map(e => e.message).join(','));
         return next(err);
     }
     let activities = dbres.data.activities;
-    return res.render('./activities/users.njk', { activities });
+    return res.render('./activities/activities.njk', { activities });
 });
 
 // get form to create a new activity

@@ -11,6 +11,22 @@
         <li>Start Date: {{ event.start }}</li>
         <li>End Date: {{ event.end }}</li>
     </ul>
+    
+    <table style="border:1px solid black;">
+        <tr>
+        <th style="border:1px solid black;">Activity Name</th>
+        <th style="border:1px solid black;">Start Date</th>
+        <th style="border:1px solid black;">End Date</th>
+        </tr>
+        {%- for activity in event.activities -%}
+        <tr>
+            <td style="border:1px solid black;">{{activity.name}}</td>
+            <td style="border:1px solid black;">{{activity.start}}</td>
+            <td style="border:1px solid black;">{{activity.end}}</td>
+        </tr>
+        {%- endfor -%}
+    </table>
+
 </main>
 
 {%- endblock -%}

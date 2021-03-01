@@ -15,10 +15,11 @@
     "start": "node src/start.js",
     "dev-no-nodemon": "node --require dotenv/config src/start.js",
     "dev": "nodemon -e js,html,njk,css src/start.js --exec \"node --require dotenv/config\"",
-    "load-test-data": "node --require dotenv/config other-test-scripts/load-test-data.js dotenv_config_path=./test/.env",
-    "test": "mocha --env dotenv_config_path=test/.env --require dotenv/config test/*js ",
+    "load-test-data": "node --require dotenv/config other-test-scripts/load-test-data.js dotenv_config_path=./test/test.env",
+    "test": "mocha --env dotenv_config_path=test/test.env --require dotenv/config test/*js ",
     "gendata": "node other-test-scripts/gendata/index.js",
-    "list-queries": "node other-test-scripts/list-queries.js"
+    "list-queries": "node other-test-scripts/list-queries.js",
+    "exportdata": "node --require dotenv/config other-test-scripts/export.js dotenv_config_path=./test/test.env"
   },
   "author": {
     "name": "Marisa DeMeglio",

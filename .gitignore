@@ -1,3 +1,5 @@
+export-events.json
+
 # Logs
 logs
 *.log

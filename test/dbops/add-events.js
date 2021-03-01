@@ -30,7 +30,7 @@ async function addEvent(event, jwt) {
         err.errors = dbres.errors;
         throw err;
     }
-    let eventType = dbres.data.eventTypes.find(item => item.name == event.type);
+    let eventType = dbres.data.eventTypes.find(item => item.name == event.eventType);
     dbres = await db.query(
         Q.EVENTS.CREATE(),
         {
@@ -146,7 +146,7 @@ async function addActivities(activities, jwt, event) {
             err.errors = dbres.errors;
             throw err;
         }
-        let activityType = dbres.data.activityTypes.find(item => item.name == activity.type);
+        let activityType = dbres.data.activityTypes.find(item => item.name == activity.activityType);
 
         dbres = await db.query(Q.LOCATIONS.GET_ALL(), {}, jwt);
         if (!dbres.success) {

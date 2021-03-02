@@ -58,3 +58,6 @@ pre {
         justify-self: center;
     }
 }
+table.users img {
+    height: 5rem;
+}

@@ -3,6 +3,7 @@ import * as db from '../database/index.js';
 import * as Q from '../queries/index.js';
 import * as middleware from '../middleware.js';
 import * as utils from '../utils.js';
+import dayjs from 'dayjs';
 
 const router = express.Router();
 
@@ -15,7 +16,7 @@ router.get('/',  middleware.isAuthenticated, middleware.isAdmin, async (req, res
         return next(err);
     }
     let users = dbres.data.users;
-    return res.render('./users/users.njk', { users });
+    return res.render('./users/users.njk', { users, dayjs, sortUserPhotos, hadRole });
 });
 
 // get logged-in user's landing page
@@ -66,6 +67,7 @@ router.get('/:id/edit',  middleware.isAuthenticated, async (req, res, next) => {
         return next(err);
     }
     let user = dbres.data.user;
+    user.photos = sortUserPhotos(user.photos);
     return res.render('./users/edit-user.njk', { user });    
 });
 
@@ -78,6 +80,7 @@ router.get('/:id',  middleware.isAuthenticated, async (req, res, next) => {
         next(err);
     }
     let user = dbres.data.user;
+    user.photos = sortUserPhotos(user.photos);
     return res.render('./users/user.njk', { user });
 });
 
@@ -86,5 +89,19 @@ router.post('/:id',  middleware.isAuthenticated, async (req, res, next) => {
     return next(new Error("TODO"));
 });
 
-
+function sortUserPhotos(photos) {
+    // most recent first
+    return photos.sort((a, b) => {
+        if (dayjs(a.event.start).isAfter(dayjs(b.event.start))) {
+            return -1;
+        }
+        else {
+            return 1;
+        }
+    });
+}
+function hadRole(user, role) {
+    // look at the users placements and see if they ever had the specified role
+    return user.placements.find(p => p.role.name == role) != undefined;
+}
 export { router };

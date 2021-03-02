@@ -5,6 +5,8 @@ import * as usersPrivateInfo from './usersPrivateInfo.js';
 import * as usersProtectedInfo from './usersProtectedInfo.js';
 import * as emergencyContacts from './emergencyContacts.js';
 import * as userGroups from './userGroups.js';
+import * as photos from './photos.js';
+import * as events from './events.js';
 
 const BASIC_FIELDS = () => `
 id
@@ -31,6 +33,12 @@ placements {
 }
 userGroups {
     ${userGroups.FIELDS()}
+}
+photos {
+    ${photos.BASIC_FIELDS()}
+    event {
+        ${events.BASIC_FIELDS()}
+    }
 }
 `;
 

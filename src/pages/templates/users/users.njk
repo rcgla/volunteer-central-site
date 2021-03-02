@@ -10,11 +10,45 @@
     This is a long alphabetical list of all users, not sorted by role. 
     The admin user management page should be considerably more organized. This is just to show the raw data.
     </pre>
-    <ul>
-        {%- for user in users -%}
-        <li><a href="/users/{{user.id}}">{{user.name}}</a></li>
-        {%- endfor -%}
-    </ul>
+    <table summary="All the users" class="users">
+        <thead>
+            <tr>
+                <td>Name</td>
+                <td>Photo</td>
+                <td>Has volunteered?</td>
+                <td>Has been a camper?</td>
+            </tr>
+        </thead>
+        <tbody>
+            {%- for user in users -%}
+            <tr>
+                <td><a href="/users/{{user.id}}">{{user.name}}</a></td>
+                <td>
+                {%- if user.photos | length > 0 -%}
+                    {%- set photos = sortUserPhotos(user.photos) -%}
+                    <img src="{{photos[0].url}}" alt="Profile photo from {{dayjs(photos[0].event.start).format('YYYY-MM-dd')}}"/>
+                {%- else -%}
+                    <span>No photo available</span>
+                {%- endif -%}
+                </td>
+                <td>
+                    {%- if hadRole(user, 'Volunteer') -%}
+                    <span>Yes</span>
+                    {%- else -%}
+                    <span>No</span>
+                    {%- endif -%}
+                </td>
+                <td>
+                    {%- if hadRole(user, "Camper") -%}
+                    <span>Yes</span>
+                    {%- else -%}
+                    <span>No</span>
+                    {%- endif -%}
+                </td>
+            </tr>
+            {%- endfor -%}
+        </tbody>
+    </table>
 </main>
 
 {%- endblock -%}

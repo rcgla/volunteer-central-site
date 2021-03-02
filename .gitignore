@@ -1,4 +1,5 @@
 export-events.json
+postgraphile.cache
 
 # Logs
 logs
@@ -105,5 +106,3 @@ dist
 # TernJS port file
 .tern-port
 .DS_Store
-src/database/postgraphile.cache
-src/database/postgraphile.cache

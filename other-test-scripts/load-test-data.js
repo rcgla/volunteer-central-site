@@ -13,13 +13,8 @@ import winston from "winston";
         events: "../test/data/events.json",
         placements: "../test/data/placements.json"
     };
-    let importedData = await readDataProfile(dataProfile);
-    let jwt = await initDb(importedData);
-    // await assignAnswerSets(jwt);
-    // await loadFirstAnswersAndPublish(jwt);
-    // await upgradeTestSuite(jwt);
-    // await loadSecondAnswers(jwt);
-
+    let data = await readDataProfile(dataProfile);
+    let jwt = await initDb(data); // this loads all the data into the db
     winston.info("Done");
     process.exit(0);
 })();

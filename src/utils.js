@@ -77,9 +77,22 @@ function formatErrorMessage(error) {
         return error.message;
     }
 }
-
+// make these fields a little easier to use
+function simplifyUserObject(user) {
+    let user_;
+    if (user.usersProtectedInfo) {
+        user_ = {...user, ...user.usersProtectedInfo};
+        delete user_.usersProtectedInfo;
+    }
+    if (user.usersPrivateInfo) {
+        user_ = {...user_, ...user.usersPrivateInfo};
+        delete user_.usersPrivateInfo;
+    }
+    return user_;
+}
 export {
     parseToken,
     getUsersBySessionAndRoleGroup,
-    formatErrorMessage
+    formatErrorMessage,
+    simplifyUserObject
 };

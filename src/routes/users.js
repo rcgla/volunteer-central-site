@@ -20,7 +20,7 @@ router.get('/',  middleware.isAuthenticated, middleware.isAdmin, async (req, res
 });
 
 // get logged-in user's landing page
-router.get('/dashboard',  middleware.isAuthenticated, async (req, res) => {
+router.get('/dashboard',  middleware.isAuthenticated, async (req, res, next) => {
     let jwt = req.cookies.jwt;
     let token = utils.parseToken(jwt);
     
@@ -35,7 +35,27 @@ router.get('/dashboard',  middleware.isAuthenticated, async (req, res) => {
 
 // get form to create a new user
 router.get('/new',  middleware.isAuthenticated, middleware.isAdmin, async (req, res, next) => {
-    return res.render('./users/new-user.njk');
+    let jwt = req.cookies.jwt;
+    // handeds, mealprefs, types, tShirtSizes
+    let handeds = ["RIGHT", "LEFT", "OTHER"];
+    let mealprefs = ["OMNIVORE", "VEGETARIAN", "VEGAN"];
+    let types = ["CLIENT", "STAFF", "ADMIN"];
+    let dbres = await db.query(Q.TSHIRT_SIZES.GET_ALL(), {}, jwt);
+    if (!dbres.success) {
+        let err = new Error(dbres.errors.map(e => e.message).join(','));
+        return next(err);
+    }
+    let tShirtSizes = dbres.data.tShirtSizes;
+    return res.render('./users/new-edit-user.njk', 
+        {
+            title: "New user", 
+            handeds, 
+            mealprefs, 
+            types, 
+            tShirtSizes, 
+            user: null,
+            postEndpoint: `/new`
+        });
 });
 
 // handle form to create a new user
@@ -45,6 +65,7 @@ router.post('/new',  middleware.isAuthenticated, middleware.isAdmin, async (req,
 
 // get form to confirm deleting a user
 router.get('/:id/delete',  middleware.isAuthenticated, middleware.isAdmin, async (req, res, next) => {
+    let jwt = req.cookies.jwt;
     let dbres = await db.query(Q.USERS.GET(), { id: parseInt(req.params.id) }, jwt);
     if (!dbres.success) {
         let err = new Error(dbres.errors.map(e => e.message).join(','));
@@ -61,6 +82,7 @@ router.post('/:id/delete',  middleware.isAuthenticated, middleware.isAdmin, asyn
 
 // edit user profile
 router.get('/:id/edit',  middleware.isAuthenticated, async (req, res, next) => {
+    let jwt = req.cookies.jwt;
     let dbres = await db.query(Q.USERS.GET(), { id: parseInt(req.params.id) }, jwt);
     if (!dbres.success) {
         let err = new Error(dbres.errors.map(e => e.message).join(','));
@@ -68,7 +90,26 @@ router.get('/:id/edit',  middleware.isAuthenticated, async (req, res, next) => {
     }
     let user = dbres.data.user;
     user.photos = sortUserPhotos(user.photos);
-    return res.render('./users/edit-user.njk', { user });    
+    // handeds, mealprefs, types, tShirtSizes
+    let handeds = ["RIGHT", "LEFT", "OTHER"];
+    let mealprefs = ["OMNIVORE", "VEGETARIAN", "VEGAN"];
+    let types = ["CLIENT", "STAFF", "ADMIN"];
+    dbres = await db.query(Q.TSHIRT_SIZES.GET_ALL(), {}, jwt);
+    if (!dbres.success) {
+        let err = new Error(dbres.errors.map(e => e.message).join(','));
+        return next(err);
+    }
+    let tShirtSizes = dbres.data.tShirtSizes;
+    return res.render('./users/new-edit-user.njk', 
+        {
+            title: "New user", 
+            handeds, 
+            mealprefs, 
+            types, 
+            tShirtSizes, 
+            user: utils.simplifyUserObject(user),
+            postEndpoint: `/${user.id}`
+        });
 });
 
 // get user profile

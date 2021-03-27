@@ -222,6 +222,45 @@ async function addActivities(activities, jwt, event) {
                     );
                 }
             }
+
+            // activity roles are given as an array of arrays
+            // e.g. [[A and B and C] or [D and E]]
+            // add to the database as "A, B, C" and "D, E"
+            if (activity.roles) {
+                dbres = await db.query(
+                    Q.ROLES.GET_ALL(),
+                    {},
+                    jwt
+                );
+                if (!dbres.success) {
+                    let err = new Error("Could not get roles");
+                    err.errors = dbres.errors;
+                    throw err;
+                }
+                for (let roleList of activity.roles) {
+                    let roleIds = [];
+                    for (let roleName of roleList) {
+                        let role = roleList.find(r => r.name == roleName);
+                        if (role) {
+                            roleIds.push(role.id);
+                        }
+                        else {
+                            winston.log(`Role ${roleName} not found in db`);
+                        }
+                    }
+                    let roleListStr = roleIds.join(", ");
+                    dbres = await db.query(
+                        Q.ACTIVITIES_ROLES.CREATE(),
+                        {
+                            input: {
+                                activityId: addedActivity.id,
+                                roleIds: roleListStr
+                            },
+                            jwt
+                        }
+                    );
+                }
+            }
         }
     }
 }

@@ -4,6 +4,7 @@ import * as locations from './locations.js';
 import * as tracks from './tracks.js';
 import * as rooms from './rooms.js';
 import * as events from './events.js';
+import * as roles from './roles.js';
 
 const FIELDS = () => `
 id
@@ -30,8 +31,14 @@ track {
 rooms {
     ${rooms.FIELDS()}
 }
+
 `;
 
+/* add back
+roles {
+    ${roles.FIELDS()}
+}
+*/
 export { FIELDS };
 export const {CREATE, DELETE, UPDATE, GET, GET_ALL} 
     = generate("activity", "activities", FIELDS);

@@ -336,6 +336,40 @@ describe('initial-data-import', function () {
 
     });
 
+    it("has the correct roles for activities", async function() {
+        let dbres = await db.query(Q.ACTIVITIES.GET_ALL(), {}, adminJwt);
+        let dbActivities = dbres.data.activities;
+        dbres = await db.query(Q.ROLES(), {}, jwt);
+        let dbRoles = dbres.data.roles;
+
+        let jsonActivities = importedData.eventsData.map(e => e.activities ?? []);
+        jsonActivities = jsonActivities.flat();
+        dbActivities.map(dbActivity => {
+            let jsonActivity = jsonActivities.find(a => a.name == dbActivity.name);
+            if (jsonActivity.roles) {
+                let roleLists = dbActivity.roleIds.split(",");
+                for (let roleList of roleLists) {
+                    // check each role id list, e.g. [1, 2, 3] and make sure it has a match in the JSON document
+                    // TODO left off here
+                }
+                let roleNames = [];
+                for (let roleId of roleIds) {
+                    let dbRole = dbRoles.find(r => r.id == parseInt(roleId));
+
+                }
+
+                jsonActivity.roomNames.map(item => expect(names).to.contain(item));
+            }
+            else {
+                expect(activity.rooms).to.be.empty;
+            }
+
+            if (jsonActivity.trackName) {
+                expect(activity.track).to.not.be.null;
+                expect(activity.track.name).to.equal(jsonActivity.trackName);
+            }
+        });
+    });
     it("has the correct placements", async function() {
         let dbres = await db.query(Q.PLACEMENTS.GET_ALL(), {}, adminJwt);
         let placements = dbres.data.placements;
